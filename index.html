@@ -1,0 +1,163 @@
+<html>
+<head>
+<title> IMWT </title>
+</head>
+<style type="text/css">
+
+@import url('https://fonts.googleapis.com/css2?family=Caladea&family=Rye&display=swap');
+
+	.container {
+		display: grid;
+		width: 100%;
+		grid-template-areas: "head head head"
+							 "nav nav nav"
+							 "left center right"
+							 "foot foot foot";
+		grid-template-rows: 80px 40px 1fr 50px;
+		grid-template-columns: 1fr 2fr 1fr;
+		margin: 0px;
+	}
+
+	#testa {
+		grid-area: head;
+		background: #FAEBD7;
+		margin-left: -10px;
+		margin-right: -10px;
+		margin-top: -10px;
+
+	}
+
+	#barra {
+		grid-area: nav;
+		background: white;
+		margin-left: -10px;
+		margin-right: -10px;
+	}
+	#piede {
+		grid-area: foot;
+		background: yellow;
+		margin: 0px;
+	}
+
+	#destra {
+		grid-area: right;
+		margin-right: 0px;
+		background-color:#FAEBD7;
+		position: -webkit-sticky;
+    	position: sticky;
+    	left: 0;
+    	top:50;
+    	bottom: 0;
+	}
+
+	#sinistra {
+		grid-area: left;
+		margin-left: 0px;
+		background: #FAEBD7;
+		position: -webkit-sticky;
+    	position: sticky;
+    	left: 0;
+    	top:50;
+    	bottom: 0;
+	}
+
+	#centro {
+		grid-area: center;
+		margin: 0px;
+	}
+
+	ul {
+  	list-style-type: none;
+  	margin: 0;
+  	padding: 0;
+  	overflow: hidden;
+  	background-color: black;
+	}
+
+	li {
+  	float: left;
+	}
+
+	li a {
+  	display: block;
+  	padding: 8px;
+	}
+
+	.button{
+		font-family: 'Caladea', serif;
+		font-size: 20px;
+		color: white;
+		text-decoration: none;
+		margin-left:20px;
+	}
+
+	.p{
+		font-size: 30px;
+	}
+	div.sticky {
+  	position: -webkit-sticky;
+  	position: sticky;
+  	top: 0;
+  	left:0;
+  	right:0;
+	}	
+
+</style>
+<body>
+
+<div class="container">
+  	<div class="row" id="testa">
+  		<h1 style="font-family: 'Rye', cursive; text-align: center; margin: 20px; font-size: 40pt; letter-spacing: 8px;"> CIRCUS </h1>
+  	</div>
+
+  	<div class="row" id="barra" style="position: -webkit-sticky;
+    	position: sticky;
+    	top:0;">
+	<ul style="padding:4px">
+	<li><a href="#home" class="button">Home</a></li>
+  	<li><a href="#issues" class="button">Issues</a></li>
+  	<li><a href="#about" class="button">About</a></li>
+  	<li><a href="#disclaimer" class="button">Disclaimer</a></li>
+  	<li><a href="#contacts" class="button">Contacts</a></li>
+  	<li><a href="#documentation" class="button">Documentation</a></li>
+	</ul>
+  	</div>
+  	<div class="sticky">
+    <div class="col" id="sinistra" class="sticky">
+    	<img src="pngeggr.png" height="500" align="left" style="margin: 20px; position: -webkit-sticky;
+    	position: sticky;
+    	right: 0;"> 
+    </div>
+	</div>
+
+    <div class="col" id = "centro">
+      <p>Lorem ipsum dolor sit amet. Ut quis iste et suscipit corporis hic quia provident. At asperiores quia aut nesciunt dolores ad accusantium laboriosam id inventore et molestias culpa quo sapiente quis. Qui nemo amet id itaque perferendis qui ipsum magni et aliquid molestiae ut excepturi natus in magnam eveniet.</p>
+
+	  <p>Et reprehenderit neque At quidem doloribus ut debitis dolore unde quidem et fugiat reprehenderit ut molestiae nihil est magni aliquid. Et dolores voluptas hic nulla possimus et fuga voluptatem quo suscipit saepe qui voluptatum rerum ut laboriosam dolorem ut ipsam dicta. Aut rerum omnis hic sequi inventore a quod ullam 33 aliquam eaque aut iure possimus sed facilis eligendi.</p>
+
+	  <p>Vel quasi quibusdam nam perferendis perferendis aut voluptatem illo et excepturi voluptas et officia voluptatem et sequi galisum qui natus quam. A architecto modi in quos placeat ab excepturi illum et doloremque tempore in ipsa necessitatibus et deleniti accusantium qui velit consequatur. Quo harum nihil ea ducimus velit et praesentium excepturi sed sunt praesentium in quia alias sed quos sunt.</p>
+
+	  <p>Lorem ipsum dolor sit amet. Ut quis iste et suscipit corporis hic quia provident. At asperiores quia aut nesciunt dolores ad accusantium laboriosam id inventore et molestias culpa quo sapiente quis. Qui nemo amet id itaque perferendis qui ipsum magni et aliquid molestiae ut excepturi natus in magnam eveniet.</p>
+
+	  <p>Et reprehenderit neque At quidem doloribus ut debitis dolore unde quidem et fugiat reprehenderit ut molestiae nihil est magni aliquid. Et dolores voluptas hic nulla possimus et fuga voluptatem quo suscipit saepe qui voluptatum rerum ut laboriosam dolorem ut ipsam dicta. Aut rerum omnis hic sequi inventore a quod ullam 33 aliquam eaque aut iure possimus sed facilis eligendi.</p>
+
+	  <p>Vel quasi quibusdam nam perferendis perferendis aut voluptatem illo et excepturi voluptas et officia voluptatem et sequi galisum qui natus quam. A architecto modi in quos placeat ab excepturi illum et doloremque tempore in ipsa necessitatibus et deleniti accusantium qui velit consequatur. Quo harum nihil ea ducimus velit et praesentium excepturi sed sunt praesentium in quia alias sed quos sunt.</p>
+
+	  <p>Lorem ipsum dolor sit amet. Ut quis iste et suscipit corporis hic quia provident. At asperiores quia aut nesciunt dolores ad accusantium laboriosam id inventore et molestias culpa quo sapiente quis. Qui nemo amet id itaque perferendis qui ipsum magni et aliquid molestiae ut excepturi natus in magnam eveniet.</p>
+
+	  <p>Et reprehenderit neque At quidem doloribus ut debitis dolore unde quidem et fugiat reprehenderit ut molestiae nihil est magni aliquid. Et dolores voluptas hic nulla possimus et fuga voluptatem quo suscipit saepe qui voluptatum rerum ut laboriosam dolorem ut ipsam dicta. Aut rerum omnis hic sequi inventore a quod ullam 33 aliquam eaque aut iure possimus sed facilis eligendi.</p>
+
+	  <p>Vel quasi quibusdam nam perferendis perferendis aut voluptatem illo et excepturi voluptas et officia voluptatem et sequi galisum qui natus quam. A architecto modi in quos placeat ab excepturi illum et doloremque tempore in ipsa necessitatibus et deleniti accusantium qui velit consequatur. Quo harum nihil ea ducimus velit et praesentium excepturi sed sunt praesentium in quia alias sed quos sunt.</p>
+    </div>
+    
+    <div class="sticky">
+    <div class="col" id="destra">
+      <img src="pngegg.png" height="500" align="right" style="margin: 20px; position: -webkit-sticky;
+    	position: sticky;
+    	left: 0;">
+    </div>
+    </div>
+</div>
+  
+</body>
+</html>

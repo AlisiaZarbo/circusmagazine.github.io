@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="en">
+<head><title>....</title></head>
+
+#OUTPUT VISIBILE
+<body>
+
+#TITOLO ARTICOLO
+<div class="title_art"><h2>Titolo dell'articolo, pleonastico inserire sia class che h2?</h2></div>
+#abbiamo deciso di eliminare al momento abstract e keywords, se le reinseriamo alla fine come un over non le indicizzeremo
+#capire che fare con nome autore, affiliazioni etc.
+
+#TESTO DELL'ARTICOLO
+<div class="maincontent">
+<h3>titolo paragrafo</h3>
+<h4>titolo sottoparagrafo</h3>
+<p>
+
+#RIFERIMENTO BGRF NEL TESTO: es. "ahahah(Willeford, 1969)" diventa:
+ahahah(<a href='#Willefors1969'>Willeford, 1969</a>)
+
+#ITALIC PER PAROLE STRANIERE
+<i>show</i>
+
+#LONG QUOTATION
+<blockquote>Pedro Urdemales, peyuco ...</blockquote>
+
+#INTEXT QUOTATION
+<q>ahjdahkda</q>
+
+#NOTE A PIè DI PAGINA: al momento inserite così, forse oltre all'id mettere una class per la loro formattazione uniforme
+<a href='#Nota1'>1</a>
+<p id='Nota1'>1.xyziia</p>
+
+#IMMAGINI: mettete voi se ne avete già fatte
+
+#TABELLE: come sopra
+
+#ALTRO:
+
+</p>
+</div>
+
+#EZ: numerare i paragrafi con ulteriori div?
+#EZ: quali virgolette usiamo? singole o doppie?
+
+#BIBLIOGRAFIA
+#Non taggare persone nè date dei riferimenti bibliografici: taggarli nei titoli degli articoli citati?
+<div class="references">
+<h3>titolo paragrafo</h3>
+<h4>titolo sottoparagrafo</h3>
+<p>mettere paragrafo per ogni riferimento bibliografico o fare un elenco?</p>
+#al momento sto mettendo degli id così, meglio mettere id numero? nel caso li mettiamo con un codice che identifichi a quale issue appartengono? es. 1.3_01
+<p id="Willeford1969">WILLEFoRD, William (1969). The Fool and His Scepter: A Study in Clowns and Jesters and Their Audience. Northwestern University Press.</p>
+</div>
+
+
+#EVENTUALI APPENDICI
+<div class="annexes">
+<h3>titolo paragrafo</h3>
+<h4>titolo sottoparagrafo</h3>
+<p></p>
+</div>
+
+#FINE
+</body>
+</html>
+
+#EZ dubbi:
+#a capo con divisione sillabe: rimossi, voi?
+#taggare le entity anche nei titoli dei paragrafi?
+
+
+#MARCATURE
+
+#1. GEOGRAFICHE:
+#marcatura in inglese indipendentemente dalla lingua del testo
+#city vale per città vere (Milano) e comuni (es. Guidizzolo)? EZ: al momento io ho fatto così
+#EZ: ordinare in qualche maniera le gerarchie? Pensarci, es. data-sort="MilanItaly #?" data-label="Milan - Italy #oppure Italy - Milan?"
+#EZ: bar e altri luoghi con nomi in città, ma scarsamente conosciuti? che fare? al momento li ho messi come location, con tutti i dubbi del caso su label e ordinamento
+#EZ: riferimenti geografico-culturali come "contesto europeo", "cultura anglosassone", "comunità tedesca", "circo argentino": come li trattereste? Io ne ho moltissimi
+
+<span class="entity place continent" about="Europa" data-sort="Europa" data-label="Europa">Europa</span>
+<span class="entity place country" about="Italy" data-sort="Italy" data-label="Italy">Italia</span>
+<span class="entity place city" about="Milan - Italy" data-sort="MilanItaly #?" data-label="Milan - Italy #oppure Italy - Milan?">Milano</span>
+<span class="entity place location" about="Piazza Maggiore - Bologna" data-sort="decidere_come" data-label="decidere_come">Piazza Maggiore</span>
+
+#2. PERSONE:
+<span class="entity person" about="Nome Cognome" data-sort="CognomeNome" data-label="Cognome, Nome">Trotzky</span>
+#EZ: inseriti anche i nomi d'arte, senza in quel caso scambio di cognome-nome
+#EZ: che fare con i "personaggi"? Al momento inseriti come "concept"
+
+3. ENTI COLLETTIVI:
+<span class="entity organization" about="Circo Timoteo" data-sort="CircoTimoteo" data-label="Circo Timoteo">Circo Timoteo</span>
+#inserite qui le compagnie di circo, verificare se specializzare la class
+#EZ: inserito qui es. Chiesa, giunta militare, etc.
+
+4. CONCEPT:
+<span class="entity concept" about="xxx" data-sort="xxx" data-label="xxx">xxx</span>
+#EZ: inseriti qui i "personaggi" es. di mitologia popolare
+
+5. TIME: 
+<time datetime="YYYY-MM-DD">1934</time>
+#individuare il corretto modo di inserire un range o una durata
+#EZ: nomalizzare le date senza MM e DD a 01-01?
+
+#EZ 6. EVENT? Mi sembra manchi, p.es. fatti di Stonewall o Colpo di stato del 1973, lo inseriamo? A me sembra utile, essendo geografia+tempo+fatto
+#EZ 7. THING: teniamolo se serve, Vitali lo usava per cose con nomi

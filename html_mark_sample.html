@@ -1,6 +1,8 @@
 <!doctype html>
 <html lang="en">
-<head><title>....</title></head>
+<head><title>....</title>
+<meta charset="utf-8">
+</head>
 
 #OUTPUT VISIBILE
 <body>
@@ -22,16 +24,18 @@ ahahah(<a href='#Willefors1969'>Willeford, 1969</a>)
 
 #ITALIC PER PAROLE STRANIERE
 <i>show</i>
-# IR Non bisognerebbe utilizzare <em>? (così come <strong> invece di <b>)
+# IR Non bisognerebbe utilizzare <em>? (così come <strong> invece di <b>) 
+#EZ11-26: ho riletto, per stile dovrebbe valere css quindi es. <for_lang>show</for_lang> che poi diciamo come trattare nel css; se invece è italic per dare enfasi ovvero un significato "semantico", è <em>
 
 #LONG QUOTATION
 <blockquote>Pedro Urdemales, peyuco ...</blockquote>
-
+	
 #INTEXT QUOTATION
 <q>ahjdahkda</q>
-
+#EZ11-26: rivedendo Vitali dice: <cite>: short quote, <q>: long quote.
+	
 #NOTE A PIè DI PAGINA: al momento inserite così, forse oltre all'id mettere una class per la loro formattazione uniforme
-<a href='#Nota1'>1</a>
+EZ11-26: nel testo <sup><a href='#Nota1'>1</a></sup> (<sup> per apice)
 <p id='Nota1'>1.xyziia</p>
 
 #IMMAGINI: mettete voi se ne avete già fatte
@@ -55,7 +59,7 @@ ahahah(<a href='#Willefors1969'>Willeford, 1969</a>)
 </p>
 </div>
 
-#EZ: numerare i paragrafi con ulteriori div?
+#EZ: numerare i paragrafi con ulteriori div? #EZ11-26: mi sa che mi sono epressa male, intendevo le parti coi titoletti, dopo lo vediamo
 # IR non sono sicura serva...piuttosto forse fare un id ad ogni paragrafo dentro all'elemento p?
 # tipo <p id="p1"> e via dicendo
 #EZ: quali virgolette usiamo? singole o doppie?
@@ -121,6 +125,7 @@ ahahah(<a href='#Willefors1969'>Willeford, 1969</a>)
 4. CONCEPT:
 <span class="entity concept" about="xxx" data-sort="xxx" data-label="xxx">xxx</span>
 #EZ: inseriti qui i "personaggi" es. di mitologia popolare
+#EZ11-26: magari segnamoci cosa inseriamo in modo che eventualmente li riutilizziamo es. clown (facciamo un excel?)
 
 5. TIME: 
 <time datetime="YYYY-MM-DD">1934</time>
@@ -128,4 +133,10 @@ ahahah(<a href='#Willefors1969'>Willeford, 1969</a>)
 #EZ: nomalizzare le date senza MM e DD a 01-01?
 
 #EZ 6. EVENT? Mi sembra manchi, p.es. fatti di Stonewall o Colpo di stato del 1973, lo inseriamo? A me sembra utile, essendo geografia+tempo+fatto
+es. <span class="entity event" about="Stonewall riots" data-sort="StonewallRiots" data-label="Stonewall riots">disturbios de Stonewall de 1969</span>
+
 #EZ 7. THING: teniamolo se serve, Vitali lo usava per cose con nomi
+#EZ11-26: titoli libri/spettacoli?
+
+#EZ11-26: <section> <article> <aside>
+	

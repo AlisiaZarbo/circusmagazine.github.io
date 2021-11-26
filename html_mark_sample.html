@@ -21,24 +21,30 @@
 #RIFERIMENTO BGRF NEL TESTO: es. "ahahah(Willeford, 1969)" diventa:
 ahahah(<a href='#Willefors1969'>Willeford, 1969</a>)
 # IR per i rif biblio come id ho utilizzato bib1, bib2, bib3 etc....problema?
+#OK
 
 #ITALIC PER PAROLE STRANIERE
 <i>show</i>
 # IR Non bisognerebbe utilizzare <em>? (così come <strong> invece di <b>) 
-#EZ11-26: ho riletto, per stile dovrebbe valere css quindi es. <for_lang>show</for_lang> che poi diciamo come trattare nel css; se invece è italic per dare enfasi ovvero un significato "semantico", è <em>
+#EZ11-26: ho riletto, per stile dovrebbe valere css quindi es. <for_lang>show</for_lang>
+	che poi diciamo come trattare nel css; se invece è italic per dare enfasi ovvero un significato "semantico", è <em>
+	<i class="for">
+	<em>
 
 #LONG QUOTATION
 <blockquote>Pedro Urdemales, peyuco ...</blockquote>
 	
 #INTEXT QUOTATION
 <q>ahjdahkda</q>
-#EZ11-26: rivedendo Vitali dice: <cite>: short quote, <q>: long quote.
+#EZ11-26: rivedendo Vitali dice: <cite>: title, <q>: long quote.
 	
 #NOTE A PIè DI PAGINA: al momento inserite così, forse oltre all'id mettere una class per la loro formattazione uniforme
 EZ11-26: nel testo <sup><a href='#Nota1'>1</a></sup> (<sup> per apice)
 <p id='Nota1'>1.xyziia</p>
 
 #IMMAGINI: mettete voi se ne avete già fatte
+<img src="assets\img\1.1\1_1.1.png" alt="fig. 1 Foire St. Germain a Parigi."><br>
+<caption>Figure 1 – Title: Foire St. Germain a Parigi. Technique: Incision. 17th century. General view of the fair. Two stages of acrobats and comedians are visible: one on the far left and the other in the center, with a covering awning. Source: Dionysos Archive, University of Florence. Reference Image 853.</caption>
 
 #TABELLE: come sopra
 # IR per ora ho fatto così
@@ -122,8 +128,8 @@ EZ11-26: nel testo <sup><a href='#Nota1'>1</a></sup> (<sup> per apice)
 #inserite qui le compagnie di circo, verificare se specializzare la class
 #EZ: inserito qui es. Chiesa, giunta militare, etc.
 
-4. CONCEPT:
-<span class="entity concept" about="xxx" data-sort="xxx" data-label="xxx">xxx</span>
+4. CONCEPT/KEYWORDS:
+<span class="entity keyword" about="xxx" data-sort="xxx" data-label="xxx">xxx</span>
 #EZ: inseriti qui i "personaggi" es. di mitologia popolare
 #EZ11-26: magari segnamoci cosa inseriamo in modo che eventualmente li riutilizziamo es. clown (facciamo un excel?)
 

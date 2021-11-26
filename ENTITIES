@@ -1,0 +1,60 @@
+SUCCESSIONE ISSUES:
+1)ENRICA
+2)ALI
+3)ILA
+
+ORDINE ARTICOLI:
+1)INGLESE
+2)STRANIERO
+3)REVIEW
+
+KEYWORDS (<span class="entity keyword"):
+
+- marginality
+- nomadism
+- contemporary circus
+- music
+- circus animals
+- clown
+- perfomance
+- acrobats
+- characters
+
+CORSIVO:
+
+<i class="foreign">parola straniera</i>
+<em>parola normale</em>
+
+NOTE(APICE):
+
+<sup><a href='#nota'> numero </a></sup>
+
+IMMAGINI:
+
+<caption> didascalia </caption>
+
+SEZIONI:
+
+<div id= "sec_01">
+
+VIRGOLETTE:
+
+nel testo: ""
+nel tag: "" 
+
+<q> ---> mette le virgolette di default
+
+BIBLIOGRAFIA:
+
+Elenco
+
+<ul>
+<li id="">blablabla</li>
+</ul>
+
+
+
+
+
+
+

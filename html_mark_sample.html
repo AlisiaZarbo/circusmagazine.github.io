@@ -1,7 +1,15 @@
+---	
+#PRELIMINARI:
+	
+#Per i tag usiamo virgolette doppie: ""
+#Nel testo idem, rimuovere quelle diverse come francesi >>, inglesi, etc.: "" (IR non ricordo chi diceva fosse buona prassi utilizzare non virgolette inglesi ma cambiarle tutte in dritte, singole o doppie che siano)
+---
+
 <!doctype html>
 <html lang="en">
-<head><title>....</title>
-<meta charset="utf-8">
+<head>
+	<title>....</title>
+	<meta charset="utf-8">
 </head>
 
 #OUTPUT VISIBILE
@@ -14,106 +22,94 @@
 
 #TESTO DELL'ARTICOLO
 <div class="maincontent">
-<h3>titolo paragrafo</h3>
-<h4>titolo sottoparagrafo</h3>
-<p>
 
-#RIFERIMENTO BGRF NEL TESTO: es. "ahahah(Willeford, 1969)" diventa:
-ahahah(<a href='#Willefors1969'>Willeford, 1969</a>)
-# IR per i rif biblio come id ho utilizzato bib1, bib2, bib3 etc....problema?
-#OK
+	#numerare i paragrafi che hanno titoli e loro successivo contenuto con ulteriori div es:
+	<div id="sec_00"> #intro
+	<div id="sec_01"> #1°paragrafo etc.
 
-#ITALIC PER PAROLE STRANIERE
-<i>show</i>
-# IR Non bisognerebbe utilizzare <em>? (così come <strong> invece di <b>) 
-#EZ11-26: ho riletto, per stile dovrebbe valere css quindi es. <for_lang>show</for_lang>
-	che poi diciamo come trattare nel css; se invece è italic per dare enfasi ovvero un significato "semantico", è <em>
-	<i class="for">
-	<em>
+	<div id="sec_02">
+		<h3>titolo paragrafo</h3>
+		<h4>titolo sottoparagrafo</h3>
+			<p></p>
+			<p></p>
+			<p></p>
+	</div>
+	<div id="sec_03"></div>
+	<div id="sec_04">
 
-#LONG QUOTATION
-<blockquote cite="url se c'è">Pedro Urdemales, peyuco ...</blockquote>
-	
-#INTEXT QUOTATION
-<q>ahjdahkda</q>
-#EZ11-26: rivedendo Vitali dice: <cite>: title, <q>: long quote.
-q aggiuge le virgolette quindi toglierle dal testo
-		
-#NOTE A PIè DI PAGINA: al momento inserite così, forse oltre all'id mettere una class per la loro formattazione uniforme
-EZ11-26: nel testo <sup><a href='#Nota1'>1</a></sup> (<sup> per apice)
-<p id='Nota1'>1.xyziia</p>
+		#RIFERIMENTO BGRF NEL TESTO: 
+		es. "ahahah(Willeford, 1969)" diventa: ahahah(<a href='#bib1'>Willeford, 1969</a>)
+		# bib1, bib2, bib3 a seconda dell'ordine finale
 
-#IMMAGINI: mettete voi se ne avete già fatte
-<img src="assets\img\1.1\1_1.1.png" alt="fig. 1 Foire St. Germain a Parigi."><br>
-<caption>Figure 1 – Title: Foire St. Germain a Parigi. Technique: Incision. 17th century. General view of the fair. Two stages of acrobats and comedians are visible: one on the far left and the other in the center, with a covering awning. Source: Dionysos Archive, University of Florence. Reference Image 853.</caption>
+		#ITALIC
+		<i class="for">se corsivo per parola straniera</i>
+		<em>se corsivo per enfatizzare<em>
+		# IR Non bisognerebbe utilizzare <em>? (così come <strong> invece di <b>) 
+		#EZ11-26: ho riletto, per stile diamo una classe da trattare nel css; se invece è italic per dare enfasi ovvero un significato "semantico", è <em>
 
-#TABELLE: come sopra
-# IR per ora ho fatto così
-<table class="table">
-			<caption>Table 1</caption>
-			<thead>Overview of Respondents: Pseudonym, Role, Sex and Age</thead>
-			<tr>
-				<th>Pseudonym</th> <th>Role</th> <th>Sex</th> <th>Age</th>
-			</tr>
-			<tr>
-				<td>Aliya</td> <td>Participant</td> <td>Girl</td> <td>11</td>
-			</tr>
-			<tr> etc....
-</table>
+		#LONG QUOTATION
+		<blockquote cite="url della fonte se si ha">Pedro Urdemales, peyuco ...</blockquote>
 
-#ALTRO:
+		#INTEXT QUOTATION
+		<cite>titolo di libro, film, spettacolo etc</cite>
+		<q>quotation di parte di libro, discorso, etc.: <q> inserisce automanticamente le virgolette quindi togliere quelle della stringa>/q>
 
-</p>
-</div>
+		#NOTE A PIè DI PAGINA: al momento inserite così, forse oltre all'id mettere una class per la loro formattazione uniforme
+		nel testo <sup><a href='#Nota1'>1</a></sup> (<sup> per apice)
+		<p id='Nota1'>1.xyziia</p>
 
-#EZ: numerare i paragrafi con ulteriori div? #EZ11-26: mi sa che mi sono epressa male, intendevo le parti coi titoletti, dopo lo vediamo
-# IR non sono sicura serva...piuttosto forse fare un id ad ogni paragrafo dentro all'elemento p?
-# tipo <p id="p1"> e via dicendo<<img src="assets\img\1.1\1_1.1.png" alt="fig. 1 Foire St. Germain a Parigi."><br>
-<caption>Figure 1 – Title: Foire St. Germain a Parigi. Technique: Incision. 17th century. General view of the fair. Two stages of acrobats and comedians are visible: one on the far left and the other in the center, with a covering awning. Source: Dionysos Archive, University of Florence. Reference Image 853.</caption></p>
-<div id="sec_00"> #intro
-<div id="sec_01"> etc.
-		
-#EZ: quali virgolette usiamo? singole o doppie? "" per taggatura e testo>cambiare dove sono
-# IR non ricordo chi diceva fosse buona prassi utilizzare non virgolette inglesi ma cambiarle tutte in dritte, singole o doppie che siano
-# IR btw comunque dobbiamo ricordarci di aggiungere la codifica nell'<head>
-  <head>
-    <meta charset="utf-8">
-  </head>
+		#IMMAGINI:
+		<img src="assets\img\1.1\1_1.1.png" alt="fig. 1 Foire St. Germain a Parigi."><br>
+		<caption>Figure 1 – Title: Foire St. Germain a Parigi. Technique: Incision. 17th century. General view of the fair. Two stages of acrobats and comedians are visible: one on the far left and the other in the center, with a covering awning. Source: Dionysos Archive, University of Florence. Reference Image 853.</caption>
+
+		#TABELLE:
+		# IR per ora ho fatto così
+		<table class="table">
+					<caption>Table 1</caption>
+					<thead>Overview of Respondents: Pseudonym, Role, Sex and Age</thead>
+					<tr>
+						<th>Pseudonym</th> <th>Role</th> <th>Sex</th> <th>Age</th>
+					</tr>
+					<tr>
+						<td>Aliya</td> <td>Participant</td> <td>Girl</td> <td>11</td>
+					</tr>
+					<tr> etc....
+		</table>
+
+	</div>
+</div> #main content
 
 #BIBLIOGRAFIA
-#Non taggare persone nè date dei riferimenti bibliografici: taggarli nei titoli degli articoli citati?
+#Non taggare persone nè date dei riferimenti bibliografici: taggarli nei titoli degli articoli citati? Al momento no
 
 <div class="references">
-<div>
-<h3>titolo paragrafo</h3>
-<h4>titolo sottoparagrafo</h3>
-<ul><li id="#">per ogni riferimento bibliografico</li>
-	<li id="#">per ogni riferimento bibliografico</li>
-</ul>
-#meglio mettere id numero? nel caso li mettiamo con un codice che identifichi a quale issue appartengono? NOes. 1.3_01
-<p id="Willeford1969">WILLEFoRD, William (1969). The Fool and His Scepter: A Study in Clowns and Jesters and Their Audience. Northwestern University Press.</p>
-</div>
-
+	<div>
+	<h3>titolo paragrafo</h3>
+	<h4>titolo sottoparagrafo</h3>
+	<ul>
+		<li id="#">per ogni riferimento bibliografico</li>
+		<li id="#">per ogni riferimento bibliografico</li>
+	</ul>
+	</div>
+</div>#references
 
 #EVENTUALI APPENDICI
 <div class="annexes">
-<h3>titolo paragrafo</h3>
-<h4>titolo sottoparagrafo</h3>
-<p></p>
-</div>
+	<h3>titolo paragrafo</h3>
+	<h4>titolo sottoparagrafo</h3>
+	<p></p>
+</div>#annexes
 
 #FINE
 </body>
 </html>
 
-#EZ dubbi:
-#a capo con divisione sillabe: rimossi, voi? OK
-#taggare le entity anche nei titoli dei paragrafi? NO
-# IR mi ponevo la stessa questione... per ora non li ho messi
-
+#dubbi:
+#a capo con divisione sillabe: rimossi OK
+#taggare le entity anche nei titoli dei paragrafi, NO
 
 #MARCATURE
-#EZ:utilizzare e nel caso come accenti e caratteri speciali nelle marcature? rimuovere nel sort e lasciare nel label
+#accenti e caratteri speciali nelle marcature: rimuovere nel sort e lasciare nel label
 
 #1. GEOGRAFICHE:
 #marcatura in inglese indipendentemente dalla lingua del testo
@@ -152,7 +148,4 @@ vedere: xpath, xquery
 es. <span class="entity event" about="Stonewall riots" data-sort="StonewallRiots" data-label="Stonewall riots">disturbios de Stonewall de 1969</span>
 
 #EZ 7. THING: teniamolo se serve, Vitali lo usava per cose con nomi
-#EZ11-26: titoli libri/spettacoli? <CITE>
-
 #EZ11-26: <section> <article> <aside> AL MOMENTO SOSPESE
-	

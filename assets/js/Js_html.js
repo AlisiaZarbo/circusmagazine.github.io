@@ -19,7 +19,7 @@ function change_css2(style) {
   document.getElementById('css').href = n_css;
 }
 
-$(document).ready(function(){
+(document).ready(function(){
 $("#A1").click(function(){
     $(function(){
       $("#artM").load("1_1.html"); 

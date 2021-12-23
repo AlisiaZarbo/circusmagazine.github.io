@@ -19,14 +19,6 @@ function change_css2(style) {
   document.getElementById('css').href = n_css;
 }
 
-$(document).ready(function(){
-	$("#A3").click(function(){
-    $(function(){
-      $("#artM").load("1_1.html"); 
-    });
-});
- })
-
 function change_issue(sw) {
   var art1, art2, art3;
 	if (sw == 1) {
@@ -44,9 +36,9 @@ function change_issue(sw) {
 	art2 = '3_2.html';
 	art3 = '3_3.html'
   }
-	document.getElementById('artM').setAttribute('w3-include-html', art1);
-	document.getElementById('artL1').setAttribute('w3-include-html', art2);
-	document.getElementById('artL2').setAttribute('w3-include-html', art3);
+	$("#artM").load("art1");
+	$("#artL1").load("art2");
+	$("#artL2").load("art3);
 	}
 
 function includeHTML() {

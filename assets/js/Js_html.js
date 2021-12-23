@@ -38,7 +38,7 @@ function change_issue(sw) {
   }
 	$("#artM").load("art1");
 	$("#artL1").load("art2");
-	$("#artL2").load("art3);
+	$("#artL2").load("art3");
 	}
 
 function includeHTML() {

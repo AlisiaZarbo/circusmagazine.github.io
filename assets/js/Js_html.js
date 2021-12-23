@@ -36,7 +36,7 @@ function change_issue(sw) {
 	art2 = '3_2.html';
 	art3 = '3_3.html'
   }
-	  document.getElementById('artM').w3-include-html = art1;
+	  document.getElementById('artM').setAttribute('w3-include-html', art1);
 	  document.getElementById('artL1').w3-include-html = art2;
 	  document.getElementById('artL2').w3-include-html = art3;
 }

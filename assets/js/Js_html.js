@@ -36,10 +36,10 @@ function change_issue(sw) {
 	art2 = '3_2.html';
 	art3 = '3_3.html'
   }
-	  document.getElementById('artM').setAttribute('w3-include-html', art1);
-	  document.getElementById('artL1').w3-include-html = art2;
-	  document.getElementById('artL2').w3-include-html = art3;
-}
+	document.getElementById('artM').setAttribute('w3-include-html', art1);
+	document.getElementById('artL1').setAttribute('w3-include-html', art2);
+	document.getElementById('artL2').setAttribute('w3-include-html', art3);
+	}
 
 function includeHTML() {
   var z, i, elmnt, file, xhttp;

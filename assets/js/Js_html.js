@@ -31,7 +31,7 @@ $(document).ready(function(){
  })
 
 $(document).ready(function(){
-	$("#A1").click(function(){
+	$("#A2").click(function(){
     $(function(){
       $("#artM").load("2_1.html");
 	$("#artL1").load("2_2.html");

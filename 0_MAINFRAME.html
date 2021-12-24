@@ -24,11 +24,11 @@
   <ul>
 	<li><a href="#">Home</a></li>
     <li class="dropdown">
-    <a class="dropbtn">Issues</a>
+    <a class="dropbtn" id="Ai">Issues</a>
 	<div class="dropdown-content">
-		<a href="#" onclick="change_issue(1)">1. Circus and cultural studies</a>
-		<a href="#" onclick="change_issue(2)">2. Circus and Arts</a>
-		<a href="#" onclick="change_issue(3)">3. Social Circus</a>
+		<a href="#" id="I1">1. Circus and cultural studies</a>
+		<a href="#" id="I2">2. Circus and Arts</a>
+		<a href="#" id="I3">3. Social Circus</a>
 	</div>
 	</li>
     <li><a href="#">Disclaimer</a></li>
@@ -78,16 +78,16 @@
 
 <!-- Central colum: main article -->
 
-<div class="main">
-   <embed id="artM" type="text/html" src="1_1.html" width="100%" height="100%">
+<div class="main" id="artM">
+   <!--embed id="artM" type="text/html" src="1_1.html" width="100%" height="100%"-->
 </div><!-- end Central colum -->
 
 <!-- sideR colum -->
-<div class="sider">
-	<embed id="artL1" type="text/html" src="1_2.html" width="100%" height="100%">
+<div class="sider" id="artL1" width="100%" height="100%">
+	<!--embed id="artL1" type="text/html" src="1_2.html" width="100%" height="100%"-->
 
 <!-- sideR colum2 -->
-<div class="sider">
+<div class="sider" id="artL2">
 	<embed id="artL2" type="text/html" src="1_3.html" width="100%" height="100%">
 </div><!-- end sideR colum2 -->
 </div><!-- end sideR colum -->

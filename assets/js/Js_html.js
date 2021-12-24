@@ -36,7 +36,9 @@ function change_issue(sw) {
 	art2 = '3_2.html';
 	art3 = '3_3.html'
   	}
-   $("#artM").load(art1);
-   $("#artL1").load(art2);
-   $("#artL2").load(art3)
+	$(function(){
+      	$("#artM").load(art1);
+	$("#artL1").load(art2);
+	$("#artL2").load(art3)
+    	});
 }

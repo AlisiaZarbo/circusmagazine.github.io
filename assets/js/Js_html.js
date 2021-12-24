@@ -21,7 +21,7 @@ function change_css2(style) {
 
 
 $(document).ready(function(){
-	$("#I1", "Ai").click(function(){
+	$("Ai").click(function(){
     $(function(){
       $("#artM").load("1_1.html");
 	$("#artL1").load("1_2.html");
@@ -30,6 +30,16 @@ $(document).ready(function(){
 });
  })
 
+$(document).ready(function(){
+	$("#I1")click(function(){
+    $(function(){
+      $("#artM").load("1_1.html");
+	$("#artL1").load("1_2.html");
+	$("#artL2").load("1_3.html")
+    });
+});
+ })
+	
 $(document).ready(function(){
 	$("#I2").click(function(){
     $(function(){

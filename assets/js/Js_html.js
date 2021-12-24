@@ -19,36 +19,27 @@ function change_css2(style) {
   document.getElementById('css').href = n_css;
 }
 
-$(document).ready(function(){
-	$("#A1").click(function(){
-    $(function(){
-      $("#artM").load("1_1.html");
-	$("#artL1").load("1_2.html");
-	$("#artL2").load("1_3.html")
-    });
-});
- })
-
 function change_issue(sw) {
   var art1, art2, art3;
 	if (sw == 1) {
 		art1 = '1_1.html';
 		art2 = '1_2.html';
 		art3 = '1_3.html'
-	  }
+	}
 	if (sw == 2) {
 		art1 = '2_1.html';
 		art2 = '2_2.html';
 		art3 = '2_3.html'
 	}
 	if (sw == 3) {
-    art1 = '3_1.html';
+    	art1 = '3_1.html';
 	art2 = '3_2.html';
 	art3 = '3_3.html'
-  }
-	document.getElementById('artL1').setAttribute('w3-include-html', art2);
-	document.getElementById('artL2').setAttribute('w3-include-html', art3);
-	}
+  	}
+   $("#artM").load(art1);
+   $("#artL1").load(art2);
+   $("#artL2").load(art3)
+    }
 
 function includeHTML() {
   var z, i, elmnt, file, xhttp;
@@ -76,6 +67,6 @@ function includeHTML() {
       return;
     }
   }
-};
+}
 
 //function browse_issue(sw) tipo quella prima ma con scorrimento lista, forse col for loop//

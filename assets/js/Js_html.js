@@ -12,7 +12,7 @@ function change_css2(style) {
     n_css = "assets/css/1800.css"
   }
   if (style == 4) {
-    n_css = "assets\1900-50.css"
+    n_css = "assets/1900-50.css"
   }  //else{
     //n_css = "abcd.css"
   //}
@@ -21,7 +21,7 @@ function change_css2(style) {
 
 
 $(document).ready(function(){
-	$("#A1").click(function(){
+	$("#I1", "Ai").click(function(){
     $(function(){
       $("#artM").load("1_1.html");
 	$("#artL1").load("1_2.html");
@@ -31,7 +31,7 @@ $(document).ready(function(){
  })
 
 $(document).ready(function(){
-	$("#A2").click(function(){
+	$("#I2").click(function(){
     $(function(){
       $("#artM").load("2_1.html");
 	$("#artL1").load("2_2.html");
@@ -41,7 +41,7 @@ $(document).ready(function(){
  })
 
 $(document).ready(function(){
-	$("#A3").click(function(){
+	$("#I3").click(function(){
     $(function(){
       $("#artM").load("3_1.html");
 	$("#artL1").load("3_2.html");

@@ -133,7 +133,7 @@ li.dropdown {
   background-color: #ebebe0;
   padding: 0px;
   height: 60vmin;
-/*  overflow: auto;*/
+  overflow: auto;
 }
   
 /* Style the iframe */

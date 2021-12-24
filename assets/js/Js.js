@@ -12,33 +12,51 @@ function change_css2(style) {
     n_css = "assets/css/1800.css"
   }
   if (style == 4) {
-    n_css = "assets\1900-50.css"
+    n_css = "assets/1900-50.css"
   }  //else{
     //n_css = "abcd.css"
   //}
   document.getElementById('css').href = n_css;
 }
 
-function change_issue(sw) {
-  var art1, art2, art3;
-	if (sw == 1) {
-		art1 = '1_1.html';
-		art2 = '1_2.html';
-		art3 = '1_3.html'
-	  }
-	if (sw == 2) {
-		art1 = '2_1.html';
-		art2 = '2_2.html';
-		art3 = '2_3.html'
-	}
-	if (sw == 3) {
-    art1 = '3_1.html';
-	art2 = '3_2.html';
-	art3 = '3_3.html'
-  }
-	  document.getElementById('artM').src = art1;
-	  document.getElementById('artL1').src = art2;
-	  document.getElementById('artL2').src = art3;
-}
+$(document).ready(function(){
+	$("#Ai").click(function(){
+    $(function(){
+      $("#artM").load("1_1.html");
+	$("#artL1").load("1_2.html");
+	$("#artL2").load("1_3.html")
+    });
+});
+ })
+
+$(document).ready(function(){
+	$("#I1").click(function(){
+    $(function(){
+      $("#artM").load("1_1.html");
+	$("#artL1").load("1_2.html");
+	$("#artL2").load("1_3.html")
+    });
+});
+ })
+
+$(document).ready(function(){
+	$("#I2").click(function(){
+    $(function(){
+      $("#artM").load("2_1.html");
+	$("#artL1").load("2_2.html");
+	$("#artL2").load("2_3.html")
+    });
+});
+ })
+
+$(document).ready(function(){
+	$("#I3").click(function(){
+    $(function(){
+      $("#artM").load("3_1.html");
+	$("#artL1").load("3_2.html");
+	$("#artL2").load("3_3.html")
+    });
+});
+ })
 
 //function browse_issue(sw) tipo quella prima ma con scorrimento lista, forse col for loop

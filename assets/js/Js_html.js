@@ -90,4 +90,4 @@ function includeHTML() {
   }
 };
 
-//function browse_issue(sw) tipo quella prima ma con scorrimento lista, forse col for loop
+//function browse_issue(sw) tipo quella prima ma con scorrimento lista, forse col for loop//

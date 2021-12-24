@@ -20,11 +20,23 @@ function change_css2(style) {
 }
 
 $(document).ready(function(){
-	$("#A3").click(function(){
+	$("#A1").click(function(){
     $(function(){
       $("#artM").load("1_1.html");
 	$("#artL1").load("1_2.html");
 	$("#artL2").load("1_3.html")
+    });
+	$("#A2").click(function(){
+    $(function(){
+      $("#artM").load("2_1.html");
+	$("#artL1").load("2_2.html");
+	$("#artL2").load("2_3.html")
+    });
+	$("#A3").click(function(){
+    $(function(){
+      $("#artM").load("3_1.html");
+	$("#artL1").load("3_2.html");
+	$("#artL2").load("3_3.html")
     });
 });
  })

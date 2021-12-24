@@ -32,7 +32,7 @@ $(document).ready(function(){
 
 $(document).ready(function(){
 	$("#I1")click(function(){
-    $(function(){
+	$(function(){
       $("#artM").load("1_1.html");
 	$("#artL1").load("1_2.html");
 	$("#artL2").load("1_3.html")

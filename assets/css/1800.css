@@ -1,20 +1,30 @@
+@import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Quicksand&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Caladea&family=Rye&display=swap');
+
 * {
+	font-family: 'Rye';
   box-sizing: border-box;
-  font-family: Arial;
+  background-image: url(".\img\styles\1800background.PNG")
 }
 
 /* Style the body */
 body {
-  font-family: Arial;
+  font-family: 'Rye';
   margin: 0;
 }
 
 /* Header/logo Title */
 .header {
+  font-family: 'Rye';
   padding: 5px;
   text-align: center;
-  background: brown;
-  color: green;
+  background: white;
+  color: black;
+  font-family: 'Rye', cursive; 
+  
+  font-size: 20pt; 
+  letter-spacing: 8px;
 }
 
 /* Style the top navigation bar */
@@ -94,29 +104,33 @@ li.dropdown {
 .row {  
   display: flex;
   flex-wrap: wrap;
+  
 }
 
 /* Create three unequal columns that sits next to each other */
 /* Sidebar/left column */
 .sidel {
   flex: 8%;
-  background-color: #f1f1f1;
+  background-color: #ebebe0;
   padding: 20px;
 }
 
 /* Main column */
 .main {
+  column-count: 3;
+  column-rule-color: 4px black;
   flex: 41%;
-  background-color: white;
+  background-color: #d7d7c1;
   padding: 0px;
   height: 120vmin;
- /* overflow: auto;*/
+  overflow: auto;
 }
 
 /* Sidebar/right column */
 .sider {
+  column-count: 3;
   flex: 25%;
-  background-color: #f1f1f1;
+  background-color: #ebebe0;
   padding: 0px;
   height: 60vmin;
 /*  overflow: auto;*/
@@ -143,7 +157,7 @@ embed {
 /* Higlight the entities */
 
 .entity {
-  background-color: #ffe6e6;
+  background-color: #ffffe6;
   font-style:oblique;
 }
 

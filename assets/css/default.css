@@ -110,7 +110,7 @@ li.dropdown {
   background-color: white;
   padding: 0px;
   height: 120vmin;
- /* overflow: auto;*/
+ overflow: auto;
 }
 
 /* Sidebar/right column */
@@ -119,27 +119,9 @@ li.dropdown {
   background-color: #f1f1f1;
   padding: 0px;
   height: 60vmin;
-/*  overflow: auto;*/
+  overflow: auto;
 }
   
-/* Style the iframe */
-.article {
-  font-family: Arial;
-  margin: 0;
-}
-
-embed {
-  font-family: Arial;
-  margin: 0;
-}
-
-/* Fake image, just for this example */
-.fakeimg {
-  background-color: #aaa;
-  width: 100%;
-  padding: 20px;
-}
-
 /* Higlight the entities */
 
 .entity {

@@ -24,7 +24,7 @@ $(document).ready(function(){
     $(function(){
       $("#artM").load("1_1.html");
 	$("#artL1").load("1_2.html");
-	$("#artL2").load("1_3.html")
+	$("#artL2").load("1_3.html");
     });
 });
  })

@@ -27,20 +27,19 @@ $(document).ready(function(){
 	$("#artL2").load("1_3.html");
   })
 
-$(document).ready(function(){
-	var issue, art1, art2, art3;
-	$(issue).click(function(){
-	if (issue == "#I1") {
+function change_issue(issue) {
+	var art1, art2, art3;
+	if (issue == 1) {
 		art1 = "1_1.html";
 		art2 = "1_2.html";
 		art3 = "1_3.html";
 	  	}
-	if (issue == "#I2") {
+	if (issue == 2) {
 		art1 = '2_1.html';
 		art2 = '2_2.html';
 		art3 = '2_3.html';
 		}
-	if (issue == "#I3") {
+	if (issue == 3) {
 		art1 = "'3_1.html'";
 		art2 = '3_2.html';
 		art3 = '3_3.html';
@@ -48,7 +47,6 @@ $(document).ready(function(){
 	$("#artM").load(art1);
 	$("#artL1").load(art2);
 	$("#artL2").load(art3);
-    });
 })
 
 //$(document).ready(function(){

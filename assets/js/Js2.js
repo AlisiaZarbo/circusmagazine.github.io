@@ -47,7 +47,7 @@ function change_issue(issue) {
 	$("#artM").load(art1);
 	$("#artL1").load(art2);
 	$("#artL2").load(art3);
-})
+}
 
 //$(document).ready(function(){
 //	$("#I1").click(function(){

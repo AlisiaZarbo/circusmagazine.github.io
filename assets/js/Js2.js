@@ -27,9 +27,8 @@ $(document).ready(function(){
 	$("#artL2").load("1_3.html");
   })
 
-var issue, art1, art2, art3
-
 $(document).ready(function(){
+	var issue, art1, art2, art3;
 	$(issue).click(function(){
 	if (issue == "#I1") {
 		art1 = "'1_1.html'";

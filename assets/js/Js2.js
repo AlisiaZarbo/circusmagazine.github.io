@@ -56,18 +56,18 @@ $(document).ready(function(){
 });
  })
 
-function slide_articles(counter){
-if (counter==0) {
+counter=0
+function slide_articles(){
+counter=counter+1;
+if (counter==1) {
       $("#artM").load("1_2.html");
 	$("#artL1").load("1_3.html");
 	$("#artL2").load("1_1.html");
-counter=counter+1;
 }
-if (counter==1) {
+if (counter==2) {
     $("#artM").load("1_3.html");
 	$("#artL1").load("1_1.html");
 	$("#artL2").load("1_2.html");
-counter=counter+1;
 }	
 //if (counter==2) {
 //    	$("#artM").load("1_1.html");

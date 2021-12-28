@@ -31,7 +31,7 @@ var art1, art2, art3
 
 $(document).ready(function(){
 	$(issue).click(function(){
-	if (issue == #I1) {
+	if (issue == "#I1") {
 		art1 = "'1_1.html'";
 		art2 = "'1_2.html'";
 		art3 = '1_3.html'

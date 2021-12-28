@@ -69,12 +69,12 @@ if (counter==2) {
 	$("#artL1").load("1_1.html");
 	$("#artL2").load("1_2.html");
 }	
-//if (counter==2) {
-//    	$("#artM").load("1_1.html");
-//	$("#artL1").load("1_2.html");
-//	$("#artL2").load("1_3.html");
-//counter = 0;
-//}
+if (counter==3) {
+   	$("#artM").load("1_1.html");
+	$("#artL1").load("1_2.html");
+	$("#artL2").load("1_3.html");
+counter = 0;
+}
 }
 
 //function browse_issue(sw) tipo quella prima ma con scorrimento lista, forse col for loop

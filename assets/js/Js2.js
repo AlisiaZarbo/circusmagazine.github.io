@@ -57,25 +57,25 @@ $(document).ready(function(){
  })
 
 function slide_articles(){
-var i=0;
-if (i==0) {
+//var i=0;
+//if (i==0) {
       $("#artM").load("1_2.html");
 	$("#artL1").load("1_3.html");
 	$("#artL2").load("1_1.html");
 }
-i=i+1;
-if (i==1) {
-      $("#artM").load("1_3.html");
-	$("#artL1").load("1_1.html");
-	$("#artL2").load("1_2.html");
-}	
-i=i+1;
-if (i==2) {
-      $("#artM").load("1_1.html");
-	$("#artL1").load("1_2.html");
-	$("#artL2").load("1_3.html");
-}
-i = 0;
-}
+//i=i+1;
+//if (i==1) {
+  //    $("#artM").load("1_3.html");
+//$("#artL1").load("1_1.html");
+//	$("#artL2").load("1_2.html");
+//}	
+//i=i+1;
+//if (i==2) {
+ //     $("#artM").load("1_1.html");
+//	$("#artL1").load("1_2.html");
+//	$("#artL2").load("1_3.html");
+//}
+//i = 0;
+//}
 
 //function browse_issue(sw) tipo quella prima ma con scorrimento lista, forse col for loop

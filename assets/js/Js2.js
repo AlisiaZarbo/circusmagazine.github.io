@@ -51,23 +51,23 @@ function change_issue(issue) {
 
 counter=0
 function slide_articles(){
-counter=counter+1;
-if (counter==1) {
-      $("#artM").load("1_2.html");
-	$("#artL1").load("1_3.html");
-	$("#artL2").load("1_1.html");
-}
-if (counter==2) {
-    $("#artM").load("1_3.html");
-	$("#artL1").load("1_1.html");
-	$("#artL2").load("1_2.html");
-}	
-if (counter==3) {
-   	$("#artM").load("1_1.html");
-	$("#artL1").load("1_2.html");
-	$("#artL2").load("1_3.html");
-counter = 0;
-}
+	counter=counter+1;
+	if (counter==1) {
+		$("#artM").load(art2);
+		$("#artL1").load(art3);
+		$("#artL2").load("1_1.html");
+	}
+	if (counter==2) {
+		$("#artM").load("1_3.html");
+		$("#artL1").load("1_1.html");
+		$("#artL2").load("1_2.html");
+	}	
+	if (counter==3) {
+		$("#artM").load("1_1.html");
+		$("#artL1").load("1_2.html");
+		$("#artL2").load("1_3.html");
+		counter = 0;
+	}
 }
 
 function entities(){

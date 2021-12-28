@@ -103,7 +103,7 @@ counter = 0;
 }
 }
 
-$(.entity).hide(); 
-$(.entity).show(); 
+//$(.entity).hide(); 
+//$(.entity).show(); 
 
 //function browse_issue(sw) tipo quella prima ma con scorrimento lista, forse col for loop

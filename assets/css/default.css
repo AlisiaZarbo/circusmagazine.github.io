@@ -118,7 +118,7 @@ li.dropdown {
   flex: 25%;
   background-color: #f1f1f1;
   padding: 0px;
-  height: 60vmin;
+  height: 120vmin;
   overflow: auto;
 }
   

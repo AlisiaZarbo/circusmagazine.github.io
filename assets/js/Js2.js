@@ -20,14 +20,17 @@ function change_css2(style) {
 	 document.getElementById('css').href = n_css;
 }
 
+var art1, art2, art3
+art1 = "1_1.html";
+art2 = "1_2.html";
+art3 = "1_3.html";
 
 $(document).ready(function(){
-	$("#artM").load("1_1.html");
-	$("#artL1").load("1_2.html");
-	$("#artL2").load("1_3.html");
+	$("#artM").load(art1);
+	$("#artL1").load(art2);
+	$("#artL2").load(art3);
   })
 
-var art1, art2, art3
 function change_issue(issue) {
 	if (issue == 1) {
 		art1 = "1_1.html";
@@ -59,8 +62,8 @@ function slide_articles(){
 	}
 	if (counter==2) {
 		$("#artM").load(art3);
-		$("#artL1").load(art2);
-		$("#artL2").load(art1);
+		$("#artL1").load(art1);
+		$("#artL2").load(art2);
 	}	
 	if (counter==3) {
 		$("#artM").load(art1);

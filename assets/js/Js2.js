@@ -27,7 +27,7 @@ $(document).ready(function(){
 	$("#artL2").load("1_3.html");
   })
 
-var art1, art2, art3
+var issue, art1, art2, art3
 
 $(document).ready(function(){
 	$(issue).click(function(){

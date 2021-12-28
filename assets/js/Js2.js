@@ -68,7 +68,8 @@ if (i==1) {
       $("#artM").load("1_3.html");
 	$("#artL1").load("1_1.html");
 	$("#artL2").load("1_2.html");
-i = i+1
+i = i+1;
+break;
 }	
 if (i==2) {
       $("#artM").load("1_1.html");

@@ -65,4 +65,26 @@ $(document).ready(function(){
 });
  })
 
+
+counter=0
+function slide_articles(){
+counter=counter+1;
+if (counter==1) {
+      $("#artM").load("1_2.html");
+	$("#artL1").load("1_3.html");
+	$("#artL2").load("1_1.html");
+}
+if (counter==2) {
+    $("#artM").load("1_3.html");
+	$("#artL1").load("1_1.html");
+	$("#artL2").load("1_2.html");
+}	
+if (counter==3) {
+   	$("#artM").load("1_1.html");
+	$("#artL1").load("1_2.html");
+	$("#artL2").load("1_3.html");
+counter = 0;
+}
+}
+
 //function browse_issue(sw) tipo quella prima ma con scorrimento lista, forse col for loop

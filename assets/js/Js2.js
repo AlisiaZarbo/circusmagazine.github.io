@@ -20,6 +20,7 @@ function change_css2(style) {
   document.getElementById('css').href = n_css;
 }
 
+
 $(document).ready(function(){
 	$("#artM").load("1_1.html");
 	$("#artL1").load("1_2.html");
@@ -27,34 +28,58 @@ $(document).ready(function(){
   })
 
 $(document).ready(function(){
-	$("#I1").click(function(){
-    $(function(){
-      $("#artM").load("1_1.html");
-	$("#artL1").load("1_2.html");
-	$("#artL2").load("1_3.html")
+	$(issue).click(function(){
+	var art1, art2, art3;
+	if (issue == "#I1") {
+		art1 = "'1_1.html'";
+		art2 = "'1_2.html'";
+		art3 = '1_3.html'
+	  	}
+	if (issue == "#I3") {
+		art1 = '2_1.html';
+		art2 = '2_2.html';
+		art3 = '2_3.html'
+		}
+	if (issue == "#I3") {
+		art1 = "'3_1.html'";
+		art2 = '3_2.html';
+		art3 = '3_3.html';
+		}
+      $("#artM").load(art1);
+	$("#artL1").load(art2);
+	$("#artL2").load(art3)
     });
-});
- })
+})
 
-$(document).ready(function(){
-	$("#I2").click(function(){
-    $(function(){
-      $("#artM").load("2_1.html");
-	$("#artL1").load("2_2.html");
-	$("#artL2").load("2_3.html")
-    });
-});
- })
+//$(document).ready(function(){
+//	$("#I1").click(function(){
+//    $(function(){
+//      $("#artM").load("1_1.html");
+//	$("#artL1").load("1_2.html");
+//	$("#artL2").load("1_3.html")
+//    });
+//});
+// })
 
-$(document).ready(function(){
-	$("#I3").click(function(){
-    $(function(){
-      $("#artM").load("3_1.html");
-	$("#artL1").load("3_2.html");
-	$("#artL2").load("3_3.html")
-    });
-});
- })
+//$(document).ready(function(){
+//	$("#I2").click(function(){
+//    $(function(){
+//      $("#artM").load("2_1.html");
+//	$("#artL1").load("2_2.html");
+//	$("#artL2").load("2_3.html")
+//    });
+//});
+// })
+
+//$(document).ready(function(){
+//	$("#I3").click(function(){
+//    $(function(){
+//      $("#artM").load("3_1.html");
+//	$("#artL1").load("3_2.html");
+//	$("#artL2").load("3_3.html")
+//    });
+//});
+// })
 
 counter=0
 function slide_articles(){

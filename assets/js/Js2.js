@@ -31,9 +31,9 @@ $(document).ready(function(){
 	var issue, art1, art2, art3;
 	$(issue).click(function(){
 	if (issue == "#I1") {
-		art1 = "'1_1.html'";
-		art2 = "'1_2.html'";
-		art3 = "'1_3.html'";
+		art1 = "1_1.html";
+		art2 = "1_2.html";
+		art3 = "1_3.html";
 	  	}
 	if (issue == "#I2") {
 		art1 = '2_1.html';
@@ -102,7 +102,9 @@ counter = 0;
 }
 }
 
-//$(.entity).hide(); 
-//$(.entity).show(); 
+function entities(){
+	$(".entity").hide(); 
+	$(".entity").show(); 
+}
 
 //function browse_issue(sw) tipo quella prima ma con scorrimento lista, forse col for loop

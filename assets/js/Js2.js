@@ -27,9 +27,10 @@ $(document).ready(function(){
 	$("#artL2").load("1_3.html");
   })
 
+var art1, art2, art3
+
 $(document).ready(function(){
 	$(issue).click(function(){
-	var art1, art2, art3;
 	if (issue == "#I1") {
 		art1 = "'1_1.html'";
 		art2 = "'1_2.html'";
@@ -45,7 +46,7 @@ $(document).ready(function(){
 		art2 = '3_2.html';
 		art3 = '3_3.html';
 		}
-      $("#artM").load(art1);
+	$("#artM").load(art1);
 	$("#artL1").load(art2);
 	$("#artL2").load(art3)
     });

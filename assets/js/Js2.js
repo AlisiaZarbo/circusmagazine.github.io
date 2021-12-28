@@ -5,19 +5,19 @@ function change_css(style) {
 }
 
 function change_css2(style) {
-  var n_css;
-  if (style == 0) {
-    n_css = "assets\default.css"
-  }
-  if (style == 2) {
-    n_css = "assets/css/1800.css"
-  }
-  if (style == 4) {
-    n_css = "assets/1900-50.css"
-  }  //else{
-    //n_css = "abcd.css"
-  //}
-  document.getElementById('css').href = n_css;
+	var n_css;
+	if (style == 0) {
+		n_css = "assets\default.css"
+	}
+	if (style == 2) {
+		n_css = "assets/css/1800.css"
+	}
+	if (style == 4) {
+		n_css = "assets/1900-50.css"
+	}  //else{
+	    //n_css = "abcd.css"
+	  //}
+	 document.getElementById('css').href = n_css;
 }
 
 

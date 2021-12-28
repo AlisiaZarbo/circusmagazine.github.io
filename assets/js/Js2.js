@@ -27,8 +27,8 @@ $(document).ready(function(){
 	$("#artL2").load("1_3.html");
   })
 
+var art1, art2, art3
 function change_issue(issue) {
-	var art1, art2, art3;
 	if (issue == 1) {
 		art1 = "1_1.html";
 		art2 = "1_2.html";

@@ -55,17 +55,17 @@ function slide_articles(){
 	if (counter==1) {
 		$("#artM").load(art2);
 		$("#artL1").load(art3);
-		$("#artL2").load("1_1.html");
+		$("#artL2").load(art1);
 	}
 	if (counter==2) {
-		$("#artM").load("1_3.html");
-		$("#artL1").load("1_1.html");
-		$("#artL2").load("1_2.html");
+		$("#artM").load(art3);
+		$("#artL1").load(art2);
+		$("#artL2").load(art1);
 	}	
 	if (counter==3) {
-		$("#artM").load("1_1.html");
-		$("#artL1").load("1_2.html");
-		$("#artL2").load("1_3.html");
+		$("#artM").load(art1);
+		$("#artL1").load(art2);
+		$("#artL2").load(art3);
 		counter = 0;
 	}
 }

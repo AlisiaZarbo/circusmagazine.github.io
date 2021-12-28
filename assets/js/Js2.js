@@ -79,13 +79,14 @@ function entities(){
 }
 
 //function high_href(){//
+
 $(document).ready(function(){
 	$(".bib").click(function(){
 	var ancor;
 	ancor = $(".bib").attr("href");
 	$(ancor).classList.add('highlighted');
-	};
-})
+	}));
+}))
 
 //function browse_issue(sw) tipo quella prima ma con scorrimento lista, forse col for loop
 

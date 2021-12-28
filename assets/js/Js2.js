@@ -20,11 +20,11 @@ function change_css2(style) {
   document.getElementById('css').href = n_css;
 }
 
-//$(document).ready(function(){
-//	$("#artM").load("1_1.html");
-//	$("#artL1").load("1_2.html");
-//	$("#artL2").load("1_3.html");
-//  })
+$(document).ready(function(){
+	$("#artM").load("1_1.html");
+	$("#artL1").load("1_2.html");
+	$("#artL2").load("1_3.html");
+  })
 
 $(document).ready(function(){
 	$("#I1").click(function(){

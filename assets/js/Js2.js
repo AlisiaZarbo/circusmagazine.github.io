@@ -84,7 +84,7 @@ $(document).ready(function(){
 	$(".bib").click(function(){
 	var ancor;
 	ancor = $(".bib").attr("href");
-	$(ancor).classList.add('highlighted');
+	$(ancor).addClass('highlighted');
 	});
 })
 

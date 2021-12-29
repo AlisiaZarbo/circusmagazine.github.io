@@ -81,7 +81,8 @@ function slide_articles(){
 
 //function to high_href() [working off-line not online]//
 //function high_href(){//
-$(document).ready(function(){
+//$(document).ready(function()
+$(window).load(function(){
 	$(".bib").click(function(){
 		var ancor;
 		ancor = $(this).attr("href");

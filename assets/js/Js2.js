@@ -80,11 +80,16 @@ function entities(){
 
 //function high_href(){//
 
+//function high_href(){//
+
 $(document).ready(function(){
 	$(".bib").click(function(){
-	var ancor;
-	ancor = $(".bib").attr("href");
-	$(ancor).addClass('highlighted');
+		var ancor;
+		ancor = $(this).attr("href");
+		$(ancor).addClass('highlighted');
+		$(ancor).click(function(){
+			$(ancor).removeClass('highlighted');	
+		});
 	});
 })
 

@@ -35,19 +35,6 @@ $(document).ready(function(){
 	$("#artL2").load(art3);
   })
 
-//function to high_href() [working off-line not online]//
-//function high_href(){//
-//$(document).ready(function(){
-	$(".bib").click(function(){
-		var ancor;
-		ancor = $(this).attr("href");
-		$(ancor).addClass('highlighted');
-		$(ancor).click(function(){
-			$(ancor).removeClass('highlighted');	
-		});
-	})
-//})
-
 //function change_issue//
 function change_issue(issue) {
 	if (issue == 1) {
@@ -91,6 +78,19 @@ function slide_articles(){
 		counter = 0;
 	}
 }
+
+//function to high_href() [working off-line not online]//
+//function high_href(){//
+$(document).ready(function(){
+	$(".bib").click(function(){
+		var ancor;
+		ancor = $(this).attr("href");
+		$(ancor).addClass('highlighted');
+		$(ancor).click(function(){
+			$(ancor).removeClass('highlighted');	
+		});
+	})
+})
 
 //function to hide/show entities [not working]//
 function entities(){

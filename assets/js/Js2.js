@@ -1,9 +1,12 @@
 //copia Js per prove modifica su mainframe2//
+
+//function change_css//
 function change_css(style) {
 	document.getElementById('css').href = style
 	//setAttribute('href', style);
 }
 
+//function change_css 2nd version (I prefere the first one)//
 function change_css2(style) {
 	var n_css;
 	if (style == 0) {
@@ -25,12 +28,27 @@ art1 = "1_1.html";
 art2 = "1_2.html";
 art3 = "1_3.html";
 
+//function load default article in the frame{//
 $(document).ready(function(){
 	$("#artM").load(art1);
 	$("#artL1").load(art2);
 	$("#artL2").load(art3);
   })
 
+//function to high_href() [working off-line not online]//
+//function high_href(){//
+//$(document).ready(function(){
+	$(".bib").click(function(){
+		var ancor;
+		ancor = $(this).attr("href");
+		$(ancor).addClass('highlighted');
+		$(ancor).click(function(){
+			$(ancor).removeClass('highlighted');	
+		});
+	})
+//})
+
+//function change_issue//
 function change_issue(issue) {
 	if (issue == 1) {
 		art1 = "1_1.html";
@@ -52,6 +70,7 @@ function change_issue(issue) {
 	$("#artL2").load(art3);
 }
 
+//function slide_articles() in an issue//
 counter=0
 function slide_articles(){
 	counter=counter+1;
@@ -73,29 +92,13 @@ function slide_articles(){
 	}
 }
 
+//function to hide/show entities [not working]//
 function entities(){
 	$(".entity").hide(); 
 	$(".entity").show(); 
 }
 
-//function high_href(){//
-
-//function high_href(){//
-
-//$(document).ready(function(){
-	$(".bib").click(function(){
-		var ancor;
-		ancor = $(this).attr("href");
-		$(ancor).addClass('highlighted');
-		$(ancor).click(function(){
-			$(ancor).removeClass('highlighted');	
-		});
-	})
-//})
-
-//function browse_issue(sw) tipo quella prima ma con scorrimento lista, forse col for loop
-
-
+//previous attempts to load issues//
 //$(document).ready(function(){
 //	$("#I1").click(function(){
 //    $(function(){

@@ -82,7 +82,7 @@ function entities(){
 
 //function high_href(){//
 
-$(document).ready(function(){
+//$(document).ready(function(){
 	$(".bib").click(function(){
 		var ancor;
 		ancor = $(this).attr("href");
@@ -90,8 +90,8 @@ $(document).ready(function(){
 		$(ancor).click(function(){
 			$(ancor).removeClass('highlighted');	
 		});
-	});
-})
+	})
+//})
 
 //function browse_issue(sw) tipo quella prima ma con scorrimento lista, forse col for loop
 

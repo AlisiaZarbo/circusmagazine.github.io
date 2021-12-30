@@ -150,7 +150,7 @@ border: 0.2vw solid #000000;}
     'menu main main main  right right'
     'menu main main main  right1 right1'
     'footer footer footer footer footer footer';
-  height: 60em;
+  height: 120vmin;
   width:100%;
   margin-top: -0.5em;
   grid-template-columns: 15% 1fr 1fr 1fr 1fr 1fr;

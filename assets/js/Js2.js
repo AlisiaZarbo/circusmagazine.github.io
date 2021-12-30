@@ -84,13 +84,15 @@ function slide_articles(){
 //$(document).ready(function()
 $(window).load(function(){
 	$(".bib").click(function(){
-		var ancor;
-		ancor = $(this).attr("href");
-		$(ancor).addClass('highlighted');
-		$(ancor).click(function(){
-			$(ancor).removeClass('highlighted');	
+		var target = $(this).attr("href");
+		var source_id = $(this).attr("id");
+		var source = document.getElementById(source_id);
+		$(target).addClass('highlighted');
+		$(target).click(function(){
+			$(target).removeClass('highlighted');
+			source.scrollIntoView();
 		});
-	})
+	});
 })
 
 //function to hide/show entities [not working]//

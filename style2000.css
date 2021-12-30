@@ -8,7 +8,7 @@
 #lineanavbar{
   color:black;
   background-color: black;
-  height: 4px;
+  height: 1.3em;
   margin: 0;
 }
 /*navbar*/
@@ -33,7 +33,7 @@
   display: block;
   color: black;
   text-align: center;
-  padding: 14px 16px;
+  padding: 2.9vw 3.1vw;
   text-decoration: none;
 }
 
@@ -63,7 +63,7 @@
   display: block;
   color: black;
   text-align: center;
-  padding: 14px 16px;
+  padding: 2.9vw 3.1vw;
   text-decoration: none;
 }
 
@@ -91,16 +91,16 @@
   font-size: 2.5vw;
   font-family: 'Courgette', cursive;
   color:#77223e;
-  margin-left: 2px;
+  margin-left: 0.4vw;
   float: right;
   margin-top: 0;
 }
 .item1 { 
 grid-area: header;
 font-family: 'Oswald', sans-serif;
-font-size: 70px;
+font-size: 14vw;
 text-align: right; 
-letter-spacing: -3px;
+letter-spacing: -0.2vw;
 position: static;
 padding: 0.5em;
 }
@@ -110,28 +110,28 @@ padding: 0.5em;
 .item2 { 
 grid-area: menu;
 height: 120vmin;
-padding: 10px;
-border: 3px solid #000000;
+padding: 2vw;
+border: 0.2vw solid #000000;
 line-height: 0;
 background-color: #ededed;
 }
 .item3 { grid-area: main; 
 overflow: auto;
 height: 60vmin;
-padding: 20px;
-border-top: 3px solid #000000;
-border-bottom: 3px solid #000000;
+padding: 4vw;
+border-top: 0.2vw solid #000000;
+border-bottom: 0.2vw solid #000000;
 }
 .item4 { grid-area: right; 
 overflow: auto;
 height: 60vmin;
-border-right: 3px solid #000000;
-border-top: 3px solid #000000;
-border-left: 3px solid #000000;
+border-right: 0.2vw solid #000000;
+border-top: 0.2vw solid #000000;
+border-left: 0.2vw solid #000000;
 }
 .item5 { grid-area: right1;
 overflow: auto;
-border: 3px solid #000000;}
+border: 0.2vw solid #000000;}
 .item6 { grid-area: footer; }
 .item7{
   grid-area: statino;

@@ -176,3 +176,7 @@ overflow:scroll;}
   .boxRU { grid-area: 5 / 1 / 6 / span 6 ;  }
   .boxRD { grid-area: 6 / 1 / 7 / span 6 ; }
   }
+
+.highlighted {
+  background-color: #ffffcc; 
+}

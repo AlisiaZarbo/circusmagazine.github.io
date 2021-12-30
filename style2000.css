@@ -119,7 +119,7 @@ background-color: #ededed;
 }
 .item3 { grid-area: main; 
 overflow: scroll;
-padding: 20px;
+/*padding: 20px;*/
 border-top: 0.2em solid #000000;
 border-bottom: 0.2em solid #000000;
 height:60em;

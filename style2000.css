@@ -115,17 +115,19 @@ line-height: 0;
 background-color: #ededed;
 }
 .item3 { grid-area: main; 
-overflow: scroll;
+overflow: auto;
 padding: 20px;
 border-top: 3px solid #000000;
 border-bottom: 3px solid #000000;
 }
 .item4 { grid-area: right; 
+overflow: auto;
 border-right: 3px solid #000000;
 border-top: 3px solid #000000;
 border-left: 3px solid #000000;
 }
 .item5 { grid-area: right1;
+overflow: auto;
 border: 3px solid #000000;}
 .item6 { grid-area: footer; }
 .item7{

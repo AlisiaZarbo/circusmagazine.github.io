@@ -117,14 +117,12 @@ background-color: #ededed;
 }
 .item3 { grid-area: main; 
 overflow: auto;
-height: 60vmin;
 padding: 4vw;
 border-top: 0.2vw solid #000000;
 border-bottom: 0.2vw solid #000000;
 }
 .item4 { grid-area: right; 
 overflow: auto;
-height: 60vmin;
 border-right: 0.2vw solid #000000;
 border-top: 0.2vw solid #000000;
 border-left: 0.2vw solid #000000;

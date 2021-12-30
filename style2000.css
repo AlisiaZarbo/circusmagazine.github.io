@@ -8,7 +8,7 @@
 #lineanavbar{
   color:black;
   background-color: black;
-  height: 1.3em;
+  height: 0.3em;
   margin: 0;
 }
 /*navbar*/
@@ -33,7 +33,7 @@
   display: block;
   color: black;
   text-align: center;
-  padding: 2.9vw 3.1vw;
+  padding: 1em 1em;
   text-decoration: none;
 }
 
@@ -63,7 +63,7 @@
   display: block;
   color: black;
   text-align: center;
-  padding: 2.9vw 3.1vw;
+  padding: 1em 1em;
   text-decoration: none;
 }
 
@@ -91,16 +91,16 @@
   font-size: 2.5vw;
   font-family: 'Courgette', cursive;
   color:#77223e;
-  margin-left: 0.4vw;
+  margin-left: 0.5em;
   float: right;
   margin-top: 0;
 }
 .item1 { 
 grid-area: header;
 font-family: 'Oswald', sans-serif;
-font-size: 14vw;
+font-size: 6vw;
 text-align: right; 
-letter-spacing: -0.2vw;
+letter-spacing: -0.05em;
 position: static;
 padding: 0.5em;
 }
@@ -108,28 +108,30 @@ padding: 0.5em;
   grid-area: nav;
 }
 .item2 { 
-grid-area: menu;
-height: 120vmin;
-padding: 2vw;
-border: 0.2vw solid #000000;
+grid-area: menu; 
+padding: 1em;
+border: 0.2em solid #000000;
 line-height: 0;
 background-color: #ededed;
 }
 .item3 { grid-area: main; 
-overflow: auto;
-padding: 4vw;
-border-top: 0.2vw solid #000000;
-border-bottom: 0.2vw solid #000000;
+overflow: scroll;
+padding: 20px;
+border-top: 0.2em solid #000000;
+border-bottom: 0.2em solid #000000;
+height:60em;
 }
 .item4 { grid-area: right; 
-overflow: auto;
-border-right: 0.2vw solid #000000;
-border-top: 0.2vw solid #000000;
-border-left: 0.2vw solid #000000;
+border-right: 0.2em solid #000000;
+border-top: 0.2em solid #000000;
+border-left: 0.2em solid #000000;
+height:30em;
+overflow:scroll;
 }
 .item5 { grid-area: right1;
-overflow: auto;
-border: 0.2vw solid #000000;}
+border: 0.2em solid #000000;
+height:30em;
+overflow:scroll;}
 .item6 { grid-area: footer; }
 .item7{
   grid-area: statino;
@@ -150,7 +152,7 @@ border: 0.2vw solid #000000;}
     'menu main main main  right right'
     'menu main main main  right1 right1'
     'footer footer footer footer footer footer';
-  height: 100%;
+  height: 65em;
   width:100%;
   margin-top: -0.5em;
   grid-template-columns: 15% 1fr 1fr 1fr 1fr 1fr;
@@ -159,9 +161,15 @@ border: 0.2vw solid #000000;}
 
 }
 
+@media screen and (max-width:700px) {
+.grid-container {
+flex-direction: column;
+}
+}
+
 .section1{
-	column-count: 3;
-	column-gap: 2em;
-	text-align: justify;
-	font-size: 1.5vw;
+  column-count: 3;
+  column-gap: 2em;
+  text-align: justify;
+  font-size: 1.5vw;
 }

@@ -157,14 +157,6 @@ overflow:scroll;}
   margin-top: -0.5em;
   grid-template-columns: 15% 1fr 1fr 1fr 1fr 1fr;
   grid-template-rows: 15% 12.3% 1fr 1fr 10%;
-
-
-}
-
-@media screen and (max-width:700px) {
-.grid-container {
-flex-direction: column;
-}
 }
 
 .section1{
@@ -173,3 +165,14 @@ flex-direction: column;
   text-align: justify;
   font-size: 1.5vw;
 }
+
+/* Responsive layout - when the screen is less than xxpx (o vmin??) wide, make the grid items stack on top of each other instead of next to each other */
+
+@media screen and (max-width: 500px) {
+	.logo { display: none; }
+  .header { grid-area: 1 / 1 / 2 / span 6 ; }
+  .menu { grid-area: 3 / 1 / 4 / span 6 ;  }
+  .boxM { grid-area: 4 / 1 / 5 / span 6 ; }
+  .boxRU { grid-area: 5 / 1 / 6 / span 6 ;  }
+  .boxRD { grid-area: 6 / 1 / 7 / span 6 ; }
+  }

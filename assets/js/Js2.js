@@ -82,7 +82,7 @@ function slide_articles(){
 //function to high_href() [working off-line not online]//
 //function high_href(){//
 //$(document).ready(function()
-$(window).load(function(){
+//$(window).load(function(){
 	$(".bib").click(function(){
 		var target = $(this).attr("href");
 		var source_id = $(this).attr("id");
@@ -93,7 +93,7 @@ $(window).load(function(){
 			source.scrollIntoView();
 		});
 	});
-})
+//})
 
 //function to hide/show entities [not working]//
 function entities(){

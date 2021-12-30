@@ -118,24 +118,32 @@ line-height: 0;
 background-color: #ededed;
 }
 .item3 { grid-area: main; 
-overflow: scroll;
-/*padding: 20px;*/
-border-top: 0.2em solid #000000;
-border-bottom: 0.2em solid #000000;
-height:60em;
+	overflow: scroll;
+	/*padding: 20px;*/
+	border-top: 0.2em solid #000000;
+	border-bottom: 0.2em solid #000000;
+	height:61em;
 }
+
 .item4 { grid-area: right; 
-border-right: 0.2em solid #000000;
-border-top: 0.2em solid #000000;
-border-left: 0.2em solid #000000;
-height:30em;
-overflow:scroll;
+	overflow:scroll;
+	border-right: 0.2em solid #000000;
+	border-top: 0.2em solid #000000;
+	border-left: 0.2em solid #000000;
+	height:30em;
 }
+
 .item5 { grid-area: right1;
-border: 0.2em solid #000000;
-height:30em;
-overflow:scroll;}
-.item6 { grid-area: footer; }
+	overflow:scroll;
+	border: 0.2em solid #000000;
+	height:30em;
+}
+
+.item6 { 
+	grid-area: footer; 
+	text-align: center;
+}
+
 .item7{
   grid-area: statino;
   background-color: #000000;

@@ -98,10 +98,10 @@ $(window).load(function(){
 }
 
 //function to hide/show entities [not working]//
-function entities(){
-	$(".entity").hide(); 
-	$(".entity").show(); 
-}
+//function entities(){//
+//	$(".entity").hide(); 
+//	$(".entity").show(); 
+//}
 
 //previous attempts to load issues//
 //$(document).ready(function(){

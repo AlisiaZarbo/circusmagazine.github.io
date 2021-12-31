@@ -33,6 +33,7 @@ $(document).ready(function(){
 	$("#artM").load(art1);
 	$("#artL1").load(art2);
 	$("#artL2").load(art3);
+	$(".entity").hide(); 
 	$(".bib_note").click(function(){
 		var target = $(this).attr("href");
 		var source_id = $(this).attr("id");

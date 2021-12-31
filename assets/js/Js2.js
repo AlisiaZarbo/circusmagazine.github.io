@@ -33,7 +33,17 @@ $(document).ready(function(){
 	$("#artM").load(art1);
 	$("#artL1").load(art2);
 	$("#artL2").load(art3);
-  })
+	$(".bib_note").click(function(){
+		var target = $(this).attr("href");
+		var source_id = $(this).attr("id");
+		var source = document.getElementById(source_id);
+		$(target).addClass('highlighted');
+		$(target).click(function(){
+			$(target).removeClass('highlighted');
+			source.scrollIntoView();
+		});
+	});
+})
 
 //function change_issue//
 function change_issue(issue) {
@@ -115,3 +125,10 @@ function slide_articles(){
 //    });
 //});
 // })
+
+	//function to high_href() [working off-line with $(document).ready(function(){ not online]//
+//function high_href(){//
+//$(window).load(function(){//
+//window.onload = function(){//
+//function high_href(){//
+//$(document).ready(function(){//

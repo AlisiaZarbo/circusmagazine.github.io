@@ -84,7 +84,7 @@ function slide_articles(){
 //$(window).load(function(){//
 //window.onload = function(){//
 //function high_href(){//
-$(document).ready(function()
+$(document).ready(function(){
 	$(".bib").click(function(){
 		var target = $(this).attr("href");
 		var source_id = $(this).attr("id");

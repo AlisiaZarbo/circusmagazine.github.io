@@ -79,12 +79,12 @@ function slide_articles(){
 	}
 }
 
-//function to high_href() [working off-line not online]//
+//function to high_href() [working off-line with $(document).ready(function(){ not online]//
 //function high_href(){//
 //$(window).load(function(){//
 //window.onload = function(){//
 //function high_href(){//
-$(document).ready(function(){
+//$(document).ready(function(){
 	$(".bib_note").click(function(){
 		var target = $(this).attr("href");
 		var source_id = $(this).attr("id");
@@ -94,7 +94,7 @@ $(document).ready(function(){
 			$(target).removeClass('highlighted');
 			source.scrollIntoView();
 		});
-	});
+//	});
 })
 
 //function to hide/show entities [not working]//

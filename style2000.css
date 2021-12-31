@@ -181,7 +181,7 @@ background-color: #ededed;
 
 /* Responsive layout - when the screen is less than xxpx (o vmin??) wide, make the grid items stack on top of each other instead of next to each other */
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 300px) {
 	.logo { display: none; }
 	.header { grid-area: 1 / 1 / 2 / span 6 ; }
 	.itemnav{ grid-area: 2 / 1 / 3 / span 6 ; 

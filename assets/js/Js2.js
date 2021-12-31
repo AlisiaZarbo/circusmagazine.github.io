@@ -95,7 +95,7 @@ $(window).load(function(){
 			source.scrollIntoView();
 		});
 	});
-}
+})
 
 //function to hide/show entities [not working]//
 //function entities(){//

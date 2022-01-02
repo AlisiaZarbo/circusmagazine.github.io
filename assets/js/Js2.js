@@ -79,6 +79,24 @@ function slide_articles(){
 	}
 }
 
+function MDV(selection){
+	let text = "";
+	if (selection == 1){
+		classname="entity person";
+		id = "PE"};
+	if (selection == 2){
+		classname="entity place";
+		id = "PL"};
+	if (selection == 3){
+		classname="entity keyword";
+		id = "KW"};
+	var arr = document.getElementsByClassName(classname);
+	for (let i = 0; i < arr.length; i++) {
+		text += '<a class="dropdown-item" href="https://www.unibo.it" onclick="openpopup()">' + arr[i].getAttribute("data-label") + "</a>"
+	}
+	document.getElementById(id).innerHTML = text;
+ }
+
 //function to hide/show entities [not working]//
 //function entities(){//
 //	$(".entity").hide(); 

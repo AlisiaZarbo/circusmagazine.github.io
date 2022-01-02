@@ -52,7 +52,7 @@
 	background-color: #ededed;
 	border: 0.2vw solid #000000;
 	padding: 1vw;
-	line-height: 0;
+	overflow: auto;
 }
 
 .boxM { 

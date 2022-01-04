@@ -1,5 +1,3 @@
-//copia Js per prove modifica su mainframe2//
-
 //function change_css//
 function change_css(style) {
 	document.getElementById('css').href = style

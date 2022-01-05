@@ -494,8 +494,8 @@ time {
   height: 100vmin;
   width:100%;
   margin-top: 0vw;
-  grid-template-columns: 25vmin 1fr 1fr 1fr 1fr 1fr;
-  grid-template-rows: 5vmin 15vmin 1fr 1fr 5vmin;
+  grid-template-columns: 35vmin 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 15vmin 15vmin 1fr 1fr 5vmin;
 }
 
 .logo{
@@ -507,18 +507,21 @@ time {
   padding: 1vw;
   text-align: left;
   border-right: 0.2vw solid #000000;
+  font-size: 4vmin;
 
 }
 
 .header { 
   grid-area: header;
   font-family: 'Bassanova', sans-serif;
+  font-variant-ligatures: discretionary-ligatures;
   font-weight: bolder;
   color: #331a00;
   text-align: right; 
   letter-spacing: -0.05vw;
   position: static;
   padding: 0.5vw;
+  font-size: 7vw;
 
 }
 

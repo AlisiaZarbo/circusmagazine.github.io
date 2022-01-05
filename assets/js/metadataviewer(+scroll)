@@ -1,0 +1,35 @@
+function myFunction() {
+var arr = document.getElementsByClassName("entity keyword");
+var myarray = Array.from(arr);
+myarray.sort();
+myarray.reverse();
+let text = "";
+for (let i = 0; i < myarray.length; i++) {
+ if (myarray[i].hasAttribute("data-active")){
+  text += '<li> <a onclick="highlight(this)" about="'+ myarray[i].getAttribute("about") + '">' + myarray[i].getAttribute("data-label") + '</a></li>';
+  }
+}
+document.getElementById("p2").innerHTML = text;
+ }
+
+
+function highlight(el){
+let ul = el.getAttribute("about");
+let arre = document.getElementsByClassName("entity keyword");
+	var i;
+  	for (i = 0; i < arre.length; i++) {
+    	if (arre[i].getAttribute("about") === ul) {
+        	document.body.style.backgroundColor = 'white'
+        	arre[i].style.backgroundColor = "#cc9999";
+            } else {arre[i].style.backgroundColor = "white";}
+    }
+}
+
+/* qui andrebbe aggiunto un if/contatore per il click + variabile classi + indici*/
+function scrollprev() {
+var el = document.getElementById("01");
+var rect = el.getBoundingClientRect();
+w = rect.top;
+  window.scrollTo(0, w);
+  
+}

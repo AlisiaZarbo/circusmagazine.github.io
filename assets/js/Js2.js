@@ -75,6 +75,9 @@ function MDV(selection){
 	if (selection == 3){
 		classname="entity keyword";
 		id = "KW"};
+	if (selection == 4){
+		classname="entity organization";
+		id = "OR"};
 	//var arr = document.getElementsByClassName(classname);
 	//var myarray = ((Array.from(document.getElementsByClassName(classname))).sort()).reverse();
 	//myarray.sort();
@@ -86,8 +89,8 @@ function MDV(selection){
 		 //if (myarray[i].hasAttribute("data-active")){
 			  //text += '<li> <a onclick="highlight(this)" about="'+ myarray[i].getAttribute("about") + '">' + myarray[i].getAttribute("data-label") + '</a></li>';
 		//	}
-		//text += '<button class="dropdown-item?" onclick="openPopUp()" class="w3-button">' + myarray[i].getAttribute("data-label") + '</button>'
-		text += '<a class="dropdown-item w3-button" onclick="openPopUp()">' + myarray[i].getAttribute("data-label") + '</button>'
+		text += '<button class="dropdown-item" onclick="openPopUp()" class="w3-button">' + myarray[i].getAttribute("data-label") + '</button>'
+		//text += '<a class="dropdown-item w3-button" onclick="openPopUp()">' + myarray[i].getAttribute("data-label") + '</button>'
 		}
 	document.getElementById(id).innerHTML = text;
  }

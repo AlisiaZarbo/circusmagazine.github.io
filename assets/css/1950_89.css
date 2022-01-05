@@ -512,7 +512,9 @@ time {
 
 .header { 
   grid-area: header;
-  font-family: 'Oswald', sans-serif;
+  font-family: 'Bassanova', sans-serif;
+  font-weight: bolder;
+  color: #331a00;
   text-align: right; 
   letter-spacing: -0.05vw;
   position: static;

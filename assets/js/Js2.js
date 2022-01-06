@@ -89,16 +89,15 @@ function MDV(selection){
 			array_label.push(myarray[i].getAttribute("data-label"));
 			}
 		}
-		array_label.sort();
-		let text = "";
-		for (let i = 0; i < array_label.length; i++) {
-			//text += '<li> <a onclick="highlight(this)" about="'+ myarray[i].getAttribute("about") + '">' + myarray[i].getAttribute("data-label") + '</a></li>';
-			//text += '<a class="dropdown-item w3-button" onclick="openPopUp()">' + myarray[i].getAttribute("data-label") + '</button>'
-			text += '<a class="dropdown-item w3-button" onclick="openPopUp()">' + array_label[i] + '</button>'
-			}
-		document.getElementById(id).innerHTML = text;
+	array_label.sort();
+	let text = "";
+	for (let i = 0; i < array_label.length; i++) {
+		//text += '<li> <a onclick="highlight(this)" about="'+ myarray[i].getAttribute("about") + '">' + myarray[i].getAttribute("data-label") + '</a></li>';
+		//text += '<a class="dropdown-item w3-button" onclick="openPopUp()">' + myarray[i].getAttribute("data-label") + '</button>'
+		text += '<a class="dropdown-item w3-button" onclick="openPopUp()">' + array_label[i] + '</button>'
+		}
+	document.getElementById(id).innerHTML = text;
 	}
- }
 
 //function highlight(el)
 

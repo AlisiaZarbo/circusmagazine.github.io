@@ -78,20 +78,30 @@ function MDV(selection){
 		classname="entity organization";
 		id = "OR"};
 	//var arr = document.getElementsByClassName(classname);
-	//var myarray = ((Array.from(document.getElementsByClassName(classname))).sort()).reverse();
 	//myarray.sort();
 	//myarray.reverse();
-	var myarray = ((Array.from(document.getElementsByClassName(classname))).sort()).reverse();
-	let text = "";
+	//riassunti in var myarray = ((Array.from(document.getElementsByClassName(classname))).sort()).reverse(); 
+	//però non funziona perchè il sort ordina l'arrai di object quindi a seconda dell'indice e non per il label: proposta:
+	var myarray = Array.from(document.getElementsByClassName(classname));
+	var array_label = [];
 	for (let i = 0; i < myarray.length; i++) {
 		if (myarray[i].hasAttribute("data-active")){
+			array_label.push(myarray[i].getAttribute("data-label"));
+			}
+		}
+		array_label.sort();
+		let text = "";
+		for (let i = 0; i < array_label.length; i++) {
 			//text += '<li> <a onclick="highlight(this)" about="'+ myarray[i].getAttribute("about") + '">' + myarray[i].getAttribute("data-label") + '</a></li>';
 			//text += '<a class="dropdown-item w3-button" onclick="openPopUp()">' + myarray[i].getAttribute("data-label") + '</button>'
-			text += '<button class="dropdown-item" onclick="openPopUp()" class="w3-button">' + myarray[i].getAttribute("data-label") + '</button>'
+			text += '<a class="dropdown-item w3-button" onclick="openPopUp()">' + array_label[i] + '</button>'
 			}
 		document.getElementById(id).innerHTML = text;
 	}
  }
+
+//function highlight(el)
+
 
 //function openPopUp//
 function openPopUp(){

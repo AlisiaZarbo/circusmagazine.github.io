@@ -3,8 +3,7 @@
 //function change_css//
 function change_css(style) {
 	document.getElementById('css').href = style
-	//setAttribute('href', style);
-}
+	}
 
 //set variables for the 3 articles in the 3 issues//
 var art1, art2, art3
@@ -39,7 +38,7 @@ function change_issue(issue) {
 	$("#artM").load(art1);
 	$("#artL1").load(art2);
 	$("#artL2").load(art3);
-}
+	}
 
 //function slide_articles() in an issue//
 counter=0
@@ -49,19 +48,19 @@ function slide_articles(){
 		$("#artM").load(art2);
 		$("#artL1").load(art3);
 		$("#artL2").load(art1);
-	}
+		}
 	if (counter==2) {
 		$("#artM").load(art3);
 		$("#artL1").load(art1);
 		$("#artL2").load(art2);
-	}	
+		}	
 	if (counter==3) {
 		$("#artM").load(art1);
 		$("#artL1").load(art2);
 		$("#artL2").load(art3);
 		counter = 0;
+		}
 	}
-}
 
 //function MetaDataViewer//
 function MDV(selection){
@@ -94,28 +93,31 @@ function MDV(selection){
 	for (let i = 0; i < array_label.length; i++) {
 		//text += '<li> <a onclick="highlight(this)" about="'+ myarray[i].getAttribute("about") + '">' + myarray[i].getAttribute("data-label") + '</a></li>';
 		//text += '<a class="dropdown-item w3-button" onclick="openPopUp()">' + myarray[i].getAttribute("data-label") + '</button>'
-		text += '<a class="dropdown-item w3-button" onclick="openPopUp()">' + array_label[i] + '</button>'
+		text += '<a class="dropdown-item w3-button" onclick="openPopUp(this)">' + array_label[i] + '</button>'
 		}
 	document.getElementById(id).innerHTML = text;
 	}
 
-//function highlight(el)
-
-
+var all_entities = document.getElementsByClassName("entity")
 //function openPopUp//
-function openPopUp(){
-	document.getElementById("PopUpHeader").innerHTML = "class - entity Es. Place - Panama Canal";
-	document.getElementById("PopUpWikidata").innerHTML = "url es. https://www.wikidata.org/wiki/Q7350";
-	document.getElementById("PopUpWikidata").href = "https://www.wikidata.org/wiki/Q7350";
-	document.getElementById("MOD_01").style.display="block"
-}
+function openPopUp(el){
+	let label = el.innerText;
+	for (i = 0; i < all_entities.length; i++) {
+		if (all_entities[i].hasAttribute("data-active")) {
+			if (all_entities[i].getAttribute("data-label") == label) {	
+				class_name = all_entities[i].getAttribute("class");
+				//appena possibile inserire il wd solo se c'è l'attributo
+				wikidataID = all_entities[i].getAttribute("data-wikidata-id");
+				document.getElementById("PopUpHeader").innerHTML = class_name + " - " + label;
+				document.getElementById("PopUpWikidata").innerHTML = "url es. https://www.wikidata.org/wiki/" + wikidataID;
+				document.getElementById("PopUpWikidata").href = "https://www.wikidata.org/wiki/" + wikidataID;
+				document.getElementById("MOD01").style.display="block";
+				}
+			}
+		}
+	}
 
-
-//1. highlight, 2. pop up con >> << - WIKIDATA - NOME ENTITY - CLASSE - CHIUSURA 
-	//text = <h2>classe - nome entity</h2> <p>wikidata</p>
-	//document.getElementById('id01').style.display='block';
-	//document.getElementById('id01').innerHTML = text;
-
+//1. highligHT
 //functions prev_entity_item()
 //function next_entity_item()
 

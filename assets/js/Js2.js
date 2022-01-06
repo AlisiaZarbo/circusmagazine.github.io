@@ -81,7 +81,7 @@ function MDV(selection){
 	//var myarray = ((Array.from(document.getElementsByClassName(classname))).sort()).reverse();
 	//myarray.sort();
 	//myarray.reverse();
-	var myarray = ((Array.from(document.getElementsByClassName(classname))).sort()).reverse;
+	var myarray = ((Array.from(document.getElementsByClassName(classname))).sort()).reverse();
 	let text = "";
 	for (let i = 0; i < myarray.length; i++) {
 		if (myarray[i].hasAttribute("data-active")){
@@ -90,6 +90,7 @@ function MDV(selection){
 			text += '<button class="dropdown-item" onclick="openPopUp()" class="w3-button">' + myarray[i].getAttribute("data-label") + '</button>'
 			}
 		document.getElementById(id).innerHTML = text;
+	}
  }
 
 //function openPopUp//

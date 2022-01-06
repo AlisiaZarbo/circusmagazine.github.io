@@ -111,7 +111,7 @@ function openPopUp(el){
 				document.getElementById("PopUpHeader").innerHTML = class_name + " - " + label;
 				document.getElementById("PopUpWikidata").innerHTML = "url es. https://www.wikidata.org/wiki/" + wikidataID;
 				document.getElementById("PopUpWikidata").href = "https://www.wikidata.org/wiki/" + wikidataID;
-				document.getElementById("MOD01").style.display="block";
+				document.getElementById("MOD_01").style.display="block";
 				}
 			}
 		}

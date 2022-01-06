@@ -109,7 +109,7 @@ function openPopUp(el){
 				//appena possibile inserire il wd solo se c'è l'attributo
 				wikidataID = all_entities[i].getAttribute("data-wikidata-id");
 				document.getElementById("PopUpHeader").innerHTML = class_name + " - " + label;
-				document.getElementById("PopUpWikidata").innerHTML = "url es. https://www.wikidata.org/wiki/" + wikidataID;
+				document.getElementById("PopUpWikidata").innerHTML = "https://www.wikidata.org/wiki/" + wikidataID;
 				document.getElementById("PopUpWikidata").href = "https://www.wikidata.org/wiki/" + wikidataID;
 				document.getElementById("MOD_01").style.display="block";
 				}

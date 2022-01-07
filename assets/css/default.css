@@ -176,8 +176,7 @@ li .dropdown {
 .w3-modal {
   display: none; 
   position: fixed; 
-  z-index: 1;  
-  padding-top: 100px; 
+  z-index: 1;   
   left: 10%;
   top: 60%;
   width: 40%; /* Full width */

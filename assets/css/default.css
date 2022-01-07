@@ -178,11 +178,22 @@ li .dropdown {
   position: fixed; 
   z-index: 1;  
   padding-top: 100px; 
-  left: 20%;
+  left: 10%;
   top: 60%;
-  width: 50%; /* Full width */
-  height: 100%; /* Full height */
-  overflow: auto; /* Enable scroll if needed */}
+  width: 40%; /* Full width */
+  height: 80%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: none ; /* Fallback color */
+  background-color: none;
+
+.w3-modal-content {
+  background-color: #fefefe;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+}
+
 
 /*.modal-backdrop
 {

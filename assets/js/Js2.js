@@ -93,7 +93,7 @@ function MDV(selection){
 	for (let i = 0; i < array_label.length; i++) {
 		//text += '<li> <a onclick="highlight(this)" about="'+ myarray[i].getAttribute("about") + '">' + myarray[i].getAttribute("data-label") + '</a></li>';
 		//text += '<a class="dropdown-item w3-button" onclick="openPopUp()">' + myarray[i].getAttribute("data-label") + '</button>'
-		text += '<a class="dropdown-item w3-button" onclick="openPopUp(this)">' + array_label[i] + '</button>'
+		text += '<a class="dropdown-item w3-button" onclick="openPopUp(this)">' + array_label[i] + '</a>'
 		}
 	document.getElementById(id).innerHTML = text;
 	}
@@ -107,8 +107,8 @@ function openPopUp(el){
 		if (all_entities[i].getAttribute("data-label") == label) {
 			all_entities[i].classList.add("highlighted");
 			if (all_entities[i].hasAttribute("data-active")) {
-				class_name = all_entities[i].getAttribute("class");
-				document.getElementById("PopUpHeader").innerHTML = class_name + " - " + label;
+				//class_name = all_entities[i].getAttribute("class");
+				document.getElementById("PopUpHeader").innerHTML = label;
 				if (all_entities[i].hasAttribute("data-wikidata-id")) {
 					wikidataID = all_entities[i].getAttribute("data-wikidata-id");
 					document.getElementById("PopUpWikidata").innerHTML = "url es. https://www.wikidata.org/wiki/" + wikidataID;
@@ -122,10 +122,24 @@ function openPopUp(el){
 			}
 		}
 	}
-
-//1. highligHT
-//functions prev_entity_item()
-//function next_entity_item()
+//function to slides entities occurencies//
+slide = 0
+function slide_clicked_entity(go) {
+	let label = document.getElementById("PopUpHeader").innerText;
+	var clicked_entity = ((Array.from(all_entities)).filter(entity => entity.getAttribute("data-label") == label).sort()).reverse();
+	//fino a lunghezza array while slide < clicked_entity.length - else slide = 0
+	if (go == 1) {
+		slide = slide+1;
+		}
+	if (go == -1) {
+		slide = slide-1;
+		}
+	var entity_occurency = clicked_entity.at(slide);
+	entity_occurency.classList.add("highlighted_more");
+	entity_occurency.scrollIntoView();
+	var entity_occurency_prev = clicked_entity.at(slide-1);
+	entity_occurency_prev.classList.remove("highlighted_more");
+	}
 
 //function to high_href() [working off-line with $(document).ready(function(){ not online]//
 $(".bib_note").click(function(){

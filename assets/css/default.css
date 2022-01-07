@@ -174,15 +174,20 @@ li .dropdown {
 
 
 .modal {
-position: top-left fixed;
-weight: 30vw;
-color: red;
-}
+  display: none; 
+  position: fixed; 
+  z-index: 1;  
+  padding-top: 100px; 
+  left: 20%;
+  top: 60%;
+  width: 50%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */}
 
-.modal-backdrop
+/*.modal-backdrop
 {
     opacity:none;
-}
+}*/
 
 .modal-dialog {
         left: 50%;

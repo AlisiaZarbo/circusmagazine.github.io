@@ -173,16 +173,16 @@ li .dropdown {
 }
 
 
-.w3-modal {
+/*.w3-modal {
   display: none; 
   position: fixed; 
   z-index: 1;   
   left: 10%;
   top: 60%;
-  width: 40%; /* Full width */
-  height: 20%; /* Full height */
-  overflow: none; /* Enable scroll if needed */
-  background-color: none ; /* Fallback color */
+  width: 40%; 
+  height: 20%; 
+  overflow: none; 
+  background-color: none ;
   background-color: none;
 
 .w3-modal-content {
@@ -190,18 +190,19 @@ li .dropdown {
   margin: auto;
   padding: 20px;
   border: 1px solid #888;
-  width: 40%; /* Full width */
-  height: 20%; /* Full height */
-  background-color: none ; /* Fallback color */
+  width: 40%; 
+  height: 20%; 
+  background-color: none ; 
   background-color: none;
 }
 
 	
 .w3-container{
-background-color: none ; /* Fallback color */
+background-color: none ; 
 background-color: none;
-width: 40%; /* Full width */
-height: 5%; /* Full height */	}
+width: 40%; 
+height: 5%; 	}
+
 
 /*.modal-backdrop
 {

@@ -180,8 +180,8 @@ li .dropdown {
   left: 10%;
   top: 60%;
   width: 40%; /* Full width */
-  height: 10%; /* Full height */
-  overflow: auto; /* Enable scroll if needed */
+  height: 20%; /* Full height */
+  overflow: none; /* Enable scroll if needed */
   background-color: none ; /* Fallback color */
   background-color: none;
 
@@ -190,14 +190,18 @@ li .dropdown {
   margin: auto;
   padding: 20px;
   border: 1px solid #888;
-  width: 30%;
+  width: 40%; /* Full width */
+  height: 20%; /* Full height */
+  background-color: none ; /* Fallback color */
+  background-color: none;
 }
 
 	
 .w3-container{
 background-color: none ; /* Fallback color */
 background-color: none;
-	}
+width: 40%; /* Full width */
+height: 20%; /* Full height */	}
 
 /*.modal-backdrop
 {

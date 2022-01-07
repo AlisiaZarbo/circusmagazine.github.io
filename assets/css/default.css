@@ -157,7 +157,7 @@ li .dropdown {
   display: inline-block;
 }*/
 
-2021-01-07
+/* EZ2021-01-07*/
 /* Higlight the entities and the references */
 
 .entity {
@@ -172,7 +172,7 @@ li .dropdown {
   background-color: red; 
 }
 
-/*2022-01-06*/
+
 .modal {
 position: top-left fixed;
 weight: 30vw;
@@ -183,3 +183,9 @@ color: red;
 {
     opacity:none;
 }
+
+.modal-dialog {
+        left: 50%;
+        right: auto;
+        width: 50vmin;
+    }

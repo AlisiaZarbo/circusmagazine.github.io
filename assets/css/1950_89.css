@@ -178,6 +178,9 @@ HEADERS & TITLES
   font-variant-ligatures: discretionary-ligatures;
 
   font-weight: bold;
+
+  transform: skewY(-5deg);  
+
 }
 
 .title_art p {
@@ -192,6 +195,7 @@ HEADERS & TITLES
   font-family: 'Bassanova', serif;
   font-variant-ligatures: discretionary-ligatures;
 
+  transform: skewY(-5deg);  
 
 }
 
@@ -199,7 +203,7 @@ HEADERS & TITLES
 TEXT
  */
 .maincontent {
-  padding: 1em 2.50em;
+  padding: 1em 1.75em;
   color: #331a00;
   font-size: ;
   font-family: 'Bassanova', serif;
@@ -220,6 +224,8 @@ TEXT
   padding: 2vmin;
   margin: 0.4vmin;
 
+  transform: skewY(-7deg);
+
 }
 
 .maincontent h4 {
@@ -235,6 +241,9 @@ TEXT
   text-align: right;
   padding: 1vmin;
   margin: 0.4vmin;
+
+  transform: skewY(-5deg);
+
 }
 
 .maincontent h5 {
@@ -251,6 +260,8 @@ TEXT
   padding: 1vmin;
   margin: 0.4vmin;
 
+  transform: skewY(-5deg);
+
 }
 
 .maincontent h6 {
@@ -264,6 +275,8 @@ TEXT
   text-align: right;
   padding: 1vmin;
   margin: 0.4vmin;
+
+  transform: skewY(-5deg);
 
 }
 
@@ -287,14 +300,30 @@ TEXT
   text-decoration: underline;
 }
 
-.maincontent p {
+
+
+.maincontent div[id^="sec"] {
   background-color: #ffa31a;
   color: ;
-  margin: 2vmin;
-  
+  margin: 0vmin;
+  padding: 2.5vmin;
+
+  transform: skewY(+4deg);
 
 }
 
+
+.maincontent p {
+  color: ;
+  margin: 2vmin;
+  padding: 2vmin;
+  transform: skewY(-4deg);
+}
+
+.maincontent table, .maincontent table img, .maincontent ol, .maincontent ul, .maincontent img, .maincontent blockquote {
+  transform: skewY(-4deg);
+
+}
 
 /*   
 IMAGES
@@ -309,13 +338,15 @@ TABLES
  */
 
 table.table {
-  width: 100%;
-  border: 2pt solid  #cc0000;
+  padding: 0;
+
+  width: 40%;
+  border: 0.2rem solid  #cc0000;
   empty-cells: show;
 }
 
 table, th, td, thead {
-  border: 2pt solid  #cc0000;
+  border: 0.2rem solid  #cc0000;
   /*border-collapse: collapse;*/
   text-align: center;
   vertical-align: bottom;
@@ -332,6 +363,8 @@ table th {
 table td:hover{
   text-decoration: underline;
 }
+
+/* @media         PER LE TABLES QUANDO NEL LATERALE*/
 
  /*   
 LONG QUOTES
@@ -399,8 +432,8 @@ REFERENCES
  */
 .references {
   margin: 3em 2em;
-  padding-right: 4em;
-  padding-left: 4em;
+  padding-right: 2em;
+  padding-left: 2em;
 
   color:  #b32d00;
   font-size: 1.1em;
@@ -408,6 +441,10 @@ REFERENCES
   font-variant-ligatures: discretionary-ligatures;
   letter-spacing: 0.02vmin;
 
+}
+
+.references ul {
+  padding-left: 0;
 }
 
 /*   
@@ -426,6 +463,25 @@ LISTS (U&O)
 
 
 }
+
+
+.references>ul>li:nth-child(odd) {
+  transform: skewY(+1.5deg);
+
+
+}
+
+.references>ul>li:nth-child(even) {
+  transform: skewY(-1.5deg);
+
+
+}
+
+
+
+
+
+
 
 /*   
 ENTITIES
@@ -569,6 +625,8 @@ ul.navbar-nav {
   border-bottom: 0.2vw solid #000000;
   padding:2vw;
   scroll-behavior: smooth;
+  overflow-wrap: break-word;
+
 
 }
 
@@ -580,6 +638,8 @@ ul.navbar-nav {
   border-left: 0.2vw solid #000000;
   padding:2vw;
   scroll-behavior: smooth;
+  overflow-wrap: break-word;
+
 
 }
 
@@ -587,8 +647,10 @@ ul.navbar-nav {
   grid-area: rightDown;
   overflow:auto;
   border: 0.2vw solid #000000;
-  padding:2vw
+  padding:2vw;
   scroll-behavior: smooth;
+  overflow-wrap: break-word;
+
 }
 
 .footer, .footer p { 

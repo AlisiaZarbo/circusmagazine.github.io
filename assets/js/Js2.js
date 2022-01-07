@@ -122,6 +122,7 @@ function openPopUp(el){
 			}
 		}
 	}
+
 //function to slides entities occurencies//
 slide = 0
 function slide_clicked_entity(go) {
@@ -135,10 +136,10 @@ function slide_clicked_entity(go) {
 		slide = slide-1;
 		}
 	var entity_occurency = clicked_entity.at(slide);
-	entity_occurency.classList.add("highlighted_more");
+	entity_occurency.classList.add("highlighted_current_occurency");
 	entity_occurency.scrollIntoView();
 	var entity_occurency_prev = clicked_entity.at(slide-1);
-	entity_occurency_prev.classList.remove("highlighted_more");
+	entity_occurency_prev.classList.remove("highlighted_current_occurency");
 	}
 
 //function to high_href() [working off-line with $(document).ready(function(){ not online]//

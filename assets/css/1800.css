@@ -14,34 +14,29 @@ src: url("../fonts/Jenson.ttf");
 
 * {
   box-sizing: border-box;
-    font-family: 'MyJenson', serif;
 	/*background-image: url("../img/styles/1800background.PNG");*/
-
-}
-.h2, .h3, .h4 {
-	font-family: 'MyRivanna', sans-serif;
 }
 
 /*grid layout and items*/
 .grid-container {
   display: grid;
   grid-template-areas:
-    'logo logo header header header header'
-    'logo logo nav nav nav nav'
+    'logo header header header header header'
+    'logo nav nav nav nav nav'
     'menu main main main rightUp rightUp'
     'menu main main main rightDown rightDown'
-    'footer footer footer footer footer footer';
+    'menu footer footer footer footer footer';
   height: 100vmin;
-  width:100%;
+  width: 100vmax;
   margin-top: -0.5vw;
   grid-template-columns: 15vmax 1fr 1fr 1fr 1fr 1fr;
-  grid-template-rows: 10vmax 7vmax 1fr 1fr 5vmax;
+  grid-template-rows: 7vmax 10vmax 1fr 1fr 3vmax;
 }
 
 .logo{
   grid-area: logo;
   background-color: #c87354;
-font-size: 3vw;
+	font-size: 2vw;
   color: black;
   font-family: 'MyRivanna', sans-serif;
   padding: 1vw;
@@ -53,21 +48,20 @@ font-size: 3vw;
 	grid-area: header;
 	font-family: 'MyRivanna', sans-serif;
 	/*font-family: 'Cinzel Decorative', cursive;*/
-	text-align: right; 
-	font-size: 7vw;
+	text-align: center; 
+	font-size: 5vw;
 	color: #c87354;
-	letter-spacing: -0.05vw;
+	letter-spacing: 1vw;
 	position: static;
-	padding: 0.5vw;
 	background-color: black;
 }
 
 .navbar{
   grid-area: nav;
   background-color: black;
-font-family: 'MyRivanna', sans-serif;
-	
-	position: static;
+font-family: 'MyJenson', sans-serif;
+	font-size: 1.2vw;
+	position: flex;
   /*display: flex; manca blocco allo scorrimento in alto*/
 }
 
@@ -79,15 +73,18 @@ font-family: 'MyRivanna', sans-serif;
 	padding: 1vw;
 	overflow: auto;
 	font-family: 'MyRivanna', sans-serif;
+	font-size: 1.5vw;
 }
 
 .boxM { 
 	grid-area: main; 
+	column-count: 3;
+	column-rule-color: 4px black;
 	overflow: auto;
 	border-top: 0.2vw solid #000000;
 	border-bottom: 0.2vw solid #000000;
 	padding:2vw;
-	font-family: MyRivanna;
+	font-family: 'MyJenson', serif;
 }
 
 .boxRU { 
@@ -97,6 +94,7 @@ font-family: 'MyRivanna', sans-serif;
 	border-top: 0.2vw solid #000000;
 	border-left: 0.2vw solid #000000;
 	padding:2vw;
+	font-family: 'MyJenson', serif;
 }
 
 .boxRD { 
@@ -104,6 +102,7 @@ font-family: 'MyRivanna', sans-serif;
 	overflow:auto;
 	border: 0.2vw solid #000000;
 	padding:2vw
+	font-family: 'MyJenson', serif;
 }
 
 .footer { 
@@ -111,11 +110,29 @@ font-family: 'MyRivanna', sans-serif;
 	text-align: center;
 	color: #c87354;
 	background-color: black;
+	font-family: 'MyRivanna', sans-serif;
 }
 
 img {
 	weight: 100%
 }
+
+p {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+}
+p:after,
+p::after {
+  content: url("../img/styles/1800.PNG"); 
+  display: inline-block;
+  width: 100%;
+  height: auto;
+  z-index: -1;
+  position: absolute;
+}
+
+
 
 /* Responsive layout - when the screen is less than xxpx (o vmin??) wide, make the grid items stack on top of each other instead of next to each other */
 
@@ -132,12 +149,11 @@ img {
 
 /* Style the body or other elements*/
 body {
-  font-family: Arial;
+	font-family: 'MyJenson', serif;
 }
 
 .maincontent div[id^="sec"] p:first-of-type::first-letter {
   font-family: 'MyRivanna', sans-serif;
-  font-size: 12vmin;
   font-style: normal;
   float: left;
 }

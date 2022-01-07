@@ -143,15 +143,6 @@ body {
   text-align: left;
 }
 
-
-.entity {
-  background-color: #ffe6e6;
-}
-
-.highlighted {
-  background-color: #ffffcc; 
-}
-
 /*.navbar-nav ul, li {
   list-style-type: none;
   margin: 0;
@@ -166,5 +157,29 @@ li .dropdown {
   display: inline-block;
 }*/
 
-
+2021-01-07
 /* Higlight the entities and the references */
+
+.entity {
+  background-color: #ffe6e6;
+}
+
+.highlighted {
+  background-color: #ffffcc; 
+}
+
+.highlighted_current_occurency {
+  background-color: red; 
+}
+
+/*2022-01-06*/
+.modal {
+position: top-left fixed !important;
+weight: 30vw;
+color: red;
+}
+
+.modal-backdrop
+{
+    opacity:none !important;
+}

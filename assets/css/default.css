@@ -173,7 +173,7 @@ li .dropdown {
 }
 
 
-.modal {
+#MOD_01 {
   display: none; 
   position: fixed; 
   z-index: 1;  

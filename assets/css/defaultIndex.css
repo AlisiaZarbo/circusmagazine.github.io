@@ -69,6 +69,8 @@
 	border-top: 0.2vw solid #000000;
 	border-bottom: 0.2vw solid #000000;
 	padding:2vw;
+  scroll-behavior: smooth;
+
 }
 
 
@@ -93,6 +95,7 @@
 /* Style the body or other elements*/
 body {
   font-family: Arial;
+  scroll-behavior: smooth;
 }
 
 /* Style the navigation bar links */
@@ -161,3 +164,8 @@ li .dropdown {
 
 
 /* Higlight the entities and the references */
+
+
+h2 {
+  text-align: center;
+}

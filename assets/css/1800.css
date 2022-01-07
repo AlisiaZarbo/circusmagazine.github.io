@@ -1,14 +1,22 @@
 @import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative&family=Libre+Baskerville&display=swap');
 /*@import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative&display=swap');*/
+
 @font-face {
 font-family: MyRivanna;
 src: url("../fonts/RIVANNA_.TTF");
 }
 
+/* Jenson font for body inspired to William Morris rethinking of the type, with typical "e" */
+@font-face {
+font-family: MyJenson;
+src: url("../fonts/Jenson.ttf");
+}
+
 * {
   box-sizing: border-box;
-    font-family: 'Libre Baskerville', serif;
+    font-family: 'MyJenson', serif;
 	/*background-image: url("../img/styles/1800background.PNG");*/
+
 }
 .h2, .h3, .h4 {
 	font-family: 'MyRivanna', sans-serif;

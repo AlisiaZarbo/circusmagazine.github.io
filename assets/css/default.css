@@ -201,7 +201,7 @@ li .dropdown {
 background-color: none ; /* Fallback color */
 background-color: none;
 width: 40%; /* Full width */
-height: 20%; /* Full height */	}
+height: 5%; /* Full height */	}
 
 /*.modal-backdrop
 {

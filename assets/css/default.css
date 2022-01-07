@@ -194,6 +194,11 @@ li .dropdown {
   width: 80%;
 }
 
+	
+.w3-container{
+background-color: none ; /* Fallback color */
+background-color: none;
+	}
 
 /*.modal-backdrop
 {

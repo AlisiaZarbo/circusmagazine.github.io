@@ -153,6 +153,14 @@ function slide_clicked_entity(go){
 	(clicked_entity.at(slide)).scrollIntoView();
 	}
 
+//function closePopUp()//
+function closePopUp(){
+	document.getElementById('MOD_01').style.display='none';
+	let label = document.getElementById("PopUpHeader").innerText;
+	var clicked_entity = ((Array.from(all_entities)).filter(entity => entity.getAttribute("data-label") == label));
+	clicked_entity.forEach(entity => entity.classList.remove("highlighted", "highlighted_more"));
+	}
+
 //function to high_href() [working off-line with $(document).ready(function(){ not online]//
 $(".bib_note").click(function(){
 		var target = $(this).attr("href");

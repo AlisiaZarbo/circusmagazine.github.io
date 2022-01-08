@@ -25,7 +25,7 @@
   width:100%;
   margin-top: -0.5vw;
   grid-template-columns: 25vmin 1fr 1fr 1fr 1fr 1fr;
-  grid-template-rows: 15vmin 2vmin 13vmin 1fr 1fr 10vmin;
+  grid-template-rows: 15vmin 2vmin 13vh 1fr 1fr 10vmin;
 
 }
 
@@ -153,7 +153,7 @@ body {
 }
 
 .nav-item, .dropdown li, a {
-  /*display: inline-block;*/
+  display: inline-block;
 }
 
 .dropdown:hover .dropdown-menu {
@@ -168,7 +168,7 @@ body {
   background-color: #f9f9f9;
   min-width: 20vw;
   /*box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);*/
-  /*z-index: 1;*/
+  z-index: 1;
 }
 
 .dropdown-menu a {

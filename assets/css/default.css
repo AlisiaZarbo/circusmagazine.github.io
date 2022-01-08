@@ -131,6 +131,8 @@
 /* Style the body or other elements*/
 body {
   font-family: Arial;
+  margin: 0;
+  overflow-y: hidden;
 }
 
 /* Style the navigation bar links */

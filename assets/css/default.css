@@ -21,7 +21,7 @@
     'menu main main main rightUp rightUp'
     'menu main main main rightDown rightDown'
     'footer footer footer footer footer footer';
-  height: 108vmin;
+  height: 100vmin;
   width:100%;
   margin-top: -0.5vw;
   grid-template-columns: 25vmin 1fr 1fr 1fr 1fr 1fr;

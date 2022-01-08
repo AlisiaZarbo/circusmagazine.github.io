@@ -183,3 +183,16 @@ $(".bib_note").click(function(){
 //	$(".entity").hide(); 
 //	$(".entity").show(); 
 //}
+
+
+// function to set on resize the client w/h to window w/h [elements w/ position absolute/fixed and responsive measurement units needed]
+document.addEventListener(resize, myRes)
+function myRes() {
+  var w = window.outerWidth;
+  	var h = window.outerHeight;
+  	if (document.documentElement.clientWidth != w ||
+  		document.documentElement.clientHeight != h) {
+  			document.documentElement.clientWidth = w;
+  			document.documentElement.clientHeight = h;
+}
+}

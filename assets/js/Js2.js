@@ -186,7 +186,7 @@ $(".bib_note").click(function(){
 
 
 // function to set on resize the client w/h to window w/h [elements w/ position absolute/fixed and responsive measurement units needed]
-document.addEventListener(resize, myRes)
+document.addEventListener("resize", myRes)
 function myRes() {
   var w = window.outerWidth;
   	var h = window.outerHeight;

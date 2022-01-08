@@ -221,7 +221,7 @@ height: 5%;   }
 
 
 
-.title_art{
+.title_art > h2 {
   font-family: 'Oswald', sans-serif;
   font-size: 3vw;
   text-transform: uppercase;

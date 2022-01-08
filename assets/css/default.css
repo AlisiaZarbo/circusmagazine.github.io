@@ -103,6 +103,11 @@ body {
 }
 
 /* Style the navigation bar links */
+img {
+	width:100%
+}
+
+/* Style the navigation bar links */
 
 .navbar a {
   color: white;

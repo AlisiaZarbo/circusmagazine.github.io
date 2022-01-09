@@ -15,9 +15,9 @@
   <body>
     <!-- GRID -->
     <div class="grid-container">
-	    
-      <div class="logo">LLLL (Leisurely LusciousLiteraryLens) oppure mettere immagine</div>
-      <div class="header">THECIRCUSMAGAZINE</span></div>
+	<div class="logo"><p>Leisurely</p><p>Luscious</p><p>Literary</p><p>Lens</p></div>
+	<div class="header">THECIRCUSMAGAZINE</span></div>
+	<div class="sep"></div>
       
       <!-- NAVBAR -->
       <nav class="navbar">
@@ -34,10 +34,12 @@
 		  <li class="nav-item"><a class="nav-link" href="#Documentation">Documentation</a></li>
 		  <li class="nav-item"><a class="nav-link" href="#About">About</a></li>
 		</ul>
-		<hr class="lineanavbar">
-		<ul class="navbar-nav" align="right">				  
-		  <button class="nav-item active" onclick="slide_articles()">change main article&raquo;</button>
-		  <button class="nav-item" onclick="change_css('assets/css/default.css')">reset style</button>
+		<!--hr class="lineanavbar"-->
+	      	<ul class="navbar-nav-selector" align="right">
+		<!--ul class="navbar-nav" align="right"-->				  
+		  <!--button class="nav-item active" onclick="slide_articles()">change main article&raquo;</button-->
+		<button class="buttons" onclick="slide_articles()">change main article&raquo;</button>
+		  <button class="buttons" onclick="change_css('assets/css/default.css')">reset style</button>
 		  <li class="nav-item"><a class="nav-link" href="#" onclick="change_css('assets/css/pre1800.css')">-1799</a></li>
 		  <li class="nav-item"><a class="nav-link" href="#" onclick="change_css('assets/css/1800.css')">1800</a></li>
 		  <li class="nav-item"><a class="nav-link" href="#" onclick="change_css('assets/css/1900_50.css')">1900-1950</a></li>
@@ -51,7 +53,7 @@
       <!-- MENU -->
       <div class="menu">
           <!-- Paragraph, inserire funzione per apparizione issue title -->
-	  <p>About</p><p>this issue</p>
+	  <p id="menutitle">About</p><p>this issue</p>
 	  <!-- paragraph end-->
 	      
 	  <!-- MDViewer: strutturato a navbar, forse meglio un accordion?-->

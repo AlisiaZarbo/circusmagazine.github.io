@@ -48,8 +48,10 @@ function change_issue(issue) {
 	$("#artM").load(art1);
 	$("#artL1").load(art2);
 	$("#artL2").load(art3);
-	document.getElementById("issue_metadata").innerHTML = metadata_issue;
 	document.getElementById("issue_title").innerHTML = issue_title;
+	document.getElementById("issue_metadata").innerHTML = metadata_issue;
+	document.getElementById("main_art_title").classList.add("highlighted");
+	document.getElementById("main_art_url").classList.add("highlighted");
 	}
 
 //function slide_articles() in an issue//
@@ -60,6 +62,8 @@ function slide_articles(){
 		$("#artM").load(art2);
 		$("#artL1").load(art3);
 		$("#artL2").load(art1);
+		document.getElementById("main_art_title").classList.remove("highlighted");
+		document.getElementById("main_art_url").classList.remove("highlighted");
 		document.getElementById("guest_art_title").classList.add("highlighted");
 		document.getElementById("guest_art_url").classList.add("highlighted");
 		}

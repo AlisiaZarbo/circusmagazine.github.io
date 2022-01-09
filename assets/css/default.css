@@ -25,8 +25,9 @@
   width:100%;
   margin-top: -0.5vw;
   /*grid-template-columns: 25vmin 1fr 1fr 1fr 1fr 1fr;*/
-  grid-template-columns: 1.5fr 1.5fr 1fr 0fr 1fr 1fr;
-  grid-template-rows: 15vmin 2vmin 13vw 1fr 1fr 10vmin;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  /*grid-template-rows: 15vmin 2vmin 13vw 1fr 1fr 10vmin;*/
+  grid-template-rows: 0.5fr 0.3fr 0.8fr 1fr 1fr 0.3fr;
   /*ricordiamoci che dobbiamo ragionare in 12imi */
 
 }

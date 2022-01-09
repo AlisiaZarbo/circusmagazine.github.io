@@ -27,7 +27,7 @@
   /*grid-template-columns: 25vmin 1fr 1fr 1fr 1fr 1fr;*/
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
   /*grid-template-rows: 15vmin 2vmin 13vw 1fr 1fr 10vmin;*/
-  grid-template-rows: 0.5fr 0.3fr 0.8fr 1fr 1fr 0.3fr;
+  grid-template-rows: 0.6fr 0.3fr 0.8fr 2fr 2fr 0.3fr;
   /*ricordiamoci che dobbiamo ragionare in 12imi */
 
 }

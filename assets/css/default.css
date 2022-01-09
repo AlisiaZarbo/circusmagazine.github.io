@@ -15,7 +15,7 @@
 .grid-container {
   display: grid;
   grid-template-areas:
-    'header header header header header header'
+    'logo header header header header header'
     'sep sep sep sep sep sep'
     'nav nav nav nav nav nav'
     'menu main main main rightUp rightUp'
@@ -24,8 +24,10 @@
   height: 100vmin;
   width:100%;
   margin-top: -0.5vw;
-  grid-template-columns: 25vmin 1fr 1fr 1fr 1fr 1fr;
+  /*grid-template-columns: 25vmin 1fr 1fr 1fr 1fr 1fr;*/
+  grid-template-columns: 1.5fr 1.5fr 1fr 0fr 1fr 1fr;
   grid-template-rows: 15vmin 2vmin 13vw 1fr 1fr 10vmin;
+  /*ricordiamoci che dobbiamo ragionare in 12imi */
 
 }
 

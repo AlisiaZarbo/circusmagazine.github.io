@@ -67,6 +67,8 @@ function slide_articles(){
 		$("#artM").load(art3);
 		$("#artL1").load(art1);
 		$("#artL2").load(art2);
+		document.getElementById("guest_art_title").classList.remove("highlighted");
+		document.getElementById("guest_art_url").classList.remove("highlighted");
 		document.getElementById("rev_art_title").classList.add("highlighted");
 		document.getElementById("rev_art_url").classList.add("highlighted");
 		}	
@@ -75,6 +77,8 @@ function slide_articles(){
 		$("#artL1").load(art2);
 		$("#artL2").load(art3);
 		counter = 0;
+		document.getElementById("rev_art_title").classList.remove("highlighted");
+		document.getElementById("rev_art_url").classList.remove("highlighted");
 		document.getElementById("main_art_title").classList.add("highlighted");
 		document.getElementById("main_art_url").classList.add("highlighted");
 		}

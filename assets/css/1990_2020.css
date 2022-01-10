@@ -337,7 +337,7 @@ h3 {
 
 .table {
   padding: 0;
-  width: 40%;
+  width: 20%;
   border: 0.2rem solid  black;
   empty-cells: show;
 }
@@ -350,7 +350,7 @@ table, th, td, thead {
 }
 
 th, td, thead {
-  width: 20%;
+  width: 10%;
 }
 }
 

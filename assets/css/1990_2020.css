@@ -285,12 +285,17 @@ h4 {
 
 h5{
   font-family: 'BenchNine', sans-serif;
-  font-size: 1.8vw;
+  font-size: 1.9vw;
   column-span: all;
   font-weight: bolder;
 }
-
-#toptitle{
+h6{
+  font-family: 'BenchNine', sans-serif;
+  font-size: 1.8vw;
+  column-span: all;
+  font-weight: bolder;
+  
+  #toptitle{
   font-family: 'BenchNine', sans-serif;
   padding: 1.7vmin;
 }

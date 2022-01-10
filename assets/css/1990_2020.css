@@ -355,8 +355,8 @@ h6{
 }
 
 .table {
-  padding: 0;
-  width: 10%;
+  padding: 1;
+  width: 5%;
   border: 0.2rem solid  black;
   empty-cells: show;
 }
@@ -369,7 +369,7 @@ table, th, td, thead {
 }
 
 th, td, thead {
-  width: 5%;
+  width: 2.5%;
 }
 }
 

@@ -4,7 +4,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@600&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@600&display=swap');
 @font-face{
-  src: url('..assets/fonts/quentincaps.regular.ttf');
+  src: url('../assets/fonts/quentincaps.regular.ttf');
   font-family: QuentinCaps;
 }
 
@@ -28,7 +28,7 @@
   grid-template-columns: 0.8fr 0.8fr 0.8fr 0.8fr 0.8fr;
   /*grid-template-rows: 15vmin 2vmin 13vw 1fr 1fr 10vmin;*/
   /*grid-template-rows: 0.5fr 0.05fr 0.2fr 1fr 1fr 0.3fr;*/
-  grid-template-rows: 0.3fr 0.17fr 0.8fr 0.8fr 0.25fr;
+  grid-template-rows: 0.4fr 0.25fr 0.8fr 0.8fr 0.25fr;
   /*5vmin 15vmin 1fr 1fr 5vmin;*/
   /*ricordiamoci che dobbiamo ragionare in 12imi */
  

@@ -331,6 +331,7 @@ IMAGES
 
 img {
   filter: contrast(130%);
+  width: 100%;
 }
 
 /*   

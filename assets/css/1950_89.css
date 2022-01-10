@@ -1,172 +1,387 @@
 @font-face {
-  src: url('../fonts/doublebass/DoubleBass-Bold-trial.ttf');
-  font-family: DoubleBass-Bold;
-}
-@font-face {
-  src: url('../fonts/doublebass/DoubleBass-Light-trial.ttf');
-  font-family: DoubleBass-Light;
-}
-@font-face {
-  src: url('../fonts/doublebass/DoubleBass-Regular-trial.ttf');
-  font-family: DoubleBass-Regular;
-}
-
-@font-face {
   src: url('../fonts/Bassanova.otf');
   font-family: Bassanova;
-}
-
+} 
 
 * {
   box-sizing: border-box;
   -webkit-box-sizing: border-box;
-}
-
-
-html, body {
-    /* get rid of default spacing on the edges */
-    margin: 0;
-    padding: 0;
-
-    /* get rid of that 2px window border in Internet Explorer 6 */
-    border: 0;
-
-    /* fill the height of the browser */
-    height: 100%;
-
-    /* no more scroll bar */
-    overflow-x: hidden;
-
-    display: block;
-
-    scroll-behavior: smooth;
 
 }
 
+.grid-container {
+  display: grid;
+  grid-template-areas:
+    'logo header header header header header'
+    'nav nav nav nav nav nav'
+    'menu main main main rightUp rightUp'
+    'menu main main main rightDown rightDown'
+    'footer footer footer footer footer footer';
+  height: 100vmin;
+  width:100%;
+  margin-top: -0.5vw;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 0.3fr 0.25fr 3fr 3fr 0.3fr;
+}
 
-body {
-   box-sizing: border-box;
-   margin: 0;
-   padding: 0;
-   width: 100%;
-   background-color: #ffe6cc;
+.logo{
+  grid-area: logo;
+  background-color: #cc0000;
+  color: #ffe6cc;
+  font-family: 'Bassanova', sans-serif;
+  font-weight: bold;
+  padding: 1vmin;
+  margin: 0;
+  padding-bottom: 0;
+  text-align: left;
+  border-right: 0.2vw solid #000000;
+  font-size: 2.5vmin;
+  line-height: 0.1vmin;
+}
 
-  font-family: sans-serif;
-  /*font-family: 'IM Fell Great Primer SC', serif;*/
-  color: #ff0080;
-  
-    overflow-wrap: break-word;
+.header { 
+  grid-area: header;
+  font-family: 'Bassanova', sans-serif;
+  font-variant-ligatures: discretionary-ligatures;
+  font-weight: bolder;
+  color: #331a00;
+  text-align: right; 
+  letter-spacing: -0.05vw;
+  position: static;
+  padding: 1vw;
+  padding-bottom: 0;
+  font-size: 5vw;
+  background-color: #ffe6cc;
+}
+
+.sep {
+  grid-area: sep;
+  background-color: #331a00; 
 }
 
 
+.navbar{
+  grid-area: nav;
+  background-color: #e60000;
+  border: 0.2vw solid #000000;
+  font-family:'Bassanova';
+  font-size: 1.2vw;
+  color: #331a00;
+}
 
+ul.navbar-nav {
+  margin-top: 1.5vmin;
+  margin-bottom: 1.5vmin;
+}
+
+/*Style the navigation bar links*/
+.nav-item a, .nav-item.dropdown a {
+  color: white;
+  margin: 0;
+  padding: 0.1vw 0.2vw;
+  text-decoration: none;
+  text-align: center;
+  font-family: Bassanova;
+}
+
+.nav-item a:hover, .nav-item.dropdown a:hover, .dropdown:hover {
+  background-color: #ffa31a;
+  color: black;
+  font-weight: bold;
+  padding-right: 2vmin;
+  padding-left: 2vmin;
+}
+
+.nav-item, .dropdown li, a {
+  display: inline-block;
+}
+
+.dropdown:hover .dropdown-menu {
+  display: block;
+}
+
+.dropdown-menu a:hover {background-color: #f1f1f1;}
+
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  background-color: #ffe6cc;
+  min-width: 50vw;
+  box-shadow: 0 1vmin 1vmin 0 rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-menu a.dropdown-item {
+  color: black;
+  padding: 0.4vw 0.3vw;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+button {
+  color: #ffe6cc;
+  padding: 0.5vmin;
+  margin: 0;
+  text-decoration: none;
+  text-align: center;
+  font-family: 'Bassanova', serif;
+  background-color: #cc0000;
+}
+
+button:hover {
+  color: #cc0000;
+  font-weight: bold;
+  background-color: #ffe6cc;
+}
+
+.menu { 
+  grid-area: menu; 
+  background-color: #ffa31a;
+  border: 0.2vw solid #000000;
+  padding: 1vw;
+  overflow: auto;
+  font-family: Bassanova;
+  letter-spacing: 0.02vmin;
+  color: #ffe6cc;
+  scroll-behavior: smooth;
+  font-size: 2.5vmin;
+  text-align: left;
+}
+
+.menu ul.navbar-nav {
+  color: white;
+  margin: 0;
+  padding: 0;
+  margin-top: 1.5vmin;
+  margin-bottom: 1.5vmin;
+  text-decoration: none;
+  text-align: center;
+  font-family: Bassanova;
+}
+
+.menu nav.navbar ul li .dropdown-menu {
+  max-width: 50vw;
+}
+
+.menu nav.navbar ul li .dropdown-menu .dropdown-item {
+  display: inline-block;
+}
+
+/*.menu nav.navbar ul li {
+  display: block;
+}*/
+
+.boxM { 
+  grid-area: main; 
+  overflow: auto;
+  border-top: 0.2vw solid #000000;
+  border-bottom: 0.2vw solid #000000;
+  padding:2vw;
+  scroll-behavior: smooth;
+  overflow-wrap: break-word;
+}
+
+.boxRU { 
+  grid-area: rightUp; 
+  overflow:auto;
+  border-right: 0.2vw solid #000000;
+  border-top: 0.2vw solid #000000;
+  border-left: 0.2vw solid #000000;
+  padding:2vw;
+  scroll-behavior: smooth;
+  overflow-wrap: break-word;
+}
+
+.boxRD { 
+  grid-area: rightDown;
+  overflow:auto;
+  border: 0.2vw solid #000000;
+  padding:2vw;
+  scroll-behavior: smooth;
+  overflow-wrap: break-word;
+}
+
+.footer { 
+  grid-area: footer; 
+  text-align: center;
+  background-color: #cc0000;
+  color: #ffe6cc;
+  font-family: Bassanova;
+  font-size: 1vw;
+  margin-bottom: -0.5vw;
+  padding: 0 1vw 0 1vw;
+}
+
+.footer a, .footer p a {
+  font-family: Bassanova;
+  font-variant-ligatures: discretionary-ligatures;
+}
+
+.footer a:link {
+  color:  #ffe6cc;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.footer a:visited {
+  color: #ffe6cc;
+}
+
+.footer a:hover {
+  color: #ffe6cc;
+  font-style: italic;
+  text-decoration: underline;
+}
+
+/* required - the "base" of the bar - mostly for setting width */
 .boxM::-webkit-scrollbar {
   width: 2vmin;               /* width of the entire scrollbar */
 }
-  /* the "track" of the bar - great for customizing "background" colors */
+  /* the "track" of the bar, "background" colors */
 .boxM::-webkit-scrollbar-track {
-  background-color: #ffe6cc;        /* color of the tracking area */    /*#ffeecc*/
+  background-color: #ffe6cc;        /* color of the tracking area */   
   -webkit-filter: blur(0.7vmin); /* Safari 6.0 - 9.0 */
   filter: blur(0.7vmin);
 }
-  /* the actual draggable element, the star of the show! */
+  /* the actual draggable element */
 .boxM::-webkit-scrollbar-thumb {
   background-color: #ffa31a;    /* color of the scroll thumb */
   border-radius: 0.3vmin;       /* roundness of the scroll thumb */
   border: 0.3vmin solid #331a00;
-    /* creates padding around scroll thumb */   /* #cc0000*/
 }  
 
  /* required - the "base" of the bar - mostly for setting width */
 .boxRU::-webkit-scrollbar {
   width: 2vmin;               /* width of the entire scrollbar */
 }
-  /* the "track" of the bar - great for customizing "background" colors */
+  /* the "track" of the bar, "background" colors */
 .boxRU::-webkit-scrollbar-track {
-  background-color: #ffe6cc;        /* color of the tracking area */    /*#ffeecc*/
+  background-color: #ffe6cc;        /* color of the tracking area */   
   -webkit-filter: blur(0.7vmin); /* Safari 6.0 - 9.0 */
   filter: blur(0.7vmin);
 }
-  /* the actual draggable element, the star of the show! */
+  /* the actual draggable element */
 .boxRU::-webkit-scrollbar-thumb {
   background-color: #ffa31a;    /* color of the scroll thumb */
   border-radius: 0.3vmin;       /* roundness of the scroll thumb */
   border: 0.3vmin solid #331a00;
-    /* creates padding around scroll thumb */   /* #cc0000*/
 }  
 
  /* required - the "base" of the bar - mostly for setting width */
 .boxRD::-webkit-scrollbar {
   width: 2vmin;               /* width of the entire scrollbar */
 }
-  /* the "track" of the bar - great for customizing "background" colors */
+  /* the "track" of the bar, "background" colors */
 .boxRD::-webkit-scrollbar-track {
-  background-color: #ffe6cc;        /* color of the tracking area */    /*#ffeecc*/
+  background-color: #ffe6cc;        /* color of the tracking area */   
   -webkit-filter: blur(0.7vmin); /* Safari 6.0 - 9.0 */
   filter: blur(0.7vmin);
 }
-  /* the actual draggable element, the star of the show! */
+  /* the actual draggable element */
 .boxRD::-webkit-scrollbar-thumb {
   background-color: #ffa31a;    /* color of the scroll thumb */
   border-radius: 0.3vmin;       /* roundness of the scroll thumb */
   border: 0.3vmin solid #331a00;
-    /* creates padding around scroll thumb */   /* #cc0000*/
 }  
 
 /* required - the "base" of the bar - mostly for setting width */
 .menu::-webkit-scrollbar {
   width: 2vmin;               /* width of the entire scrollbar */
 }
-  /* the "track" of the bar - great for customizing "background" colors */
+  /* the "track" of the bar, "background" colors */
 .menu::-webkit-scrollbar-track {
-  background-color: #ffa31a;        /* color of the tracking area */    /*#ffeecc*/
+  background-color: #ffa31a;        /* color of the tracking area */   
   -webkit-filter: blur(0.7vmin); /* Safari 6.0 - 9.0 */
   filter: blur(0.7vmin);
 }
-  /* the actual draggable element, the star of the show! */
+  /* the actual draggable element */
 .menu::-webkit-scrollbar-thumb {
   background-color: #ffe6cc;    /* color of the scroll thumb */
   border-radius: 0.3vmin;       /* roundness of the scroll thumb */
-  border: 0.3vmin solid #331a00;
-    /* creates padding around scroll thumb */   /* #cc0000*/
+  border: 0.3vmin solid #331a00;   
 }  
 
-
-
-
-
-
-
-em {
-
+/* maybe useless*/
+html, body {
+    /* get rid of default spacing on the edges */
+    margin: 0;
+    padding: 0;
+    /* get rid of that 2px window border in Internet Explorer 6 */
+    border: 0;
+    /* fill the height of the browser */
+    height: 100%;
+    /* no more scroll bar */
+    overflow-x: hidden;
+    display: block;
+    scroll-behavior: smooth;
 }
 
-strong {
-
+/* maybe useless*/
+body {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  background-color: #ffe6cc; 
+  font-family: sans-serif; /*debug*/
+  color: #ff0080; /*FUXIA for debug*/
+  overflow-wrap: break-word;
 }
 
-q {
-  font-family: ;
-  background-color: ;
-  color: ;
+img {
+  width: 100%
+  filter: contrast(130%);
 }
 
-cite {
-  font-family: ;
-  background-color: ;
-  color: ;
+figure img {
+  width: 100%
+  filter: contrast(130%);
+  padding-bottom: 2vh;
 }
 
-blockquote {
-  padding: 1vmin 5%;
-  background-color: ;
-  color: ;
-  text-align: justify;
+.highlighted {
+  font-style: oblique;
+  background-color: #cc0000;
+  color: #ffe6cc;
+  font-family: Bassanova;
+  font-variant-ligatures: discretionary-ligatures; 
 }
 
-/*   
-HEADERS & TITLES
- */
+.highlighted_more {
+  font-weight: bold;
+  text-decoration: underline; 
+}
+
+/*.navbar-nav-selector {
+background-color: #c68c8c;
+margin-top: 2.5vmin;
+}
+
+.buttons {
+  border: none;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  float: left;
+  cursor: pointer;
+  text-align: center;
+  color: white;
+  background-color: #993333;
+  margin-right: 1vmin;
+  font-family: 'Cinzel', serif;
+  font-size: 1.2vw;
+}*/
+
+/* CHIEDI a ENIRCA COME CLASSIFICARE DIV sua e COME METTERE ANCHE NOI*/
+.enriclass {
+  text-align: right;
+  color:  #331a00;
+  font-size: 1.1em;
+  font-family: 'Bassanova', serif;
+  letter-spacing: 0.02vmin;
+}
+
 .title_art h2 {
   padding-right: 1.25em;
   color: #330000;
@@ -176,32 +391,23 @@ HEADERS & TITLES
   font-size: 2.75em;
   font-family: 'Bassanova', serif;
   font-variant-ligatures: discretionary-ligatures;
-
   font-weight: bold;
-
   transform: skewY(-5deg);  
-
 }
 
 .title_art p {
   padding-right: 1.25em;
   color: #330000;
   font-weight: bold;
-  /*line-height: 5vmin;*/
   text-align: center;
   letter-spacing: 0.95pt;
   word-spacing: 2.75pt;
   font-size: 1em;
   font-family: 'Bassanova', serif;
   font-variant-ligatures: discretionary-ligatures;
-
   transform: skewY(-5deg);  
-
 }
 
-/*   
-TEXT
- */
 .maincontent {
   padding: 1em 1.75em;
   color: #331a00;
@@ -264,7 +470,7 @@ TEXT
 
 }
 
-.maincontent h6 {
+.maincontent h6, h6 {
   font-style: italic;
   font-size: 1.1em;
   font-family: 'Bassanova';
@@ -279,7 +485,6 @@ TEXT
   transform: skewY(-5deg);
 
 }
-
 
 .maincontent a:link {
   color:  #cc0000;
@@ -319,466 +524,3 @@ TEXT
   padding: 2vmin;
   transform: skewY(-4deg);
 }
-
-.maincontent table, .maincontent table img, .maincontent ol, .maincontent ul, .maincontent img, .maincontent blockquote {
-  transform: skewY(-4deg);
-
-}
-
-/*   
-IMAGES
- */
-
-img {
-  filter: contrast(130%);
-  width: 100%;
-}
-
-/*   
-TABLES
- */
-
-table.table {
-  padding: 0;
-
-  width: 40%;
-  border: 0.2rem solid  #cc0000;
-  empty-cells: show;
-}
-
-table, th, td, thead {
-  border: 0.2rem solid  #cc0000;
-  /*border-collapse: collapse;*/
-  text-align: center;
-  vertical-align: bottom;
-}
-
-th, td, thead {
-  width: 20%;
-}
-
-table th {
-  color: #cc0000;
-}
-
-table td:hover{
-  text-decoration: underline;
-}
-
-/* @media         PER LE TABLES QUANDO NEL LATERALE*/
-
- /*   
-LONG QUOTES
- */
-
-
-/*   
-ANNEXES
- */
-.annexes {
-  text-align: center;
-  color:  #ff751a;
-  font-size: 1.1em;
-  font-family: 'Bassanova', serif;
-  letter-spacing: 0.02vmin;
-}
-
-.annexes h3 {
-  text-align: center;
-  color:  #ff751a;
-  font-size: 1.3em;
-  font-family: 'Bassanova', serif;
-  font-weight: bold;
-
-}
-
-.annexes h4 {
-  text-align: center;
-  color:  #ff751a;
-  font-size: 1.2em;
-  font-family: 'Bassanova', serif;
-  font-weight: bold;
-
-}
-
-.annexes h5 {
-  text-align: center;
-  color:  #ff751a;
-  font-size: 1.1em;
-  font-family: 'Bassanova', serif;
-
-}
-
-/*   
-LISTS (U&O)
- */
-.annexes>ul>li {
-  text-align: left;
-  /*border-left: 5px solid #cc0000;*/
-  margin: 0;
-  margin-right: 4em;
-  padding: 0;
-  list-style-type: square;
-  list-style-position: inside;
-  color:  #ff751a;
-  font-size: 0.90em;
-  font-family: 'Bassanova', serif;
-  letter-spacing: 0.02vmin;
-}
-
-
-
-/*   
-REFERENCES
- */
-.references {
-  margin: 3em 2em;
-  padding-right: 2em;
-  padding-left: 2em;
-
-  color:  #b32d00;
-  font-size: 1.1em;
-  font-family: 'Bassanova', serif;
-  font-variant-ligatures: discretionary-ligatures;
-  letter-spacing: 0.02vmin;
-
-}
-
-.references ul {
-  padding-left: 0;
-}
-
-/*   
-LISTS (U&O)
- */
-.references>ul>li {
-  margin: 0;
-  padding: 0;
-  list-style-image: url('../img/IR_styles/asterix.jpg');
-  color:  #b32d00;
-  font-size: 0.90em;
-  font-family: 'Bassanova', serif;
-  font-variant-ligatures: discretionary-ligatures;
-  padding-bottom: 2.5vmin;
-
-
-
-}
-
-
-.references>ul>li:nth-child(odd) {
-  transform: skewY(+1.5deg);
-
-
-}
-
-.references>ul>li:nth-child(even) {
-  transform: skewY(-1.5deg);
-
-
-}
-
-
-
-
-
-
-
-/*   
-ENTITIES
- */
-span.entity{
-  /*background-color: #d9b38c;*/
-  font-style: oblique;
-  background-color: #cc0000;
-  color: #ffe6cc;
-  font-family: Bassanova;
-  font-variant-ligatures: discretionary-ligatures;
-
-}
-
-span.entity:hover {
-  /*background-color: #d9b38c;*/
-  font-weight: bold;
-
-}
-
-time {
-
-}
-
-.place {
-  background-color: #ffcccc;
-  font-style:oblique;
-}
-
-.person {
-  background-color: #ffb3b3;
-  font-style:oblique;
-}
-
-.keyword {
-  background-color: #ffcccc;
-  font-style:oblique;
-}
-
-.organization {
-  background-color: #ffcccc;
-  font-style:oblique;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-/*grid layout and items*/
-.grid-container {
-  display: grid;
-  grid-template-areas:
-    'logo header header header header header'
-    'nav nav nav nav nav nav'
-    'menu main main main rightUp rightUp'
-    'menu main main main rightDown rightDown'
-    'footer footer footer footer footer footer';
-  height: 100vmin;
-  width:100%;
-  margin-top: 0vw;
-  grid-template-columns: 35vmin 1fr 1fr 1fr 1fr 1fr;
-  grid-template-rows: 15vmin 15vmin 1fr 1fr 5vmin;
-}
-
-.logo{
-  grid-area: logo;
-  background-color: #cc0000;
-  color: #ffe6cc;
-  font-family: 'Bassanova', sans-serif;
-  font-weight: bold;
-  padding: 1vw;
-  text-align: left;
-  border-right: 0.2vw solid #000000;
-  font-size: 4vmin;
-
-}
-
-.header { 
-  grid-area: header;
-  font-family: 'Bassanova', sans-serif;
-  font-variant-ligatures: discretionary-ligatures;
-  font-weight: bolder;
-  color: #331a00;
-  text-align: right; 
-  letter-spacing: -0.05vw;
-  position: static;
-  padding: 0.5vw;
-  font-size: 7vw;
-
-}
-
-.navbar{
-  grid-area: nav;
-  background-color: #e60000;
-  border: 0.2vw solid #000000;
-  /*display: flex; manca blocco allo scorrimento in alto*/
-}
-
-ul.navbar-nav {
-  margin-top: 1.5vmin;
-  margin-bottom: 1.5vmin;
-}
-
-.menu { 
-  grid-area: menu; 
-  background-color: #ffa31a;
-  border: 0.2vw solid #000000;
-  padding: 1vw;
-  overflow: auto;
-  font-family: Bassanova;
-  letter-spacing: 0.02vmin;
-
-  color: #ffe6cc;
-  scroll-behavior: smooth;
-
-}
-
-.menu ul.navbar-nav {
-  color: white;
-  margin: 0;
-  padding: 0;
-  margin-top: 1.5vmin;
-  margin-bottom: 1.5vmin;
-  text-decoration: none;
-  text-align: center;
-  font-family: Bassanova;
-}
-
-.boxM { 
-  grid-area: main; 
-  overflow: auto;
-  border-top: 0.2vw solid #000000;
-  border-bottom: 0.2vw solid #000000;
-  padding:2vw;
-  scroll-behavior: smooth;
-  overflow-wrap: break-word;
-
-
-}
-
-.boxRU { 
-  grid-area: rightUp; 
-  overflow:auto;
-  border-right: 0.2vw solid #000000;
-  border-top: 0.2vw solid #000000;
-  border-left: 0.2vw solid #000000;
-  padding:2vw;
-  scroll-behavior: smooth;
-  overflow-wrap: break-word;
-
-
-}
-
-.boxRD { 
-  grid-area: rightDown;
-  overflow:auto;
-  border: 0.2vw solid #000000;
-  padding:2vw;
-  scroll-behavior: smooth;
-  overflow-wrap: break-word;
-
-}
-
-.footer, .footer p { 
-  grid-area: footer; 
-  text-align: center;
-  background-color: #cc0000;
-  color: #ffe6cc;
-  font-family: Bassanova;
-}
-
-.footer a, .footer p a {
-  font-family: Bassanova;
-  font-variant-ligatures: discretionary-ligatures;
-}
-
-.footer a:link {
-  color:  #ffe6cc;
-  text-decoration: none;
-  font-weight: bold;
-}
-
-.footer a:visited {
-  color: #ffe6cc;
-}
-
-.footer a:hover {
-  color: #ffe6cc;
-  font-style: italic;
-  text-decoration: underline;
-}
-
-/* Responsive layout - when the screen is less than xxpx (o vmin??) wide, make the grid items stack on top of each other instead of next to each other */
-
-@media screen and (max-width: 500px) {
-  .logo { display: none; }
-  .header { grid-area: 1 / 1 / 2 / span 6 ; }
-  .navbar { grid-area: 2 / 1 / 3 / span 6 ; }
-  .menu { grid-area: 3 / 1 / 4 / span 6 ;  }
-  .boxM { grid-area: 4 / 1 / 6 / span 6 ; }
-  .boxRU { grid-area: 6 / 1 / 8 / span 6 ;  }
-  .boxRD { grid-area: 8 / 1 / 10 / span 6 ; }
-  .footer{ grid-area: 10 / 1 / 11 / span 6 ; }
-}
-
-/* Style the body or other elements*/
-body {
-  font-family: Arial;
-}
-
-/* Style the navigation bar links */
-
-.navbar a {
-  color: white;
-  margin: 0;
-  padding: 0.1vw 0.2vw;
-  text-decoration: none;
-  text-align: center;
-  font-family: Bassanova;
-}
-
-.navbar a:hover, .dropdown:hover {
-  background-color: #ffa31a;
-  color: black;
-  font-weight: bold;
-  padding-right: 2vmin;
-  padding-left: 2vmin;
-}
-
-.nav-item, .dropdown li, a {
-  display: inline-block;
-}
-
-.dropdown:hover .dropdown-menu {
-  display: block;
-}
-
-.dropdown-menu a:hover {background-color: #f1f1f1;}
-
-.dropdown-menu {
-  display: none;
-  position: absolute;
-  background-color: #f9f9f9;
-  min-width: 50vw;
-  /*box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);*/
-  z-index: 1;
-}
-
-.dropdown-menu a {
-  color: black;
-  padding: 0.4vw 0.3vw;
-  text-decoration: none;
-  display: block;
-  text-align: left;
-}
-
-
-button {
-  color: #ffe6cc;
-  padding: 0.5vmin;
-  margin: 0;
-  text-decoration: none;
-  text-align: center;
-  font-family: 'Bassanova', serif;
-  background-color: #cc0000;
-}
-
-button:hover {
-  color: #cc0000;
-  font-weight: bold;
-  background-color: #ffe6cc;
-}
-
-
-
-/*.navbar-nav ul, li {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  background-color: ;
-}*/
-/*li a:hover, .dropdown:hover .nav-item {
-  background-color: #ddd;
-}
-
-li .dropdown {
-  display: inline-block;
-}*/
-
-
-/* Higlight the entities and the references */

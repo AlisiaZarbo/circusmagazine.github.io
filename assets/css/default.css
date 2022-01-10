@@ -32,13 +32,13 @@
 
 }
 
-.logo{
+/*.logo{
   grid-area: logo;
   background-color: #000000;
   color: white;
   font-family: 'Raleway', sans-serif;
   text-align: left;
-}
+}*/
 
 .header { 
   grid-area: header;

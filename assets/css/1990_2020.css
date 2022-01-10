@@ -221,6 +221,15 @@ height: 5%;   }
   text-transform: uppercase;
 }
 
+.title_art > p {
+  font-style: italic;
+  font-family: 'Dancing Script', cursive;
+  font-size: 2.5vw;
+  margin-left:10vmin;
+  margin-top: -1vmin;
+  color: #ad335c;
+  text-transform: capitalize;}  
+
 .subtitle{
   font-style: italic;
   font-family: 'Dancing Script', cursive;
@@ -325,3 +334,7 @@ h3 {
   font-family: 'BenchNine', sans-serif;
   padding: 2vmin;
 }
+.table {
+  width: 70%;
+}
+

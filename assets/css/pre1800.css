@@ -266,6 +266,7 @@ IMAGES
 
 img {
   filter: sepia(95%) opacity(70%);
+  width: 100%;
 }
 
 /*   

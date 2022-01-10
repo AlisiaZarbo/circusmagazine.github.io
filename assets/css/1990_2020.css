@@ -224,7 +224,7 @@ height: 5%;   }
 .title_art > p {
   font-style: italic;
   font-family: 'Dancing Script', cursive;
-  font-size: 2.5vw;
+  font-size: 2vw;
   margin-left:10vmin;
   margin-top: -1vmin;
   color: #ad335c;
@@ -233,7 +233,7 @@ height: 5%;   }
 .subtitle{
   font-style: italic;
   font-family: 'Dancing Script', cursive;
-  font-size: 2.5vw;
+  font-size: 2vw;
   margin-left:10vmin;
   margin-top: -1vmin;
   color: #ad335c;
@@ -289,13 +289,14 @@ h5{
   column-span: all;
   font-weight: bolder;
 }
+
 h6{
   font-family: 'BenchNine', sans-serif;
   font-size: 1.8vw;
   column-span: all;
-  font-weight: bolder;
+  font-weight: bolder;}
   
-  #toptitle{
+#toptitle{
   font-family: 'BenchNine', sans-serif;
   padding: 1.7vmin;
 }

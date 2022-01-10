@@ -356,22 +356,18 @@ h6 {
   padding: 2vmin;
 }
 
-.table {
-  padding: 1;
-  width: 2%;
-  border: 0.2rem solid  black;
-  empty-cells: show;
+table {
+  border-collapse: collapse;
+  border: 1px solid black;
+} 
+
+th,td {
+  border: 1px solid black;
 }
 
-table, th, td, thead {
-  border: 0.2rem solid  black;
-  /*border-collapse: collapse;*/
-  text-align: center;
-  vertical-align: bottom;
+table {
+  table-layout: auto;
+  width: 20%;  
 }
 
-th, td, thead {
-  width: 1%;
-}
-}
 

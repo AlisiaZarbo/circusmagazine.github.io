@@ -216,6 +216,7 @@ height: 5%;   }
 #sec_00, #sec_01, #sec_02, #sec_03, #sec_04, #sec_05, #sec_06, #sec_07 {
 column-count: 2;
 column-gap: 2em;
+column-fill: auto;
 text-align: justify;
 font-size: 1.5vw;
 font-family: 'BenchNine', sans-serif;
@@ -360,16 +361,13 @@ table {
   border-collapse: collapse;
   border: 2px solid black;
   padding:3rem;
-  overflow-x:auto;
+  table-layout: auto;
+  width: 10%; 
 } 
 
 th,td {
   border: 2px solid black;
 }
 
-table {
-  table-layout: auto;
-  width: 10%;
-}
 
 

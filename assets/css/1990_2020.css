@@ -334,7 +334,23 @@ h3 {
   font-family: 'BenchNine', sans-serif;
   padding: 2vmin;
 }
+
 .table {
-  width: 70%;
+  padding: 0;
+  width: 40%;
+  border: 0.2rem solid  black;
+  empty-cells: show;
+}
+
+table, th, td, thead {
+  border: 0.2rem solid  black;
+  /*border-collapse: collapse;*/
+  text-align: center;
+  vertical-align: bottom;
+}
+
+th, td, thead {
+  width: 20%;
+}
 }
 

@@ -213,7 +213,15 @@ height: 5%;   }
     opacity:none;
 }*/
 
-
+#sec_00, #sec_01, #sec_02, #sec_03, #sec_04, #sec_05, #sec_06, #sec_07 {
+column-count: 2;
+column-gap: 2em;
+text-align: justify;
+font-size: 1.5vw;
+font-family: 'BenchNine', sans-serif;
+padding: 2vmin;
+border-top: 0.5vmin solid black;
+}
 
 .title_art > h2 {
   font-family: 'Oswald', sans-serif;
@@ -283,25 +291,26 @@ h4 {
   font-weight: bolder;
 }
 
-h5{
+h5 {
   font-family: 'BenchNine', sans-serif;
   font-size: 1.9vw;
   column-span: all;
   font-weight: bolder;
 }
 
-h6{
+h6 {
   font-family: 'BenchNine', sans-serif;
   font-size: 1.8vw;
   column-span: all;
-  font-weight: bolder;}
+  font-weight: bolder;
+}
   
-#toptitle{
+#toptitle {
   font-family: 'BenchNine', sans-serif;
   padding: 1.7vmin;
 }
 
-.byline{
+.byline {
   font-style: italic;
   font-family: 'Dancing Script', cursive;
   font-size: 2vw;
@@ -313,15 +322,7 @@ h6{
 
 }
 
-#sec_00, #sec_01, #sec_02, #sec_03, #sec_04, #sec_05, #sec_06, #sec_07{
-  column-count: 2;
-  column-gap: 2em;
-  text-align: justify;
-  font-size: 1.5vw;
-  font-family: 'BenchNine', sans-serif;
-  padding: 2vmin;
-  border-top: 0.5vmin solid black;
-}
+
 
 .references{
   text-align: justify;

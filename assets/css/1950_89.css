@@ -589,27 +589,29 @@ q {
   font-style: italic;
 }
 
-cite {
+.maincontent p cite {
   font-family: 'Bassanova', sans-serif;
   font-style: oblique;
   color: #cc0000;
 }
 
-em {
+.maincontent p em {
   font-family: 'Bassanova', sans-serif;
   color: #cc0000;
 }
 
-strong {
+.maincontent p strong {
   font-family: 'Bassanova', sans-serif;
   font-size: bold;
 }
 
 table.table {
   padding: 0;
-  width: 40%;
+  /*width: 40%;*/
   border: 0.2rem solid  #cc0000;
   empty-cells: show;
+  table-layout: fixed;
+  width: 100%;
 }
 
 table, th, td, thead {

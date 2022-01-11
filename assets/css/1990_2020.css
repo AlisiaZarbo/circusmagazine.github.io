@@ -365,7 +365,7 @@ table {
   border: 2px solid black;
   padding:3rem;
   table-layout: auto;
-  width: 50%; 
+  width: 100%; 
   text-align: center;
   column-span: all;
 } 

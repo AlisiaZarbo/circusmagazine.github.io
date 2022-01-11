@@ -117,7 +117,8 @@ font-family: 'MyJenson', sans-serif;
 
 /* width */
 ::-webkit-scrollbar {
-  width: 10px;
+  width: 15vw;
+background-image: url("../img/styles/1800scrollbar.PNG");
 }
 
 /* Track */

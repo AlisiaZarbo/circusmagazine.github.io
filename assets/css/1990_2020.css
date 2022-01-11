@@ -16,6 +16,7 @@
   display: grid;
   grid-template-areas:
     'logo header header header header header'
+    'sep sep sep sep sep sep'
     'nav nav nav nav nav nav'
     'menu main main main rightUp rightUp'
     'menu main main main rightDown rightDown'

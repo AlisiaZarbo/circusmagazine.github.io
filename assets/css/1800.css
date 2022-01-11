@@ -48,7 +48,7 @@ grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
 }
 
 .logo p{
-	margin-bottom:-1.2px;
+	margin-bottom:-1.7px;
 	letter-spacing:0.7em;
 }
 
@@ -117,7 +117,7 @@ font-family: 'MyJenson', sans-serif;
 
 /* width */
 ::-webkit-scrollbar {
-  width: 100px;
+  width: 10px;
 }
 
 /* Track */

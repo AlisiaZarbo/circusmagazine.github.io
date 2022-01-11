@@ -113,7 +113,7 @@ body {
 
 .navbar a {
   color: white;
-  padding: 0.1vw 0.2vw;
+  /*padding: 0.1vw 0.2vw;*/
   text-decoration: none;
   text-align: center;
 }

@@ -129,8 +129,8 @@ ul.navbar-nav {
 .dropdown-menu {
   display: none;
   position: absolute;
-  background-color: #f9f9f9;
-  min-width: 50vw;
+  background-image: url('../img/IR_styles/provanew2.jpg');
+  min-width: 20vw;
   box-shadow: 0 1vmin 1vmin 0 rgba(0,0,0,0.2);
   z-index: 1;
 }
@@ -212,8 +212,6 @@ button:hover {
 .boxM {
   grid-area: main; 
   overflow: auto;
-  border-top: 0.1vmin solid #331a00;
-  border-bottom: 0.1vmin solid #331a00;
   border-left: 0.1vmin solid #331a00;
   padding:2vw;
   margin: 0;
@@ -233,7 +231,6 @@ button:hover {
   grid-area: rightUp; 
   overflow:auto;
   border-right: 0.1vmin solid #331a00;
-  border-top: 0.1vmin solid #331a00;
   border-left: 0.1vmin solid #331a00;
   padding:2vw;
   margin: 0;
@@ -252,7 +249,8 @@ button:hover {
 .boxRD {
   grid-area: rightDown;
   overflow:auto;
-  border: 0.1vmin solid #331a00;
+  border-left: 0.1vmin solid #331a00;
+  border-right: 0.1vmin solid #331a00;
   padding:2vw;
   margin: 0;
   padding: 0;

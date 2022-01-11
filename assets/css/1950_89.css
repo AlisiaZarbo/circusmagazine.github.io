@@ -64,7 +64,7 @@
   grid-area: nav;
   background-color: #e60000;
   border: 0.2vw solid #000000;
-  font-family:'Bassanova';
+  font-family:'Bassanova', sans-serif;
   font-size: 1.2vw;
   color: #331a00;
 }
@@ -81,7 +81,7 @@ ul.navbar-nav {
   padding: 0.1vw 0.2vw;
   text-decoration: none;
   text-align: center;
-  font-family: Bassanova;
+  font-family: 'Bassanova', sans-serif;
 }
 
 .nav-item a:hover, .nav-item.dropdown a:hover, .dropdown:hover {
@@ -125,7 +125,7 @@ button {
   margin: 0;
   text-decoration: none;
   text-align: center;
-  font-family: 'Bassanova', serif;
+  font-family: 'Bassanova', sans-serif;
   background-color: #cc0000;
 }
 
@@ -141,7 +141,7 @@ button:hover {
   border: 0.2vw solid #000000;
   padding: 1vw;
   overflow: auto;
-  font-family: Bassanova;
+  font-family: 'Bassanova', sans-serif;
   letter-spacing: 0.02vmin;
   color: #ffe6cc;
   scroll-behavior: smooth;
@@ -157,7 +157,7 @@ button:hover {
   margin-bottom: 1.5vmin;
   text-decoration: none;
   text-align: center;
-  font-family: Bassanova;
+  font-family: 'Bassanova', sans-serif;
 }
 
 .menu nav.navbar ul li .dropdown-menu {
@@ -207,14 +207,14 @@ button:hover {
   text-align: center;
   background-color: #cc0000;
   color: #ffe6cc;
-  font-family: Bassanova;
+  font-family: 'Bassanova', sans-serif;
   font-size: 1vw;
   margin-bottom: -0.5vw;
   padding: 0 1vw 0 1vw;
 }
 
 .footer a, .footer p a {
-  font-family: Bassanova;
+  font-family: 'Bassanova', sans-serif;
   font-variant-ligatures: discretionary-ligatures;
 }
 
@@ -344,7 +344,7 @@ figure img {
   font-style: oblique;
   background-color: #cc0000;
   color: #ffe6cc;
-  font-family: Bassanova;
+  font-family: 'Bassanova', sans-serif;
   font-variant-ligatures: discretionary-ligatures; 
 }
 
@@ -378,7 +378,7 @@ margin-top: 2.5vmin;
   text-align: right;
   color:  #331a00;
   font-size: 1.1em;
-  font-family: 'Bassanova', serif;
+  font-family: 'Bassanova', sans-serif;
   letter-spacing: 0.02vmin;
 }
 
@@ -389,7 +389,7 @@ margin-top: 2.5vmin;
   word-spacing: 2.75pt;
   text-align: center;
   font-size: 2.75em;
-  font-family: 'Bassanova', serif;
+  font-family: 'Bassanova', sans-serif;
   font-variant-ligatures: discretionary-ligatures;
   font-weight: bold;
   transform: skewY(-5deg);  
@@ -403,7 +403,7 @@ margin-top: 2.5vmin;
   letter-spacing: 0.95pt;
   word-spacing: 2.75pt;
   font-size: 1em;
-  font-family: 'Bassanova', serif;
+  font-family: 'Bassanova', sans-serif;
   font-variant-ligatures: discretionary-ligatures;
   transform: skewY(-5deg);  
 }
@@ -412,13 +412,13 @@ margin-top: 2.5vmin;
   padding: 1em 1.75em;
   color: #331a00;
   font-size: 3vmin;
-  font-family: 'Bassanova', serif;
+  font-family: 'Bassanova', sans-serif;
   letter-spacing: 0.02vmin;
 }
 
 .maincontent h3 {
   font-size: 1.3em;
-  font-family: 'Bassanova', serif;
+  font-family: 'Bassanova', sans-serif;
   font-weight: bold;
   font-variant-ligatures: discretionary-ligatures;
   background-color: #cc0000;
@@ -431,7 +431,7 @@ margin-top: 2.5vmin;
 
 .maincontent h4 {
   font-size: 1.2em;
-  font-family: 'Bassanova', serif;
+  font-family: 'Bassanova', sans-serif;
   font-variant-ligatures: discretionary-ligatures;
   font-weight: bold;
   background-color: #e60000;
@@ -444,7 +444,7 @@ margin-top: 2.5vmin;
 
 .maincontent h5 {
   font-size: 1.2em;
-  font-family: 'Bassanova';
+  font-family: 'Bassanova', sans-serif;
   font-variant-ligatures: discretionary-ligatures;
   font-weight: bold;
   background-color: #e60000;
@@ -458,7 +458,7 @@ margin-top: 2.5vmin;
 .maincontent h6 {
   font-style: italic;
   font-size: 1.1em;
-  font-family: 'Bassanova';
+  font-family: 'Bassanova', sans-serif;
   font-variant-ligatures: discretionary-ligatures;
   background-color: #e60000;
   color: #ffa31a;
@@ -472,7 +472,7 @@ margin-top: 2.5vmin;
   color:  #cc0000;
   text-decoration: none;
   font-weight: bold;
-  font-family: Bassanova;
+  font-family: 'Bassanova', sans-serif;
   font-variant-ligatures: discretionary-ligatures;
 }
 
@@ -502,7 +502,141 @@ margin-top: 2.5vmin;
   transform: skewY(-4deg);
 }
 
+
 /*this may indeed be a PROBLEM*/
 .maincontent table, .maincontent table img, .maincontent ol, .maincontent ul, .maincontent img, .maincontent blockquote {
   transform: skewY(-4deg);
+}
+
+
+.annexes {
+  text-align: center;
+  color:  #ff751a;
+  font-size: 1.1em;
+  font-family: 'Bassanova', sans-serif;
+  letter-spacing: 0.02vmin;
+}
+
+.annexes h3 {
+  text-align: center;
+  color:  #ff751a;
+  font-size: 1.3em;
+  font-family: 'Bassanova', sans-serif;
+  font-weight: bold;
+}
+
+.annexes h4 {
+  text-align: center;
+  color:  #ff751a;
+  font-size: 1.2em;
+  font-family: 'Bassanova', sans-serif;
+  font-weight: bold;
+}
+
+.annexes h5 {
+  text-align: center;
+  color:  #ff751a;
+  font-size: 1.1em;
+  font-family: 'Bassanova', sans-serif;
+}
+
+.references {
+  margin: 3em 2em;
+  padding-right: 2em;
+  padding-left: 2em;
+  color:  #b32d00;
+  font-size: 1.1em;
+  font-family: 'Bassanova', sans-serif;
+  font-variant-ligatures: discretionary-ligatures;
+  letter-spacing: 0.02vmin;
+}
+
+.references ul {
+  padding-left: 0;
+}
+
+.references>ul>li {
+  margin: 0;
+  padding: 0;
+  list-style-image: url('../img/IR_styles/asterix.jpg');
+  color:  #b32d00;
+  font-size: 0.90em;
+  font-family: 'Bassanova', sans-serif;
+  font-variant-ligatures: discretionary-ligatures;
+  padding-bottom: 2.5vmin;
+}
+
+.references>ul>li:nth-child(odd) {
+  transform: skewY(+1.5deg);
+}
+
+.references>ul>li:nth-child(even) {
+  transform: skewY(-1.5deg);
+}
+
+blockquote {
+  padding: 1vmin 5%;
+  background-color: #ffe6cc;
+  color: #ffa31a;
+  text-align: justify;
+  font-family: 'Bassanova', sans-serif;
+  font-style: italic;
+}
+
+q {
+  background-color: #ffe6cc;
+  color: #ffa31a;
+  font-family: 'Bassanova', sans-serif;
+  font-style: italic;
+}
+
+cite {
+  font-family: 'Bassanova', sans-serif;
+  font-style: oblique;
+  color: #cc0000;
+}
+
+em {
+  font-family: 'Bassanova', sans-serif;
+  color: #cc0000;
+}
+
+strong {
+  font-family: 'Bassanova', sans-serif;
+  font-size: bold;
+}
+
+table.table {
+  padding: 0;
+  width: 40%;
+  border: 0.2rem solid  #cc0000;
+  empty-cells: show;
+}
+
+table, th, td, thead {
+  border: 0.2rem solid  #cc0000;
+  /*border-collapse: collapse;*/
+  text-align: center;
+  vertical-align: bottom;
+}
+
+th, td, thead {
+  width: 20%;
+}
+
+table th {
+  color: #cc0000;
+}
+
+table td:hover{
+  text-decoration: underline;
+}
+
+h6#main_art_title, h6#guest_art_title, h6#rev_art_title {
+  font-family: 'Bassanova', sans-serif;
+  letter-spacing: 0.02vmin;
+  color: #ffe6cc;
+  scroll-behavior: smooth;
+  font-size: 2.5vmin;
+  text-align: left; 
 }

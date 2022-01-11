@@ -28,7 +28,7 @@ src: url("../fonts/Jenson.ttf");
     'menu main main main rightDown rightDown'
     'menu footer footer footer footer footer';
   height: 100vmin;
-  width: 100vmax;
+  width: 100%;
   margin-top: -0.5vw;
 grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
   grid-template-rows: 0.3fr 0.02fr 0.5fr 3fr 3fr 0.3fr;
@@ -44,11 +44,12 @@ grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
   color: black;
   font-family: 'MyRivanna', sans-serif;
   padding: 1vw;
-  text-align: left;
+  text-align: right;
 }
 
 .logo p{
-	margin-bottom:-8px;
+	margin-bottom:-1.2px;
+	letter-spacing:0.7em;
 }
 
 .header { 

@@ -240,8 +240,7 @@ border-top: 0.5vmin solid black;
 .title_art > p {
   font-style: italic;
   font-family: 'Dancing Script', cursive;
-  font-size: 2vw;
-  margin-left:10vmin;
+  font-size: 1.5vw;
   margin-top: -1vmin;
   color: #ad335c;
   text-transform: capitalize;}  
@@ -249,8 +248,7 @@ border-top: 0.5vmin solid black;
 .subtitle{
   font-style: italic;
   font-family: 'Dancing Script', cursive;
-  font-size: 2vw;
-  margin-left:10vmin;
+  font-size: 1.5vw;
   margin-top: -1vmin;
   color: #ad335c;
   text-transform: capitalize;

@@ -340,6 +340,10 @@ figure img {
   padding-bottom: 2vh;
 }
 
+figcaption {
+  transform: skewY(-4deg);
+}
+
 .highlighted {
   font-style: oblique;
   background-color: #cc0000;

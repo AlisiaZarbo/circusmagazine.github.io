@@ -577,15 +577,14 @@ margin-top: 2.5vmin;
 blockquote {
   padding: 1vmin 5%;
   background-color: #ffe6cc;
-  color: #ffa31a;
+  color: #cc0000;
   text-align: justify;
   font-family: 'Bassanova', sans-serif;
   font-style: italic;
 }
 
 q {
-  background-color: #ffe6cc;
-  color: #ffa31a;
+  color: #ffe6cc;
   font-family: 'Bassanova', sans-serif;
   font-style: italic;
 }

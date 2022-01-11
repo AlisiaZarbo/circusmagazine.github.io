@@ -111,6 +111,26 @@ font-family: 'MyJenson', sans-serif;
 	font-family: 'MyJenson', serif;
 }
 
+/* width */
+::-webkit-scrollbar {
+  width: 40px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1; 
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888; 
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555; 
+}
+
 .footer { 
 	grid-area: footer; 
 	text-align: center;

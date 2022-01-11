@@ -43,8 +43,10 @@
   height: 100vmin;
   width:100%;
   margin-top: -0.5vw;
+  /*grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 0.3fr 0.25fr 3fr 3fr 0.3fr;*/
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
-  grid-template-rows: 0.3fr 0.25fr 3fr 3fr 0.3fr;
+  grid-template-rows: 1fr 1fr 3fr 3fr 1fr;
 }
 
 .logo{
@@ -58,9 +60,25 @@
   text-align: center;
   margin: 0;
   padding-bottom: 0;
+  padding-top: 6vmin;
   font-weight: bold;
-  font-size: 3vmin;
-  line-height: 0.3vmin;
+  font-size: 2vmin;
+  line-height: 0.1vmin;
+}
+
+/*.logo p {
+  display: inline;
+  visibility: hidden;
+}*/
+
+.logo p:first-letter {
+  font-family: 'IM Fell Great Primer', serif;
+  font-size: 3.5vmin;
+  color: #0052cc;
+}
+
+.logo p {
+  display: inline-block;
 }
 
 .header {
@@ -68,10 +86,11 @@
   font-family: 'IM Fell Great Primer', serif;
   font-variant-caps: all-small-caps;
   color: #330000;
-  text-align: right; 
+  text-align: left; 
   letter-spacing: -0.05vw;
   position: static;
   padding: 0.5vw;
+  padding-left: 12vw;
   padding-bottom: 0;
   /*background-image: url('../img/IR_styles/provanew2.jpg');*/
   font-size: 5vw;

@@ -80,10 +80,11 @@ font-family: 'MyJenson', sans-serif;
 	grid-area: main; 
 	column-count: 3;
 	column-rule-color: 4px black;
-	overflow: auto;
+	overflow-x: auto;
+	overflow-y: hidden;
 	border-top: 0.2vw solid #000000;
 	border-bottom: 0.2vw solid #000000;
-	padding:2vw;
+	padding:0.3vw;
 	font-family: 'MyJenson', serif;
 }
 
@@ -93,7 +94,7 @@ font-family: 'MyJenson', sans-serif;
 	border-right: 0.2vw solid #000000;
 	border-top: 0.2vw solid #000000;
 	border-left: 0.2vw solid #000000;
-	padding:2vw;
+	padding:0.3vw;
 	font-family: 'MyJenson', serif;
 }
 
@@ -101,7 +102,7 @@ font-family: 'MyJenson', sans-serif;
 	grid-area: rightDown;
 	overflow:auto;
 	border: 0.2vw solid #000000;
-	padding:2vw
+	padding:0.3vw
 	font-family: 'MyJenson', serif;
 }
 
@@ -114,7 +115,7 @@ font-family: 'MyJenson', sans-serif;
 }
 
 img {
-	weight: 100%
+	width: 100%
 }
 
 p {
@@ -154,6 +155,7 @@ body {
 
 .maincontent div[id^="sec"] p:first-of-type::first-letter {
   font-family: 'MyRivanna', sans-serif;
+  font-size: 3vw;
   font-style: normal;
   float: left;
 }

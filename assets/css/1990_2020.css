@@ -1,11 +1,12 @@
 
+
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Courgette&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Courgette&family=Lato&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@600&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=BenchNine:wght@300&family=Dancing+Script:wght@700&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=BenchNine:wght@300&family=Dancing+Script:wght@700&family=Six+Caps&display=swap');
 
 * {
   box-sizing: border-box;
@@ -89,6 +90,8 @@
 .footer { 
   grid-area: footer; 
   text-align: center;
+  font-size: 0.9vw;
+  
 }
 
 /* Responsive layout - when the screen is less than xxpx (o vmin??) wide, make the grid items stack on top of each other instead of next to each other */
@@ -371,6 +374,23 @@ table {
 th,td {
   border: 2px solid black;
 }
+
+.firstletter {
+  color: #903;
+  float: left;
+  font-family: 'Six Caps', sans-serif;
+  font-size: 12vw;
+  line-height: 10vmin;
+  padding-top: 6.5vmin;
+  padding-right: 2vmin;
+  padding-left: 2vmin;
+  padding-bottom:5vmin;
+}
+
+.sep {
+  background-color:#990033;
+}
+
 
 
 

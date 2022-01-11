@@ -126,6 +126,7 @@ body {
   color: black;
 }
 
+
 .nav-item, .dropdown li, a {
   display: inline-block;
 }
@@ -321,7 +322,6 @@ h6 {
   font-style: italic;
   font-family: 'Dancing Script', cursive;
   font-size: 2vw;
-  margin-left:10vmin;
   margin-top: -1vmin;
   color: #ad335c;
   text-transform: capitalize;

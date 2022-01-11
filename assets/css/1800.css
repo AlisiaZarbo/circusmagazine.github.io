@@ -30,7 +30,7 @@ src: url("../fonts/Jenson.ttf");
   height: 100vmin;
   width: 100vmax;
   margin-top: -0.5vw;
-grid-template-columns: 1.5fr 0.5fr 1fr 1fr 1fr 1fr;
+grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
   grid-template-rows: 0.3fr 0.02fr 0.5fr 3fr 3fr 0.3fr;
   
   /*grid-template-columns: 15vmax 1fr 1fr 1fr 1fr 1fr;*/
@@ -43,18 +43,21 @@ grid-template-columns: 1.5fr 0.5fr 1fr 1fr 1fr 1fr;
 	font-size: 2vw;
   color: black;
   font-family: 'MyRivanna', sans-serif;
-margin-bottom:-8px;
   padding: 1vw;
   text-align: left;
 }
 
+.logo p{
+	margin-bottom:-8px;
+}
 
 .header { 
 	grid-area: header;
 	font-family: 'MyRivanna', sans-serif;
 	/*font-family: 'Cinzel Decorative', cursive;*/
 	text-align: right; 
-	font-size: 5vw;
+	padding: 1vw;
+	font-size: 6vw;
 	color: #c87354;
 	letter-spacing:0.2vw;
 	position: static;
@@ -113,7 +116,7 @@ font-family: 'MyJenson', sans-serif;
 
 /* width */
 ::-webkit-scrollbar {
-  width: 40px;
+  width: 100px;
 }
 
 /* Track */

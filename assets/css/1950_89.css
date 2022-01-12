@@ -646,3 +646,44 @@ h6#main_art_title, h6#guest_art_title, h6#rev_art_title {
   font-size: 2.5vmin;
   text-align: left; 
 }
+
+.w3-modal {
+  background-color: #ffe6cc;
+  max-width: 25vw;
+  font-family: 'Bassanova', sans-serif;
+  color: #cc0000;
+}
+
+.w3-modal #PopUpHeader {
+  font-family: 'Bassanova', sans-serif;
+  font-variant-ligatures: discretionary-ligatures;
+}
+
+/*.w3-button.w3-display-topright {
+  
+}
+
+.w3-modal p#WikidataIntro {
+
+}
+
+.w3-modal p {
+
+}*/
+
+.w3-modal a#PopUpWikidata:link, .w3-modal p a:link {
+  text-decoration: none;
+  font-weight: bold;
+  color: #cc0000;;
+}
+
+.w3-modal a#PopUpWikidata:visited, .w3-modal p a:visited {
+  color: #cc0000;
+
+}
+
+.w3-modal a#PopUpWikidata:hover, .w3-modal p a:hover {
+  color: #cc0000;
+  font-style: italic;
+  text-decoration: underline;
+}

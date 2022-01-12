@@ -502,6 +502,7 @@ th,td {
 }
 
 .sep {
+  grid-area: sep;
   background-color:#990033;
 }
 

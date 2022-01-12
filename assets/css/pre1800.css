@@ -767,7 +767,9 @@ h6#main_art_title, h6#guest_art_title, h6#rev_art_title {
 }
 
 .w3-container {
-  background-image: url('../img/IR_styles/provanew3.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-image: url('../img/IR_styles/provanew2.jpg');
   font-family: 'IM Fell Great Primer', sans-serif;
   color: #0052cc;
   text-shadow: 0.1vmin 0.1vmin rgba(0,0,0,0.3);

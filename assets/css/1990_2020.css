@@ -40,18 +40,26 @@
   line-height:0.5pt;
 }
 
+.logo p::first-letter {
+  color:#ad335c;
+}
+
 .header { 
   grid-area: header;
   font-family: 'Oswald', sans-serif;
   text-align: right; 
   letter-spacing: -0.05vw;
+  font-size: 4.5vw;
   position: static;
   padding: 0.5vw;
 }
 
 .navbar{
   grid-area: nav;
-  background-color: black;
+  background-color: white;
+  font-family:'Raleway', sans-serif;
+  font-size: 1.2vw;
+  color: black;
   /*display: flex; manca blocco allo scorrimento in alto*/
 }
 

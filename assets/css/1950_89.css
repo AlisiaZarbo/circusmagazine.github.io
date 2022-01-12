@@ -121,6 +121,11 @@ ul.navbar-nav {
   text-align: left;
 }
 
+.dropdown-menu button.dropdown-item.w3-button:hover {
+  background-color: #ffa31a !important;
+  color: #000000 !important;
+}
+
 button {
   color: #ffe6cc;
   padding: 0.5vmin;

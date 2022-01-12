@@ -766,7 +766,7 @@ h6#main_art_title, h6#guest_art_title, h6#rev_art_title {
   text-align: center; 
 }
 
-.w3-modal {
+.w3-container {
   background-image: url('../img/IR_styles/provanew3.jpg');
   font-family: 'IM Fell Great Primer', sans-serif;
   color: #0052cc;
@@ -774,7 +774,7 @@ h6#main_art_title, h6#guest_art_title, h6#rev_art_title {
 
 }
 
-.w3-modal #PopUpHeader {
+.w3-container #PopUpHeader {
   font-family: 'IM Fell Great Primer SC', serif;
 }
 
@@ -790,18 +790,18 @@ h6#main_art_title, h6#guest_art_title, h6#rev_art_title {
 
 }*/
 
-.w3-modal a#PopUpWikidata:link, .w3-modal p a:link {
+.w3-container a#PopUpWikidata:link, .w3-container p a:link {
   text-decoration: none;
   font-weight: bold;
   color: #0052cc;
 }
 
-.w3-modal a#PopUpWikidata:visited, .w3-modal p a:visited {
+.w3-container a#PopUpWikidata:visited, .w3-container p a:visited {
   color: #0052cc;
 
 }
 
-.w3-modal a#PopUpWikidata:hover, .w3-modal p a:hover {
+.w3-container a#PopUpWikidata:hover, .w3-container p a:hover {
   color: #0052cc;
   font-style: italic;
   text-decoration: underline;

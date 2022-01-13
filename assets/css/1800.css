@@ -183,17 +183,19 @@ p::after {
 /* Style the body or other elements*/
 body {
 	font-family: 'MyJenson', serif;
+	margin: 0;
+  	overflow-y: hidden;
 }
 
 
-.h2, .h3, .h4 {
+h2, h3, h4 {
 	font-family: 'MyRivanna', sans-serif;
 }
 
 .maincontent div[id^="sec"] p:first-of-type::first-letter {
   font-family: 'MyRivanna', sans-serif;
-  padding: 0.1em 0.2em;
-	font-size: 3em;
+  padding: 0.1em 0.1em;
+	font-size: 4em;
   font-style: normal;
   float: left;
 }

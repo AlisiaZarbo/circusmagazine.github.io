@@ -38,6 +38,8 @@
   color: white;
   font-family: 'Raleway', sans-serif;
   text-align: left;
+  line-height: 0.1vmin;
+
 }
 
 .header { 

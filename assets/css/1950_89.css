@@ -663,10 +663,12 @@ h6#main_art_title, h6#guest_art_title, h6#rev_art_title {
   font-variant-ligatures: discretionary-ligatures;
 }
 
-/*.w3-button.w3-display-topright {
-  
+.w3-button.w3-display-topright:hover {
+  background-color: #ffa31a;
+  color: black;
 }
 
+/*
 .w3-modal p#WikidataIntro {
 
 }

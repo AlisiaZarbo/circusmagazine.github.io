@@ -21,12 +21,12 @@ src: url("../fonts/Jenson.ttf");
 .grid-container {
   display: grid;
   grid-template-areas:
-    'menu logo header header header header'
+    'header logo header header header header'
     'menu logo sep sep sep sep'
     'menu logo nav nav nav nav'
     'menu main main main rightUp rightUp'
     'menu main main main rightDown rightDown'
-    'menu footer footer footer rightDown rightDown';
+    'menu footer footer footer footer footer';
   height: 100vmin;
   width: 100%;
   margin-top: -0.5vw;

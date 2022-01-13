@@ -44,7 +44,7 @@
 
 .header { 
   grid-area: header;
-  font-family: 'QuentinCaps';
+  font-family: 'QuentinCaps' !important;
   font-size: 4.5vw;
   text-shadow: 4px 4px 16px white;
   text-align: center; 

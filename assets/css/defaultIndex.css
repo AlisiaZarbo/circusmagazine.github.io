@@ -41,6 +41,8 @@
   font-family: 'Raleway', sans-serif;
   padding: 1vw;
   text-align: left;
+  line-height: 0.1vmin;
+
 }
 
 .header { 

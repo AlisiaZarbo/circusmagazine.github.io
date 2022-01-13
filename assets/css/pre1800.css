@@ -54,7 +54,7 @@
   /*background-color: #0052cc;
   color: #fff2e6;*/
   /*background-image: url('../img/IR_styles/provanew3.jpg');*/
-  color: #0052cc;
+  color: #cc0000;
   font-family: 'IM Fell Great Primer', serif;
   padding: 0.5vw;
   text-align: center;
@@ -74,7 +74,7 @@
 .logo p:first-letter {
   font-family: 'IM Fell Great Primer', serif;
   font-size: 3.5vmin;
-  color: #0052cc;
+  color: #cc0000;
 }
 
 .logo p {
@@ -181,7 +181,7 @@ button {
 }
 
 button:hover {
-  color: #0052cc;
+  color: #cc0000;
   font-weight: bold;
   background-color: rgba(0, 0, 0, 0.1);
 }
@@ -207,7 +207,7 @@ button:hover {
 }
 
 .menu ul.navbar-nav {
-  color: #0052cc;
+  color: #cc0000;
   margin: 0;
   margin-top: 1.5vmin;
   margin-bottom: 1.5vmin;
@@ -255,6 +255,7 @@ button:hover {
   overflow:auto;
   border-right: 0.1vmin solid #331a00;
   border-left: 0.1vmin solid #331a00;
+  border-bottom: 0.1vmin solid #331a00;
   padding:2vw;
   margin: 0;
   padding: 0;
@@ -310,15 +311,15 @@ button:hover {
 .footer a:link {
   text-decoration: none;
   font-weight: bold;
-  color: #0052cc;
+  color: #cc0000;
 }
 
 .footer a:visited {
-  color: #0052cc;
+  color: #cc0000;
 }
 
 .footer a:hover {
-  color: #0052cc;
+  color: #cc0000;
   font-style: italic;
   text-decoration: underline;
 }
@@ -443,7 +444,7 @@ figcaption {
 
 .highlighted {
   font-style: oblique;
-  color: #0052cc; 
+  color: #cc0000; 
 }
 
 .highlighted_more {
@@ -564,7 +565,7 @@ margin-top: 2.5vmin;
   font-family: 'Arabesque';
   font-size: 15vmin;
   font-style: normal;
-  color: #0052cc;
+  color: #cc0000;
   font-weight: 500;
 }
 
@@ -655,10 +656,10 @@ margin-top: 2.5vmin;
   margin: 3em 2em;
   padding-right: 3em;
   padding-left: 3em;
-  border: 0.3em double #0052cc;
+  border: 0.3em double #cc0000;
   border-radius: 0.5em;
   /*color:  #006600;*/
-  color: #0052cc;
+  color: #cc0000;
   font-size: 1.1em;
   font-family: 'IM Fell Great Primer', serif;
   text-align: justify;
@@ -674,7 +675,7 @@ margin-top: 2.5vmin;
   padding: 0;
   list-style-image: url('../img/IR_styles/notina.png');
   /*color:  #006600;*/
-  color: #0052cc;
+  color: #cc0000;
   font-size: 0.90em;
   font-family: 'IM Fell Great Primer', serif;
   font-weight: 500;
@@ -771,7 +772,7 @@ h6#main_art_title, h6#guest_art_title, h6#rev_art_title {
   background-attachment: fixed;
   background-image: url('../img/IR_styles/provanew2.jpg');
   font-family: 'IM Fell Great Primer', sans-serif;
-  color: #0052cc;
+  color: #cc0000;
   text-shadow: 0.1vmin 0.1vmin rgba(0,0,0,0.3);
 
 }
@@ -796,16 +797,16 @@ h6#main_art_title, h6#guest_art_title, h6#rev_art_title {
 .w3-container a#PopUpWikidata:link, .w3-container p a:link {
   text-decoration: none;
   font-weight: bold;
-  color: #0052cc;
+  color: #cc0000;
 }
 
 .w3-container a#PopUpWikidata:visited, .w3-container p a:visited {
-  color: #0052cc;
+  color: #cc0000;
 
 }
 
 .w3-container a#PopUpWikidata:hover, .w3-container p a:hover {
-  color: #0052cc;
+  color: #cc0000;
   font-style: italic;
   text-decoration: underline;
 }

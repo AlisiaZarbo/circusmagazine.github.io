@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative&family=Libre+Baskerville&display=swap');
-/*@import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative&display=swap');*/
 
+/* RIVANNA art-nuveau inspired font for titles */
 @font-face {
 font-family: MyRivanna;
 src: url("../fonts/RIVANNA_.TTF");
@@ -14,7 +14,6 @@ src: url("../fonts/Jenson.ttf");
 
 * {
   box-sizing: border-box;
-	/*background-image: url("../img/styles/1800background.PNG"); togliere dalla cartella*/
 }
 
 /*grid layout and items*/
@@ -23,39 +22,35 @@ src: url("../fonts/Jenson.ttf");
   grid-template-areas:
     'logo logo header header header header'
     'logo logo sep sep sep sep'
-    'menu nav nav nav nav nav'
+    'logo logo nav nav nav nav'
     'menu main main main rightUp rightUp'
     'menu main main main rightDown rightDown'
-    'menu footer footer footer footer footer';
+    'menu footer footer footer  footer footer';
   height: 100vmin;
   width: 100%;
   margin-top: -0.5vw;
 grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
   grid-template-rows: 0.2fr 0.02fr 0.4fr 2.5fr 2.5fr 0.2fr;
-  
-  /*grid-template-columns: 15vmax 1fr 1fr 1fr 1fr 1fr;*/
-  /*grid-template-rows: 7vmax 10vmax 1fr 1fr 3vmax;*/
 }
 
 .logo{
   grid-area: logo;
   background-color: #c87354;
-	font-size: 2vw;
-  color: black;
-  font-family: 'MyRivanna', sans-serif;
-  padding: 1vw;
-  text-align: right;
+  font-size: 2vw;
+	color: black;
+	font-family: 'MyRivanna', sans-serif;
+	padding: 1vw;
+	text-align: right;
 }
 
 .logo p{
 	margin-bottom:-1em;
 	letter-spacing:1em;
-}
+	}
 
 .header { 
 	grid-area: header;
 	font-family: 'MyRivanna', sans-serif;
-	/*font-family: 'Cinzel Decorative', cursive;*/
 	font-size: 6vw;
 	text-align: right; 
 	padding: 1vw;
@@ -87,27 +82,20 @@ grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
 	padding: 1vw;
 	overflow: auto;
 	font-family: 'MyJenson', sans-serif;
-	font-size: 1.2vw;
 }
 
 .boxM { 
 	font-family: 'MyJenson', serif;
 	grid-area: main; 
-	overflow: auto;
-	column-count: 3;
-	overflow-x: scroll;
-	overflow-y: hidden;
-	border-top: 0.2vw solid #000000;
-	border-bottom: 0.2vw solid #000000;
+	overflow: auto; 
 	padding: 0.3vw;
 }
 
 .boxRU { 
 	grid-area: rightUp; 
 	overflow: auto;
-	border-right: 0.2vw solid #000000;
-	border-top: 0.2vw solid #000000;
 	border-left: 0.2vw solid #000000;
+	border-bottom: 0.2vw solid #000000;
 	padding: 0.3vw;
 	font-family: 'MyJenson', serif;
 }
@@ -115,14 +103,13 @@ grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
 .boxRD { 
 	grid-area: rightDown;
 	overflow:auto;
-	border: 0.2vw solid #000000;
-	padding:0.3vw
+	border-left: 0.2vw solid #000000;
+	padding:0.3vw;
 	font-family: 'MyJenson', serif;
 }
 
 /* width */
 ::-webkit-scrollbar {
-  height: 3vw;
   width: 3vw;
 }
 
@@ -133,15 +120,14 @@ background: url("../img/styles/1800scrollbar.PNG");
  
 /* Handle */
 ::-webkit-scrollbar-thumb {
-height: 0.5em;
-widht: 0.5em;
-background: #e5c19a; 
-/*	background: #555; */
+	height: 2px;
+	background: transparent; 
+/*	background: #555 #c87354; */
 }
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-height: 0.5em;
+	height: 2px;
 	background: #e5c19a; 
 }
 
@@ -150,7 +136,8 @@ height: 0.5em;
 	text-align: center;
 	color: #c87354;
 	background-color: black;
-	font-family: 'MyRivanna', sans-serif;
+	font-family: 'MyJenson', serif;
+/*	letter-spacing: 0.5em;*/
 }
 
 img {
@@ -158,14 +145,15 @@ img {
 }
 
 /*.boxRD,.boxRU, .boxM p:after, p::after {
-  content: &#9753
-  /*url("../img/styles/1800.PNG");*/
-  display: inline-block;
+  content: &#9753;
+  url("../img/styles/1800.PNG");*/
+/*  display: inline-block;
   width: 1em;
   height: 1em;
   z-index: -1;
-  position: absolute;
+position: absolute;
 }*/
+
 
 button {
   background-color: #e5c19a;
@@ -173,7 +161,6 @@ font-family: 'MyJenson', serif;
 }
 	
 /* Responsive layout - when the screen is less than xxpx (o vmin??) wide, make the grid items stack on top of each other instead of next to each other
-
 @media screen and (max-width: 500px) {
 	.logo { display: none; }
 	.header { grid-area: 1 / 1 / 2 / span 6 ; }

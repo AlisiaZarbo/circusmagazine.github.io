@@ -3,9 +3,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Courgette&family=Lato&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@600&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@600&display=swap');
-@font-face{
-  src: url('../assets/fonts/showboat/Showboat.ttf');
-  font-family: Showboat;
+@font-face {
+  src: url('assets/fonts/quentincaps/QuentinCaps.ttf');
+  font-family: 'QuentinCaps';
 }
 * {
   box-sizing: border-box;
@@ -42,7 +42,7 @@
 
 .header { 
   grid-area: header;
-  font-family: Showboat;
+  font-family: 'QuentinCaps';
   font-size: 4.5vw;
   text-shadow: 4px 4px 16px white;
   text-align: center; 

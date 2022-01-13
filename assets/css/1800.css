@@ -21,12 +21,12 @@ src: url("../fonts/Jenson.ttf");
 .grid-container {
   display: grid;
   grid-template-areas:
-    'logo logo header header header header'
-    'logo logo sep sep sep sep'
-    'logo logo nav nav nav nav'
+    'menu logo header header header header'
+    'menu logo sep sep sep sep'
+    'menu logo nav nav nav nav'
     'menu main main main rightUp rightUp'
     'menu main main main rightDown rightDown'
-    'menu footer footer footer footer footer';
+    'menu footer footer footer rightDown rightDown';
   height: 100vmin;
   width: 100%;
   margin-top: -0.5vw;
@@ -160,17 +160,15 @@ img {
 	width: 100%
 }
 
-/*p:after,
-p::after {
-  content: url("../img/styles/1800.PNG"); 
+.boxRD,.boxRU, .boxM p:after, p::after {
+  content: &#9753
+  /*url("../img/styles/1800.PNG");*/
   display: inline-block;
   width: 1em;
   height: 1em;
   z-index: -1;
   position: absolute;
-}*/
-
-
+}
 
 /* Responsive layout - when the screen is less than xxpx (o vmin??) wide, make the grid items stack on top of each other instead of next to each other */
 

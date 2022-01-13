@@ -25,7 +25,7 @@
   width:100%;
   margin-top: -0.5vw;
   /*grid-template-columns: 25vmin 1fr 1fr 1fr 1fr 1fr;*/
-  grid-template-columns: 0.8fr 0.8fr 0.8fr 0.8fr 0.8fr;
+  grid-template-columns: 0.8fr 0.8fr 0.8fr 0.8fr 0.8fr 0.8fr;
   /*grid-template-rows: 15vmin 2vmin 13vw 1fr 1fr 10vmin;*/
   /*grid-template-rows: 0.5fr 0.05fr 0.2fr 1fr 1fr 0.3fr;*/
   grid-template-rows: 0.4fr 0.25fr 0.8fr 0.8fr 0.25fr;

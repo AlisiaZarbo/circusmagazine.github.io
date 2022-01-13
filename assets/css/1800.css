@@ -136,15 +136,14 @@ background: url("../img/styles/1800scrollbar.PNG");
 ::-webkit-scrollbar-thumb {
 height: 0.5em;
 widht: 0.5em;
-	background: #555; 
-background: e5c19a; 
+background: #e5c19a; 
+/*	background: #555; */
 }
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
 height: 0.5em;
-	background: e5c19a; 
-
+	background: #e5c19a; 
 }
 
 .footer { 
@@ -171,7 +170,8 @@ img {
 
 button {
   background-color: e5c19a;
-	}
+font-family: 'MyJenson', serif;
+}
 	
 /* Responsive layout - when the screen is less than xxpx (o vmin??) wide, make the grid items stack on top of each other instead of next to each other
 
@@ -194,7 +194,7 @@ body {
 }
 
 
-h2, h3, h4 {
+h2, h3, h4, h5, h6 {
 	font-family: 'MyRivanna', sans-serif;
 }
 
@@ -213,6 +213,7 @@ h2, h3, h4 {
   padding: 0.1vw 0.2vw;
   text-decoration: none;
   text-align: center;
+font-family: 'MyJenson', serif;
 }
 
 .navbar a:hover, .dropdown:hover {
@@ -234,7 +235,7 @@ h2, h3, h4 {
   display: none;
   position: absolute;
   background-color: #f9f9f9;
-  min-width: 50vw;
+  min-width: 25vw;
   /*box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);*/
   z-index: 1;
 }

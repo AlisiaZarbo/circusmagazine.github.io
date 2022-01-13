@@ -14,7 +14,7 @@ src: url("../fonts/Jenson.ttf");
 
 * {
   box-sizing: border-box;
-	/*background-image: url("../img/styles/1800background.PNG");*/
+	/*background-image: url("../img/styles/1800background.PNG"); togliere dalla cartella*/
 }
 
 /*grid layout and items*/
@@ -22,7 +22,7 @@ src: url("../fonts/Jenson.ttf");
   display: grid;
   grid-template-areas:
     'logo logo header header header header'
-	'logo logo sep sep sep sep'
+    'logo logo sep sep sep sep'
     'logo logo nav nav nav nav'
     'menu main main main rightUp rightUp'
     'menu main main main rightDown rightDown'
@@ -31,7 +31,7 @@ src: url("../fonts/Jenson.ttf");
   width: 100%;
   margin-top: -0.5vw;
 grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
-  grid-template-rows: 0.3fr 0.02fr 0.5fr 3fr 3fr 0.3fr;
+  grid-template-rows: 0.2fr 0.02fr 0.4fr 2.5fr 2.5fr 0.2fr;
   
   /*grid-template-columns: 15vmax 1fr 1fr 1fr 1fr 1fr;*/
   /*grid-template-rows: 7vmax 10vmax 1fr 1fr 3vmax;*/
@@ -49,20 +49,26 @@ grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
 
 .logo p{
 	margin-bottom:-1em;
-	letter-spacing:0.7em;
+	letter-spacing:1em;
 }
 
 .header { 
 	grid-area: header;
 	font-family: 'MyRivanna', sans-serif;
 	/*font-family: 'Cinzel Decorative', cursive;*/
+	font-size: 6vw;
 	text-align: right; 
 	padding: 1vw;
-	font-size: 6vw;
+	
 	color: #c87354;
 	letter-spacing:0.2vw;
 	position: static;
 	background-color: black;
+}
+
+.sep {
+  grid-area: sep;
+  background-color: black; 
 }
 
 .navbar{
@@ -82,13 +88,12 @@ font-family: 'MyJenson', sans-serif;
 	padding: 1vw;
 	overflow: auto;
 	font-family: 'MyJenson', sans-serif;
-	font-size: 1.5vw;
+	font-size: 1.2vw;
 }
 
 .boxM { 
 	grid-area: main; 
 	column-count: 3;
-	column-rule-color: 4px black;
 	overflow-x: auto;
 	overflow-y: hidden;
 	border-top: 0.2vw solid #000000;
@@ -149,7 +154,7 @@ img {
 	width: 100%
 }
 
-p:after,
+/*p:after,
 p::after {
   content: url("../img/styles/1800.PNG"); 
   display: inline-block;
@@ -157,7 +162,7 @@ p::after {
   height: 1em;
   z-index: -1;
   position: absolute;
-}
+}*/
 
 
 

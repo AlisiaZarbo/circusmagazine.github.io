@@ -780,10 +780,11 @@ h6#main_art_title, h6#guest_art_title, h6#rev_art_title {
   font-family: 'IM Fell Great Primer SC', serif;
 }
 
-/*.w3-button.w3-display-topright {
-
+.w3-button.w3-display-topright:hover {
+  background-color: rgba(0, 0, 0, 0.1);
 }
 
+/*
 .w3-modal p#WikidataIntro {
 
 }

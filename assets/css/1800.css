@@ -94,6 +94,7 @@ font-family: 'MyJenson', sans-serif;
 .boxM { 
 	font-family: 'MyJenson', serif;
 	grid-area: main; 
+	overflow: auto;
 	column-count: 3;
 	overflow-x: scroll;
 	overflow-y: hidden;
@@ -123,7 +124,8 @@ font-family: 'MyJenson', sans-serif;
 
 /* width */
 ::-webkit-scrollbar {
-  width: 3vw;
+  height: 3vw;
+width: 3vw;
 }
 
 /* Track */
@@ -134,13 +136,16 @@ background: url("../img/styles/1800scrollbar.PNG");
 /* Handle */
 ::-webkit-scrollbar-thumb {
 height: 0.5em;
+widht: 0.5em;
+	background: #555; 
 background: e5c19a; 
 }
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
 height: 0.5em;
-  background: #555; 
+	background: e5c19a; 
+
 }
 
 .footer { 

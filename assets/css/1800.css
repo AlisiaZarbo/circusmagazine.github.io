@@ -27,8 +27,8 @@ src: url("../fonts/Jenson.ttf");
     'menu main main main rightUp rightUp'
     'menu main main main rightDown rightDown'
     'menu footer footer footer footer footer';
-  height: 100vh;
-  width: 100vw;
+  height: 100vmin;
+  width: 100%;
   margin-top: -0.5vw;
 grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
   grid-template-rows: 0.3fr 0.02fr 0.5fr 3fr 3fr 0.3fr;
@@ -90,7 +90,7 @@ font-family: 'MyJenson', sans-serif;
 	column-count: 3;
 	column-rule-color: 4px black;
 	overflow-x: auto;
-	/*overflow-y: hidden;*/
+	overflow-y: auto;
 	border-top: 0.2vw solid #000000;
 	border-bottom: 0.2vw solid #000000;
 	padding:0.3vw;
@@ -113,6 +113,15 @@ font-family: 'MyJenson', sans-serif;
 	border: 0.2vw solid #000000;
 	padding:0.3vw
 	font-family: 'MyJenson', serif;
+}
+
+.boxM, .boxRU, .boxRD p:after, p::after {
+  content: url("../img/styles/1800.PNG"); 
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  /*z-index: -1;
+  position: absolute;*/
 }
 
 /* width */
@@ -149,15 +158,7 @@ img {
 	width: 100%
 }
 
-p:after,
-p::after {
-  content: url("../img/styles/1800.PNG"); 
-  display: inline-block;
-  width: 1em;
-  height: 1em;
-  /*z-index: -1;
-  position: absolute;*/
-}
+
 
 /* Responsive layout - when the screen is less than xxpx (o vmin??) wide, make the grid items stack on top of each other instead of next to each other */
 

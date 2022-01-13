@@ -122,16 +122,18 @@ font-family: 'MyJenson', sans-serif;
 
 /* Track */
 ::-webkit-scrollbar-track {
-  background: url("../img/styles/1800scrollbar.PNG");
+background: url("../img/styles/1800scrollbar.PNG");
 }
  
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: #888; 
+height: 0.5em;
+background: e5c19a; 
 }
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
+height: 0.5em;
   background: #555; 
 }
 

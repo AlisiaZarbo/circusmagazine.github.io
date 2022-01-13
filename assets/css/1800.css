@@ -48,7 +48,7 @@ grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
 }
 
 .logo p{
-	margin-bottom:-1.7px;
+	margin-bottom:-1em;
 	letter-spacing:0.7em;
 }
 
@@ -117,13 +117,12 @@ font-family: 'MyJenson', sans-serif;
 
 /* width */
 ::-webkit-scrollbar {
-  width: 15vw;
-background-image: url("../img/styles/1800scrollbar.PNG");
+  width: 3vw;
 }
 
 /* Track */
 ::-webkit-scrollbar-track {
-  background: #f1f1f1; 
+  background: url("../img/styles/1800scrollbar.PNG");
 }
  
 /* Handle */
@@ -152,7 +151,7 @@ p:after,
 p::after {
   content: url("../img/styles/1800.PNG"); 
   display: inline-block;
-  width: 100%;
+  width: auto;
   height: auto;
   z-index: -1;
   position: absolute;

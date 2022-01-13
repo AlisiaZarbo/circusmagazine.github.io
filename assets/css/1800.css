@@ -101,7 +101,6 @@ font-family: 'MyJenson', sans-serif;
 	border-top: 0.2vw solid #000000;
 	border-bottom: 0.2vw solid #000000;
 	padding:0.3vw;
-	
 }
 
 .boxRU { 
@@ -125,7 +124,7 @@ font-family: 'MyJenson', sans-serif;
 /* width */
 ::-webkit-scrollbar {
   height: 3vw;
-width: 3vw;
+  width: 3vw;
 }
 
 /* Track */

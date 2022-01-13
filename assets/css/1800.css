@@ -92,14 +92,15 @@ font-family: 'MyJenson', sans-serif;
 }
 
 .boxM { 
+	font-family: 'MyJenson', serif;
 	grid-area: main; 
 	column-count: 3;
-	overflow-x: auto;
+	overflow-x: scroll;
 	overflow-y: hidden;
 	border-top: 0.2vw solid #000000;
 	border-bottom: 0.2vw solid #000000;
 	padding:0.3vw;
-	font-family: 'MyJenson', serif;
+	
 }
 
 .boxRU { 
@@ -186,7 +187,8 @@ body {
 
 .maincontent div[id^="sec"] p:first-of-type::first-letter {
   font-family: 'MyRivanna', sans-serif;
-  font-size: 3vw;
+  padding: 0.1em 0.2em;
+	font-size: 3em;
   font-style: normal;
   float: left;
 }

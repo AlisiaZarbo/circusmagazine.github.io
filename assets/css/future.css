@@ -34,7 +34,7 @@
   margin-top: -0.5vw;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
   grid-template-rows: auto 0.5em auto  2.5fr 2.5fr auto;
-  background-image: url("assets\img\matrix.gif");
+  background-image: url("../img/matrix.gif");
   background-size: 100%;
 
 }
@@ -74,7 +74,7 @@
   font-size: 4vw;
   position: static;
   padding: 0.5vw;
-  background-image: url("matrix.gif");
+  background-image: url("../img/matrix.gif");
   overflow: hidden;
   border-right: .15em;
   white-space: nowrap;

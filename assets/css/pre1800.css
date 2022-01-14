@@ -421,10 +421,10 @@ body {
   background-color: #ffe6cc; 
   font-family: sans-serif; /*debug*/
   color: #ff0080; /*FUXIA for debug*/
-  background-repeat: no-repeat;
+  /*background-repeat: no-repeat;*/
   background-attachment: fixed;
   overflow-wrap: break-word;
-  background-image: url('../img/IR_styles/provanew2.jpg');
+  background-image: url('../img/IR_styles/backnew2.jpg');
 }
 
 img {

@@ -227,8 +227,8 @@ margin-top: 2.5vmin;
   z-index: 9; /* Sit on top */
   left: 0;
   top: 0;
-  width: 70%; /* Full width */
-  height: 70%; /* Full height */
+  width: 50%; /* Full width */
+  height: 50%; /* Full height */
   overflow: none; /* Enable scroll if needed */
 }
 .modal-content {

@@ -231,6 +231,14 @@ margin-top: 2.5vmin;
   height: 70%; /* Full height */
   overflow: none; /* Enable scroll if needed */
 }
+.modal-content {
+  background-color: #fefefe;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+}
+
 .close {
   color: #aaaaaa;
   float: right;

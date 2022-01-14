@@ -190,7 +190,8 @@ button:hover {
 .menu {
   grid-area: menu; 
   padding: 1.2vw;
-  overflow: auto;
+  /*overflow: auto;*/
+  overflow-x: hidden;
   /*background-image: url('../img/IR_styles/provanew2.jpg'); */
   font-family: 'IM Fell Great Primer', serif;
   color: #cc0000;
@@ -234,7 +235,8 @@ button:hover {
 
 .boxM {
   grid-area: main; 
-  overflow: auto;
+  /*overflow: auto;*/
+  overflow-x: hidden;
   border-left: 0.1vmin solid #331a00;
   padding:2vw;
   margin: 0;
@@ -252,7 +254,8 @@ button:hover {
 
 .boxRU {
   grid-area: rightUp; 
-  overflow:auto;
+  /*overflow:auto;*/
+  overflow-x: hidden;
   border-right: 0.1vmin solid #331a00;
   border-left: 0.1vmin solid #331a00;
   border-bottom: 0.1vmin solid #331a00;
@@ -272,7 +275,8 @@ button:hover {
 
 .boxRD {
   grid-area: rightDown;
-  overflow:auto;
+  /*overflow:auto;*/
+  overflow-x: hidden;
   border-left: 0.1vmin solid #331a00;
   border-right: 0.1vmin solid #331a00;
   padding:2vw;

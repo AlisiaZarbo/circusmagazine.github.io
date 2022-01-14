@@ -221,12 +221,26 @@ margin-top: 2.5vmin;
   
 }
 
-#MOD_01 {
-  position: absolute;
-  z-index: 9;
-  background-color:none;
+  .modal {
+  display: none; /* Hidden by default */
+  position: absolute; /* Stay in place */
+  z-index: 9; /* Sit on top */
   left: 0;
   top: 0;
-  width: 40%;
-  overflow: none;
+  width: 70%; /* Full width */
+  height: 70%; /* Full height */
+  overflow: none; /* Enable scroll if needed */
+}
+.close {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
 }

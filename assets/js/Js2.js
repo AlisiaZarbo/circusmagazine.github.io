@@ -188,10 +188,6 @@ function slide_clicked_entity(go){
 	document.getElementById("counter_occurrencies").innerText = entity_counter;
 	}
 
-var span = document.getElementsByClassName("close")[0];
-span.onclick = function() {
-  modal.style.display = "none";
-}
 window.onclick = function(event) {
   if (event.target == modal) {
     modal.style.display = "none";
@@ -218,7 +214,8 @@ $(".bib_note").click(function(){
 		});
 	})
 
-dragElement(document.getElementById("MOD_01"));
+//function drag//
+dragElement(document.getElementById("MOD_01"))
 
 	function dragElement(elmnt) {
 	  var pos1 = 0, pos2 = 0, pos3 = 0, pos4 = 0;

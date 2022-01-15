@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative&family=Libre+Baskerville&display=swap');
+/*Fonts' import*/
 
 /* RIVANNA art-nuveau inspired font for titles */
 @font-face {
@@ -9,52 +9,58 @@ src: url("../fonts/RIVANNA_.TTF");
 /* Jenson font for body inspired to William Morris rethinking of the type, with typical "e" */
 @font-face {
 font-family: MyJenson;
-src: url("../fonts/Jenson.ttf");
+src: url("../fonts/AdobeJensonProRegular.otf") format("opentype");
 }
 
-/* ... */
+/* Flowers icons for end of lines?*/
 @font-face {
 font-family: MyFlow;
 src: url("../fonts/Art Nouveau Flowers.ttf");
 }
 
-
+/*general settings*/
 * {
   box-sizing: border-box;
 }
 
+body {
+	margin: 0;
+  	overflow-y: hidden;
+	font-family: 'MyJenson', serif;
+}
+
+h2, h3, h4, h5, h6 {
+	font-family: 'MyJenson', serif;
+	text-transform:uppercase;
+	text-align:center;
+}
+
+img{
+	width: 100%;
+	filter: sepia(100%);
+	opacity: 0.7;
+}
+
+.maincontent {
+	overflow-wrap: break-word;
+}
+
 /*grid layout and items*/
 .grid-container {
-  display: grid;
-  grid-template-areas:
-    'logo logo header header header header'
-    'logo logo sep sep sep sep'
-    'logo logo nav nav nav nav'
-    'menu main main main rightUp rightUp'
-    'menu main main main rightDown rightDown'
-    'menu footer footer footer  footer footer';
-  height: 100vmin;
-  width: 100%;
-  margin-top: -0.5vw;
-grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
-  grid-template-rows: 0.2fr 0.02fr 0.4fr 3.09fr 3.09fr 0.2fr;
+	display: grid;
+	grid-template-areas:
+		'logo logo header header header header'
+		'logo logo sep sep sep sep'
+		'logo logo nav nav nav nav'
+		'menu main main main rightUp rightUp'
+		'menu main main main rightDown rightDown'
+		'menu footer footer footer  footer footer';
+	height: 100vmin;
+	width: 100%;
+	margin-top: -0.5vw;
+	grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+	grid-template-rows: 0.2fr 0.02fr 0.4fr 3.09fr 3.09fr 0.2fr;
 }
-
-.logo{
-  grid-area: logo;
-  background-color: #c87354;
-  font-size: 2vw;
-	color: black;
-	font-family: 'MyRivanna', sans-serif;
-	padding: 1vw;
-	text-align: right;
-	border-bottom: 0.2vw solid #000000;
-}
-
-.logo p{
-	margin-bottom:-1em;
-	letter-spacing:1em;
-	}
 
 .header { 
 	grid-area: header;
@@ -69,17 +75,30 @@ grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
 }
 
 .sep {
-  grid-area: sep;
-  background-color: black; 
+	grid-area: sep;
+	background-color: black; 
 }
 
+.logo{
+	grid-area: logo;
+	background-color: #c87354;
+	font-size: 2vw;
+	color: black;
+	padding: 1vw;
+	text-align: right;
+	border-bottom: 0.2vw solid #000000;
+}
+
+	.logo p{
+		font-family: 'MyRivanna', sans-serif;
+		margin-bottom:-1em;
+		letter-spacing:1em;
+		font-weight: bold;
+		}
+
 .navbar{
-  grid-area: nav;
-  background-color: black;
-	font-family: 'MyJenson', sans-serif;
-	font-size: 1.2vw;
-	position: flex;
-  /*display: flex; manca blocco allo scorrimento in alto*/
+	grid-area: nav;
+	background-color: black;
 }
 
 .menu { 
@@ -89,33 +108,121 @@ grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
 	border-left: 0.2vw solid #000000;
 	padding: 1vw;
 	overflow: auto;
-	font-family: 'MyJenson', sans-serif;
+	font-family: 'MyJenson', serif;
 }
 
-.boxM { 
+	.menu h4 {
+		font-family: 'MyRivanna', sans-serif;
+	}
+	
+	.menu h6, p {
 	font-family: 'MyJenson', serif;
+	text-align: left;
+	}
+	
+	.menu a {
+		text-decoration:none;
+	}
+	
+.boxM { 
 	grid-area: main; 
-	overflow: auto; 
-	padding: 0.3vw;
+	overflow-y: auto;
+	overflow-x: hidden;
+	padding: 3vw;
+	font-family: 'MyJenson', serif;
 }
 
 .boxRU { 
 	grid-area: rightUp; 
-	overflow: auto;
+	overflow-y: auto;
+	overflow-x: hidden;
 	border-left: 0.2vw solid #000000;
 	border-bottom: 0.2vw solid #000000;
-	padding: 0.3vw;
+	padding: 1vw;
 	font-family: 'MyJenson', serif;
 }
 
 .boxRD { 
 	grid-area: rightDown;
-	overflow:auto;
+	overflow-y: auto;
+	overflow-x: hidden;
 	border-left: 0.2vw solid #000000;
-	padding:0.3vw;
+	padding: 1vw;
 	font-family: 'MyJenson', serif;
 }
 
+	.boxM p, .boxRU p, .boxRD p {
+		font-family: 'MyJenson', serif;
+		text-align: justify;
+		  -webkit-hyphens: auto;
+		  -moz-hyphens: auto;
+		  -ms-hyphens: auto;
+		hyphens: auto;
+		font-size: 1.2em;
+		line-height: 0.95em;
+	}
+
+	.title_art p {
+		text-align: center;
+	}
+	.title_art h2 {
+		line-height: 0.98em;
+	}
+	
+.footer { 
+	grid-area: footer; 
+	text-align: center;
+	color: #c87354;
+	background-color: black;
+	font-family: 'MyJenson', serif;
+}
+
+/*Highlighting*/
+
+.highlighted {
+	background-color: #c87354;
+	color: black;
+}
+
+.highlighted_more {
+	background-color: black;
+	color: #c87354;
+}
+
+
+/*Decorations*/
+/*Drop caps*/
+.maincontent div[id^="sec"] p:first-of-type::first-letter {
+	font-family: 'MyRivanna', sans-serif;
+	padding-right: 0.2em;
+	line-height: 1em;
+	font-size: 3.8em;
+	font-style: normal;
+	float: left;
+}
+
+/*Fine paragrafo*/
+.boxM .maincontent p:after {
+	content: "☙";
+	font-size: 1eh;
+    display: inline-block;
+    /*background: url("icon.jpg") no-repeat;
+    width: 20px;
+    height: 20px;
+    float: left;*/
+    margin: 0 6px 0 0;
+}
+
+/*publications part*/
+.pub_data p {
+	border-top: 0.3vw solid #000000;
+	margin: 0.5vw;
+	padding:0.3vw;
+	border-bottom: 0.2vw solid #000000;
+}
+
+
+/*customized scrollbar*/
 /* width */
 ::-webkit-scrollbar {
   width: 3vw;
@@ -123,13 +230,14 @@ grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
 
 /* Track */
 ::-webkit-scrollbar-track {
-background: url("../img/styles/1800scrollbar.PNG");
+	background: url("../img/styles/1800scrollbar.PNG");
+	/*from https://anno.onb.ac.at/cgi-content/anno-plus?aid=vsa&datum=1898&page=316&size=18&qid=KJUQ53UXY3PEFUDA2C48T9ZRWIEWHK*/
 }
  
 /* Handle */
 ::-webkit-scrollbar-thumb {
 	background: #555; 
-/*	background: #555 #c87354; */
+	/*	background: #555 #c87354; */
 }
 
 /* Handle on hover */
@@ -137,49 +245,20 @@ background: url("../img/styles/1800scrollbar.PNG");
 	background: #e5c19a; 
 }
 
-.footer { 
-	grid-area: footer; 
-	text-align: center;
-	color: #c87354;
-	background-color: black;
-	font-family: 'MyJenson', serif;
-/*	letter-spacing: 0.5em;*/
+/*customized modal*/
+
+.w3-container{
+	background: url(../img/styles/PikPng.com_art-nouveau-png_6017636.png);
 }
 
-img {
-	width: 100%
-	-webkit-filter: bluescale(100%);
-	filter: bluescale(100%);
+.w3-content h4{
+	font-family: 'MyRivanna', sans-serif;
+	letter-spacing: 0.5em;
 }
 
-button {
-	background-color: #e5c19a;
-	font-family: 'MyJenson', serif;
-	color:black;
-	padding:0.3em 0.3em;
-	/*display:inline-block;
-	font-weight:300;
-	padding:0.3em 1.2em;
-	text-align:center;
-	transition: all 0.2s;
-	box-sizing: border-box;
-	margin:0 0.3em 0.3em 0;*/
-	border-radius:2em;
-	text-decoration:none;
+.w3-content a{
+	text-decoration: none;
 }
-
-button:hover{
-background-color:#c87354;
-}
-
-@media all and (max-width:30em){
-a.button{
-display:block;
-margin:0.2em auto;
-}
-}
-
-
 	
 /* Responsive layout - when the screen is less than xxpx (o vmin??) wide, make the grid items stack on top of each other instead of next to each other
 @media screen and (max-width: 500px) {
@@ -191,45 +270,15 @@ margin:0.2em auto;
 	.boxRU { grid-area: 6 / 1 / 8 / span 6 ;  }
 	.boxRD { grid-area: 8 / 1 / 10 / span 6 ; }
 	.footer{ grid-area: 10 / 1 / 11 / span 6 ; }
+}
+
+@media all and (max-width:30em){
+a.button{
+display:block;
+margin:0.2em auto;
+}
 }*/
 
-/* Style the body or other elements*/
-body {
-	font-family: 'MyJenson', serif;
-	margin: 0;
-  	overflow-y: hidden;
-}
-
-
-h2, h3, h4, h5, h6 {
-	font-family: 'MyRivanna', sans-serif;
-}
-
-.menu h4, h5, h6 {
-	font-family: 'MyJenson', serif;
-}
-.maincontent div[id^="sec"] p:first-of-type::first-letter {
-  font-family: 'MyRivanna', sans-serif;
-  padding: 0.1em 0.1em;
-	font-size: 4em;
-  font-style: normal;
-  float: left;
-}
-
-.maincontent {
-	overflow-wrap: break-word;
-}
-
-.boxM .maincontent p:after {
-	content: "☙";
-	font-size: 1eh;
-    display: inline-block;
-    /*background: url("icon.jpg") no-repeat;
-    width: 20px;
-    height: 20px;
-    float: left;*/
-    margin: 0 6px 0 0;
-}
 
 
 /*.maincontent p {
@@ -257,11 +306,13 @@ h2, h3, h4, h5, h6 {
 /* Style the navigation bar links */
 
 .navbar a {
-  color: white;
-  padding: 0.1vw 0.2vw;
-  text-decoration: none;
-  text-align: center;
-font-family: 'MyJenson', serif;
+	color: white;
+	padding: 0.1vw 0.2vw;
+	text-decoration: none;
+	text-align: center;
+	font-family: 'MyRivanna', sans-serif;
+	letter-spacing: 0.1em;
+	font-size: 1.2vw;
 }
 
 .navbar a:hover, .dropdown:hover {
@@ -296,17 +347,30 @@ font-family: 'MyJenson', serif;
   text-align: left;
 }
 
-/* Higlight the entities and the references */
+button {
+	background-color: #e5c19a;
+		font-family: 'MyRivanna', sans-serif;
+	letter-spacing: 0.1em;
+	font-size: 1.2vw;
+	color:black;
+	padding:0.3em 0.3em;
+	/*display:inline-block;
+	font-family: 'MyJenson', serif;
 
-.highlighted {
-background-color: #c87354;
-  color: black;
+	font-weight:300;
+	padding:0.3em 1.2em;
+	text-align:center;
+	transition: all 0.2s;
+	box-sizing: border-box;
+	margin:0 0.3em 0.3em 0;*/
+	border-radius:2em;
+	text-decoration:none;
 }
 
-.highlighted_more {
-background-color: black;
-  color: #c87354;
-}
+	button:hover{
+	background-color:#c87354;
+	}
+
 
 
 /*.navbar-nav ul, li {

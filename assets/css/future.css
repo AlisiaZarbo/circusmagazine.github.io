@@ -7,8 +7,8 @@
 @import url('https://fonts.googleapis.com/css2?family=BenchNine:wght@300&family=Dancing+Script:wght@700&family=Six+Caps&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Orbitron&family=Press+Start+2P&family=Rock+3D&display=swap');
 @font-face{
-  src: url('../fonts/alien.otf');
-  font-family:('Alien League Expanded');
+  src: url('../fonts/nasalization-free.rg-regular.otf');
+  font-family:('Nasalization');
 }
 @font-face{
   src: url('../fonts/wheaton-capitals.otf');
@@ -50,14 +50,13 @@
   grid-area: logo;
   background-color: #000000;
   color: white;
-  font-family: 'Raleway', sans-serif;
   padding: 1vw;
   text-align: left;
   line-height:0.5pt;
   opacity: 0.7;
   box-shadow: 2px 2px 15px #2487bd;
   border-right: #2487bd;
-  font-family:'Alien League Expanded';
+  font-family:'Nasalization';
   font-size: 1vw;
 }
 
@@ -67,7 +66,7 @@
 
 .header { 
   grid-area: header;
-  font-family: 'Alien League Expanded';
+  font-family: 'Nasalization';
   color: white;
   text-align: right;
   text-shadow: 8px 8px 32px #008080;
@@ -85,7 +84,7 @@
 .navbar{
   grid-area: nav;
   background-color: black;
-  font-family:'Alien League Expanded';
+  font-family:'Nasalization';
   font-size: 1vw;
   color: white;
   text-shadow: 2px 2px 8px #2487bd;
@@ -176,7 +175,7 @@ margin-top: 2.5vmin;
 }
 
 #issue_title {
-  font-family: 'Alien League Expanded';
+  font-family: 'Nasalization';
   color: white;
 
 }
@@ -187,7 +186,7 @@ margin-top: 2.5vmin;
 }
 
 #rev_art_url{
-  font-family: 'Alien League Expanded';
+  font-family: 'Nasalization';
   font-size: 1.2vw;
   column-span: all;
   font-weight: bolder;
@@ -195,7 +194,7 @@ margin-top: 2.5vmin;
 }
 
 #main_art_url {
-  font-family: 'Alien League Expanded';
+  font-family: 'Nasalization';
   font-size: 1.2vw;
   column-span: all;
   font-weight: bolder;
@@ -203,7 +202,7 @@ margin-top: 2.5vmin;
 }
 
 #guest_art_url{
-  font-family: 'Alien League Expanded';
+  font-family: 'Nasalization';
   font-size: 1.2vw;
   column-span: all;
   font-weight: bolder;
@@ -428,23 +427,23 @@ color: white;
 }
 
 .title_art > h2 {
-  font-family: 'BenchNine', sans-serif;
-  font-size: 3.5vw;
+  font-family: 'Nasalization', sans-serif;
+  font-size: 3vw;
   text-transform: uppercase;
   font-weight: bold;
 }
 
 .title_art > p {
   font-style: italic;
-  font-family: 'Dancing Script', cursive;
+  font-family: 'Nasalization';
   font-size: 1.5vw;
   margin-top: -1vmin;
-  color: #ad335c;
+  color: #2487bd;
   text-transform: capitalize;}  
 
 .subtitle{
   font-style: italic;
-  font-family: 'Dancing Script', cursive;
+  font-family: 'Nasalization';
   font-size: 1.5vw;
   margin-top: -1vmin;
   color: #ad335c;
@@ -488,34 +487,34 @@ h3 {
 }
 
 h4 {
-  font-family: 'Alien League Expanded';
+  font-family: 'Nasalization';
   font-size: 2vw;
   column-span: all;
   font-weight: bolder;
 }
 
 h5 {
-  font-family: 'Alien League Expanded';
+  font-family: 'Nasalization';
   font-size: 1.9vw;
   column-span: all;
   font-weight: bolder;
 }
 
 h6 {
-  font-family: 'Alien League Expanded';
+  font-family: 'Nasalization';
   font-size: 1.8vw;
   column-span: all;
   font-weight: bolder;
 }
   
 #toptitle {
-  font-family: 'BenchNine', sans-serif;
+  font-family: 'Nasalization';
   padding: 1.7vmin;
 }
 
 .byline {
   font-style: italic;
-  font-family: 'Dancing Script', cursive;
+  font-family: 'Nasalization', cursive;
   font-size: 1.5vw;
   margin-top: -1vmin;
   color: #ad335c;

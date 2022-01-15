@@ -432,12 +432,12 @@ body {
 }
 
 img {
-  width: 100%
+  width: 100%;
   filter: sepia(95%) opacity(70%);
 }
 
 figure img {
-  width: 100%
+  width: 100%;
   filter: sepia(95%) opacity(70%);
   padding-bottom: 2vh;
 }

@@ -656,18 +656,18 @@ h6#main_art_title, h6#guest_art_title, h6#rev_art_title {
   text-align: left; 
 }
 
-.w3-container {
+div.modal-content {
   background-color: #ffe6cc;
   font-family: 'Bassanova', sans-serif;
   color: #cc0000;
 }
 
-.w3-container #PopUpHeader {
+div.modal-content #PopUpHeader {
   font-family: 'Bassanova', sans-serif;
   font-variant-ligatures: discretionary-ligatures;
 }
 
-.w3-button.w3-display-topright:hover {
+div.modal-content span.close:hover {
   background-color: #ffa31a;
   color: black;
 }
@@ -681,18 +681,18 @@ h6#main_art_title, h6#guest_art_title, h6#rev_art_title {
 
 }*/
 
-.w3-container a#PopUpWikidata:link, .w3-container p a:link {
+div.modal-content a#PopUpWikidata:link, div.modal-content p a:link {
   text-decoration: none;
   font-weight: bold;
   color: #cc0000;;
 }
 
-.w3-container a#PopUpWikidata:visited, .w3-container p a:visited {
+div.modal-content a#PopUpWikidata:visited, div.modal-content p a:visited {
   color: #cc0000;
 
 }
 
-.w3-container a#PopUpWikidata:hover, .w3-container p a:hover {
+div.modal-content a#PopUpWikidata:hover, div.modal-content p a:hover {
   color: #cc0000;
   font-style: italic;
   text-decoration: underline;

@@ -214,8 +214,9 @@ $(".bib_note").click(function(){
 		});
 	})
 
-
-//function drag//
+$( function() {
+    $( "MOD_01" ).draggable();
+  } );//function drag//
 //function high_href(){//
 //$(window).load(function(){//
 //window.onload = function(){//

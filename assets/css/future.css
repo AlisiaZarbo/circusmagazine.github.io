@@ -7,11 +7,11 @@
 @import url('https://fonts.googleapis.com/css2?family=BenchNine:wght@300&family=Dancing+Script:wght@700&family=Six+Caps&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Orbitron&family=Press+Start+2P&family=Rock+3D&display=swap');
 @font-face{
-  src: url(/Users/Admin/Documents/GitHub/alien.otf);
-  font-family:'Alien League Expanded';
+  src: url('../fonts/alien.otf');
+  font-family:('Alien League Expanded');
 }
 @font-face{
-  src: url(/Users/Admin/Documents/GitHub/wheaton-capitals.otf);
+  src: url('../fonts/wheaton-capitals.otf');
   font-family: 'Wheaton Capitals-Regular';
 }
 

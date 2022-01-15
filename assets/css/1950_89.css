@@ -341,12 +341,12 @@ body {
 }
 
 img {
-  width: 100%
+  width: 100%;
   filter: contrast(130%);
 }
 
 figure img {
-  width: 100%
+  width: 100%;
   filter: contrast(130%);
   padding-bottom: 2vh;
 }

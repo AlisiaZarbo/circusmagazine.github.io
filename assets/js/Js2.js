@@ -240,7 +240,7 @@ function myRes() {
   			document.documentElement.clientWidth = w;
   			document.documentElement.clientHeight = h;
 }
-}
+};
 
 dragElement(document.getElementById("MOD_01"));
 

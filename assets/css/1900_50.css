@@ -231,20 +231,52 @@ img {
 
 /*customized modal*/
 
-.w3-container{
-	background: black;
-}
+  .modal {
+  display: none; /* Hidden by default */
+  position: absolute; /* Stay in place */
+  z-index: 9; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 80%; /* Full width */
+  height: 50%; /* Full height */
+  overflow: none; /* Enable scroll if needed */
+  border-radius:10%;
+  }
 
-.w3-content h4{
-	font-family: 'Staatliches', cursive;
-}
+  .modal-content {
+  background-color: black;
+  color: white;
+  margin: auto;
+  padding: 0.2vw;
+  border: 0.1vw solid #d40000;
+  width: 50%;
+  }
 
-.w3-content p{
-	font-family: MyAkzidenz, sans-serif; 
-}
+	.modal-content h4{
+		font-family: 'Staatliches', cursive;
+	}
 
-.w3-content a{
-	text-decoration: none;
+	.modal-content p{
+		font-family: MyAkzidenz, sans-serif; 
+	}
+
+	.modal-content a{
+		text-decoration: none;
+	}
+
+
+.close {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
 }
 
 /* Style the navigation bar links */

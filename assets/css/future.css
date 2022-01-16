@@ -6,10 +6,8 @@
 @import url('https://fonts.googleapis.com/css2?family=BenchNine:wght@300&family=Dancing+Script:wght@700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=BenchNine:wght@300&family=Dancing+Script:wght@700&family=Six+Caps&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Orbitron&family=Press+Start+2P&family=Rock+3D&display=swap');
-@font-face{
-  src: url('../fonts/nasalization-free.rg-regular.otf');
-  font-family:('Nasalization Rg-Regular');
-}
+@import url('https://fonts.googleapis.com/css2?family=Orbitron&display=swap')@font-face{
+
 @font-face{
   src: url('../fonts/wheaton-capitals.otf');
   font-family: 'Wheaton Capitals-Regular';
@@ -56,7 +54,7 @@
   opacity: 0.7;
   box-shadow: 2px 2px 15px #2487bd;
   border-right: #2487bd;
-  font-family:'Nasalization';
+  font-family:'Orbitron', sans-serif;
   font-size: 1vw;
 }
 
@@ -175,7 +173,7 @@ margin-top: 2.5vmin;
 }
 
 #issue_title {
-  font-family: 'Nasalization';
+  font-family: 'Orbitron', sans-serif;
   color: white;
 
 }
@@ -186,7 +184,7 @@ margin-top: 2.5vmin;
 }
 
 #rev_art_url{
-  font-family: 'Nasalization';
+  font-family: 'Orbitron', sans-serif;
   font-size: 1.2vw;
   column-span: all;
   font-weight: bolder;
@@ -194,7 +192,7 @@ margin-top: 2.5vmin;
 }
 
 #main_art_url {
-  font-family: 'Nasalization';
+  font-family: 'Orbitron', sans-serif;
   font-size: 1.2vw;
   column-span: all;
   font-weight: bolder;
@@ -202,7 +200,7 @@ margin-top: 2.5vmin;
 }
 
 #guest_art_url{
-  font-family: 'Nasalization';
+  font-family: 'Orbitron', sans-serif;
   font-size: 1.2vw;
   column-span: all;
   font-weight: bolder;
@@ -427,7 +425,7 @@ color: white;
 }
 
 .title_art > h2 {
-  font-family: 'Nasalization', sans-serif;
+  font-family: 'Orbitron', sans-serif;
   font-size: 3vw;
   text-transform: uppercase;
   font-weight: bold;
@@ -435,7 +433,7 @@ color: white;
 
 .title_art > p {
   font-style: italic;
-  font-family: 'Nasalization';
+  font-family: 'Orbitron', sans-serif;
   font-size: 1.5vw;
   margin-top: -1vmin;
   color: #2487bd;
@@ -443,7 +441,7 @@ color: white;
 
 .subtitle{
   font-style: italic;
-  font-family: 'Nasalization';
+  font-family: 'Orbitron', sans-serif;
   font-size: 1.5vw;
   margin-top: -1vmin;
   color: #ad335c;
@@ -479,7 +477,7 @@ figcaption {
 
 
 h3 {
-  font-family: 'Press Start 2P';
+  font-family: 'Orbitron', sans-serif;
   font-size: 2vw;
   column-span: all;
   color:#2487bd;
@@ -487,34 +485,34 @@ h3 {
 }
 
 h4 {
-  font-family: 'Nasalization';
+  font-family:'Orbitron', sans-serif;
   font-size: 2vw;
   column-span: all;
   font-weight: bolder;
 }
 
 h5 {
-  font-family: 'Nasalization';
+  font-family:'Orbitron', sans-serif;
   font-size: 1.9vw;
   column-span: all;
   font-weight: bolder;
 }
 
 h6 {
-  font-family: 'Nasalization';
+  font-family: 'Orbitron', sans-serif;
   font-size: 1.8vw;
   column-span: all;
   font-weight: bolder;
 }
   
 #toptitle {
-  font-family: 'Nasalization';
+  font-family:'Orbitron', sans-serif;
   padding: 1.7vmin;
 }
 
 .byline {
   font-style: italic;
-  font-family: 'Nasalization', cursive;
+  font-family: 'Orbitron', sans-serif;
   font-size: 1.5vw;
   margin-top: -1vmin;
   color: #ad335c;

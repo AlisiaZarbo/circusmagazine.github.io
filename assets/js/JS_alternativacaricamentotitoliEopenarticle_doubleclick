@@ -1,0 +1,88 @@
+//Alternativa per load MDarticoli nel menu + doppio click apertura pagina intera//
+
+//function load default article in the IssuesViewer page//
+$(document).ready(function(){
+	change_issue(1)
+	})
+
+//function change_issue//
+function change_issue(issue) {
+	issue_id = 'I' + issue;
+	art1 = issue + '_1.html';
+	art2 = issue + '_2.html';
+	art3 = issue + '_3.html';
+	$("#artM").load(art1);
+	$("#artL1").load(art2);
+	$("#artL2").load(art3);
+	document.getElementById("issue_title").innerHTML = document.getElementById(issue_id).innerText;
+	$("#artM, #artL1, #artL2").on('load', function() {
+		load_MD()
+		})
+	}
+
+//function load default MDarticle in the menu//
+//$(window).on('load', function() {
+//	load_MD()
+//	})
+
+//function load MDarticles in the menu//
+function load_MD() {
+	var main_art_h2 = document.getElementsByTagName("h2")[0];
+	var guest_art_h2 = document.getElementsByTagName("h2")[1];
+	var rev_art_h2 = document.getElementsByTagName("h2")[2];
+	document.getElementById("main_art_title").innerText = main_art_h2.innerHTML;
+	document.getElementById("guest_art_title").innerText = guest_art_h2.innerHTML;
+	document.getElementById("rev_art_title").innerText = rev_art_h2.innerHTML;
+	(document.getElementById("main_art_url").getElementsByTagName('a')[0]).setAttribute('href', main_art_h2.getAttribute('data-src'));
+	(document.getElementById("guest_art_url").getElementsByTagName('a')[0]).setAttribute('href', guest_art_h2.getAttribute('data-src'));
+	(document.getElementById("rev_art_url").getElementsByTagName('a')[0]).setAttribute('href', rev_art_h2.getAttribute('data-src'));
+	} 
+
+//element.addEventListener("click", function(){ myFunction(p1, p2); });
+//$("#artM", "#artL1", "#artL2").addEventListener("load", function(){
+//document.querySelectorAll("#artM", "#artL1", "#artL2").addEventListener("load", function(){ load_MD() });
+
+	//document.querySelectorAll("#main_art_title, #main_art_url").classList.add("highlighted");
+//$("#artM", "#artL1", "#artL2").addEventListener("dblclick", function open_full_article())
+
+function open_full_article() {	
+	var url = art1;
+	//var url = "www.google.com";
+	var win = window.open(url, '_blank');
+	win.focus();
+}
+
+//function slide_articles() in an issue//
+counter=0
+function slide_articles(){
+	counter=counter+1;
+	if (counter==1) {
+		$("#artM").load(art2);
+		$("#artL1").load(art3);
+		$("#artL2").load(art1);
+//al posto di queste sotto ruoterebbe l'articolo nel box in alto....
+    document.getElementById("main_art_title").classList.remove("highlighted");
+		document.getElementById("main_art_url").classList.remove("highlighted");
+		document.getElementById("guest_art_title").classList.add("highlighted");
+		document.getElementById("guest_art_url").classList.add("highlighted");
+		}
+	if (counter==2) {
+		$("#artM").load(art3);
+		$("#artL1").load(art1);
+		$("#artL2").load(art2);
+		document.getElementById("guest_art_title").classList.remove("highlighted");
+		document.getElementById("guest_art_url").classList.remove("highlighted");
+		document.getElementById("rev_art_title").classList.add("highlighted");
+		document.getElementById("rev_art_url").classList.add("highlighted");
+		}	
+	if (counter==3) {
+		$("#artM").load(art1);
+		$("#artL1").load(art2);
+		$("#artL2").load(art3);
+		counter = 0;
+		document.getElementById("rev_art_title").classList.remove("highlighted");
+		document.getElementById("rev_art_url").classList.remove("highlighted");
+		document.getElementById("main_art_title").classList.add("highlighted");
+		document.getElementById("main_art_url").classList.add("highlighted");
+		}
+	}

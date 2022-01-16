@@ -242,7 +242,7 @@ div.sticky {
   align-content: center;
   width: 100%;
   border-bottom: 0.2vw solid #993333;
-
+  border-top: 0.2vw solid #993333;
 }
 
 #stylesel a {

@@ -235,7 +235,7 @@ img {
 	  position: absolute; /* Stay in place */
 	  z-index: 9; /* Sit on top */
 	  top: 0%;
-	  left: -10%;
+	  left: 0%;
 	width: 100%; /* Full width */
 	  height: 40%; /* Full height */
 	  overflow: none; /* Enable scroll if needed */
@@ -246,7 +246,7 @@ img {
   background-color: black;
   color: white;
   margin: auto;
-  padding: 0.2vw;
+  padding: 0.1vw 0.2vw;
   border: 0.2vw solid white;
   width: 50%;
   }

@@ -110,6 +110,8 @@ img {
 
 	.menu h4 {
 		font-family: 'Staatliches', cursive;
+		font-size: 1.4em;
+		text-transform: upper-case;
 	}
 	
 	.menu H6, p {

@@ -232,14 +232,16 @@ margin-top: 2.5vmin;
   width: 50%; /* Full width */
   height: 50%; /* Full height */
   overflow: none; /* Enable scroll if needed */
-}
-.modal-content {
+  border-radius:10%;
+  }
+
+  .modal-content {
   background-color: #fefefe;
   margin: auto;
   padding: 20px;
   border: 1px solid #888;
   width: 50%;
-}
+  }
 
 .close {
   color: #aaaaaa;

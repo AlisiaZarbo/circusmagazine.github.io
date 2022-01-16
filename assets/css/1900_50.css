@@ -193,6 +193,7 @@ img {
 	.higlighted_more:before {
 		content: "▶";
 		display: inline-block;
+		font-family: sans-serif;
 	}
 
 

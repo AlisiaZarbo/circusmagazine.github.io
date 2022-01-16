@@ -246,6 +246,12 @@ margin-top: 2.5vmin;
   border-radius:10%;
   }
 
+#PopUpHeader{
+font-family: 'Cinzel', serif;
+font-size: 1.5vw;
+font-weight: bold;
+}
+
 .close {
   color: #993333;
   float: right;

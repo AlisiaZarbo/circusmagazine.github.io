@@ -230,17 +230,16 @@ img {
 }
 
 /*customized modal*/
-
-  .modal {
-  display: none; /* Hidden by default */
-  position: absolute; /* Stay in place */
-  z-index: 9; /* Sit on top */
-  left: 0;
-  top: 0;
-  width: 80%; /* Full width */
-  height: 50%; /* Full height */
-  overflow: none; /* Enable scroll if needed */
-  border-radius:10%;
+.modal {
+	display: none; /* Hidden by default */
+	  position: absolute; /* Stay in place */
+	  z-index: 9; /* Sit on top */
+	  top: 0;
+	  left: 0;
+	width: 100%; /* Full width */
+	  height: 40%; /* Full height */
+	  overflow: none; /* Enable scroll if needed */
+	  border-radius:10%;
   }
 
   .modal-content {
@@ -248,7 +247,7 @@ img {
   color: white;
   margin: auto;
   padding: 0.2vw;
-  border: 0.1vw solid #d40000;
+  border: 0.2vw solid white;
   width: 50%;
   }
 
@@ -258,12 +257,12 @@ img {
 
 	.modal-content p{
 		font-family: MyAkzidenz, sans-serif; 
+font-weight: bold;
 	}
 
 	.modal-content a{
 		text-decoration: none;
 	}
-
 
 .close {
   color: #aaaaaa;
@@ -276,7 +275,6 @@ img {
   color: #000;
   text-decoration: none;
   cursor: pointer;
-}
 }
 
 /* Style the navigation bar links */

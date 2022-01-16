@@ -236,7 +236,9 @@ margin-top: 2.5vmin;
   }
 
   .modal-content {
-  background-color: #fefefe;
+  background-color: #f2e6e6;
+  font-family: 'Cinzel', serif;
+  font-size: 1.2vw;
   margin: auto;
   padding: 20px;
   border: 1px solid #888;
@@ -245,7 +247,7 @@ margin-top: 2.5vmin;
   }
 
 .close {
-  color: #aaaaaa;
+  color: #993333;
   float: right;
   font-size: 28px;
   font-weight: bold;

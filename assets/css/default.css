@@ -6,8 +6,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Rye&display=swap');
 
 @font-face {
-  src: url('assets/fonts/quentincaps/QuentinCaps.ttf');
-  font-family: 'QuentinCaps';
+  src: url('assets/fonts/quentincaps/romantiques.regular.ttf');
+  font-family: 'Romantiques Regular';
 }
 * {
   box-sizing: border-box;
@@ -46,7 +46,7 @@
 
 .header { 
   grid-area: header;
-  font-family: 'Rye', cursive;
+  font-family: 'Romantiques Regular';
   font-size: 4vw;
   text-shadow: 4px 4px 16px white;
   text-align: center; 

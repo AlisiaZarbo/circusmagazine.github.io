@@ -234,8 +234,8 @@ img {
 	display: none; /* Hidden by default */
 	  position: absolute; /* Stay in place */
 	  z-index: 9; /* Sit on top */
-	  top: 0;
-	  left: 0;
+	  top: 0%;
+	  left: -10%;
 	width: 100%; /* Full width */
 	  height: 40%; /* Full height */
 	  overflow: none; /* Enable scroll if needed */
@@ -257,7 +257,7 @@ img {
 
 	.modal-content p{
 		font-family: MyAkzidenz, sans-serif; 
-font-weight: bold;
+		font-weight: bold;
 	}
 
 	.modal-content a{
@@ -270,12 +270,12 @@ font-weight: bold;
   font-size: 28px;
   font-weight: bold;
 }
-.close:hover,
-.close:focus {
-  color: #000;
-  text-decoration: none;
-  cursor: pointer;
-}
+
+	.close:hover, .close:focus {
+	  color: #000;
+	  text-decoration: none;
+	  cursor: pointer;
+	}
 
 /* Style the navigation bar links */
 .navbar a {

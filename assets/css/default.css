@@ -7,7 +7,7 @@
 
 @font-face {
   src: url('assets/fonts/quentincaps/romantiques.regular.ttf');
-  font-family: 'Romantiques Regular';
+  font-family: 'Romantiques Regular' format("opentype");
 }
 * {
   box-sizing: border-box;

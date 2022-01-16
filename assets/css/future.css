@@ -64,7 +64,7 @@
 
 .header { 
   grid-area: header;
-  font-family: 'Nasalization';
+  font-family: 'Orbitron', sans-serif;
   color: white;
   text-align: right;
   text-shadow: 8px 8px 32px #008080;
@@ -82,7 +82,7 @@
 .navbar{
   grid-area: nav;
   background-color: black;
-  font-family:'Nasalization';
+  font-family:'Orbitron', sans-serif;
   font-size: 1vw;
   color: white;
   text-shadow: 2px 2px 8px #2487bd;

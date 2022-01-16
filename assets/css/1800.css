@@ -260,9 +260,9 @@ img{
 	display: none; /* Hidden by default */
 	position: absolute; /* Stay in place */
 	z-index: 9; /* Sit on top */
-	top: 10%;
+	top: 0%;
 	left: 0%;
-	width: 33%; /* Full width */
+	width: 100%; /* Full width */
 	height: 50%; /* Full height */
 	overflow: none; /* Enable scroll if needed */
 	border-radius:10%;
@@ -275,18 +275,18 @@ img{
 	margin: auto;
 	padding: 0.1vw 0.4vw;
 	border: 0.2vw solid black
+	text-align: left;
+	font-weight: bold;
 }
 
 	.modal-content h4{
-	font-family: 'MyRivanna', sans-serif;
-	letter-spacing: 0.5em;
-text-align:left;
-
+		font-family: 'MyRivanna', sans-serif;
+		letter-spacing: 0.5em;
 	}
 
 	.modal-content p{
 		font-family: MyJenson, serif; 
-		font-weight: bold;
+		font-size: 1.2em;
 	}
 
 	.modal-content a{

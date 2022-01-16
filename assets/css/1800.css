@@ -260,10 +260,10 @@ img{
 	display: none; /* Hidden by default */
 	position: absolute; /* Stay in place */
 	z-index: 9; /* Sit on top */
-	top: 0%;
+	top: 10%;
 	left: 0%;
-	width: 100%; /* Full width */
-	height: 40%; /* Full height */
+	width: 33%; /* Full width */
+	height: 50%; /* Full height */
 	overflow: none; /* Enable scroll if needed */
 	border-radius:10%;
   }
@@ -273,17 +273,19 @@ img{
 	background-color: white;
 	color: #c87354;
 	margin: auto;
-	padding: 0.1vw 0.2vw;
-	/*border: 0.2vw solid white;*/
+	padding: 0.1vw 0.4vw;
+	border: 0.2vw solid black
 }
 
 	.modal-content h4{
 	font-family: 'MyRivanna', sans-serif;
 	letter-spacing: 0.5em;
+text-align:left;
+
 	}
 
 	.modal-content p{
-		font-family: MyAkzidenz, sans-serif; 
+		font-family: MyJenson, serif; 
 		font-weight: bold;
 	}
 
@@ -378,7 +380,7 @@ margin:0.2em auto;
   display: none;
   position: absolute;
   background-color: #f9f9f9;
-  max-width: 25vw;
+  max-width: 40vw;
   /*box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);*/
   z-index: 1;
 }

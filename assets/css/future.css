@@ -426,7 +426,7 @@ color: white;
 
 .title_art > h2 {
   font-family: 'Orbitron', sans-serif;
-  font-size: 3vw;
+  font-size: 2vw;
   text-transform: uppercase;
   font-weight: bold;
 }
@@ -434,7 +434,7 @@ color: white;
 .title_art > p {
   font-style: italic;
   font-family: 'Orbitron', sans-serif;
-  font-size: 1.5vw;
+  font-size: 1.2vw;
   margin-top: -1vmin;
   color: #2487bd;
   text-transform: capitalize;}  
@@ -442,7 +442,7 @@ color: white;
 .subtitle{
   font-style: italic;
   font-family: 'Orbitron', sans-serif;
-  font-size: 1.5vw;
+  font-size: 1.2vw;
   margin-top: -1vmin;
   color: #ad335c;
   text-transform: capitalize;
@@ -450,7 +450,7 @@ color: white;
 
 blockquote{
   font-style: italic;
-  font-size: 1.3vw;
+  font-size: 0.9vw;
 }
 
 
@@ -486,21 +486,21 @@ h3 {
 
 h4 {
   font-family:'Orbitron', sans-serif;
-  font-size: 2vw;
+  font-size: 1.7vw;
   column-span: all;
   font-weight: bolder;
 }
 
 h5 {
   font-family:'Orbitron', sans-serif;
-  font-size: 1.9vw;
+  font-size: 1.5vw;
   column-span: all;
   font-weight: bolder;
 }
 
 h6 {
   font-family: 'Orbitron', sans-serif;
-  font-size: 1.8vw;
+  font-size: 1.3vw;
   column-span: all;
   font-weight: bolder;
 }
@@ -526,32 +526,32 @@ h6 {
 .references{
   text-align: justify;
   font-size: 1.5vw;
-  font-family: 'BenchNine', sans-serif;
+  font-family: 'Wheaton Capitals-Regular';
   padding: 2vmin;
 }
 
 .bio{  
   text-align: justify;
   font-size: 1.5vw;
-  font-family: 'BenchNine', sans-serif;
+  font-family: 'Wheaton Capitals-Regular';
   padding: 2vmin;
 }
 .copy{  
   text-align: justify;
   font-size: 1.5vw;
-  font-family: 'BenchNine', sans-serif;
+  font-family: 'Wheaton Capitals-Regular';
   padding: 2vmin;
 }
 .publicationDate{  
   text-align: justify;
   font-size: 1.5vw;
-  font-family: 'BenchNine', sans-serif;
+  font-family: 'Wheaton Capitals-Regular';
   padding: 2vmin;
 }
 .pubnote{  
   text-align: justify;
   font-size: 1.5vw;
-  font-family: 'BenchNine', sans-serif;
+  font-family: 'Wheaton Capitals-Regular';
   padding: 2vmin;
 }
 

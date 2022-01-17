@@ -296,8 +296,8 @@ body {
 
 
 .navbar a:hover, .dropdown:hover {
-  background-color: #ddd;
-  color: black;
+  background-color: black;
+  color: white;
 }
 
 
@@ -314,19 +314,21 @@ body {
 .dropdown-menu {
   display: none;
   position: absolute;
-  background-color: #f9f9f9;
+  background-color: black;
+  color:#2487bd;
   min-width: 50vw;
   /*box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);*/
   z-index: 1;
 }
 
 .dropdown-menu a {
-  color: black;
+  color: #2487bd;
   padding: 0.4vw 0.3vw;
   text-decoration: none;
   display: block;
   text-align: left;
-}
+  color:black;
+  text-shadow: 2px 2px 8px #2487bd;}
 
 /*.navbar-nav ul, li {
   list-style-type: none;

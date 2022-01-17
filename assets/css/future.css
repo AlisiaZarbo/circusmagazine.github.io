@@ -534,31 +534,31 @@ h6 {
 
 .bio{  
   text-align: justify;
-  font-size: 1.5vw;
+  font-size: 1vw;
   font-family: 'Wheaton Capitals-Regular';
   padding: 2vmin;
 }
 .copy{  
   text-align: justify;
-  font-size: 1.5vw;
+  font-size: 1vw;
   font-family: 'Wheaton Capitals-Regular';
   padding: 2vmin;
 }
 .publicationDate{  
   text-align: justify;
-  font-size: 1.5vw;
+  font-size: 1vw;
   font-family: 'Wheaton Capitals-Regular';
   padding: 2vmin;
 }
 .pubnote{  
   text-align: justify;
-  font-size: 1.5vw;
+  font-size: 1vw;
   font-family: 'Wheaton Capitals-Regular';
   padding: 2vmin;
 }
 
 table.table {
-  border: o.2rem solid black;
+  border: 0.2rem solid black;
   padding:1rem;
   width: 100%; 
   text-align: center;

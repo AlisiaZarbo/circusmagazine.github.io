@@ -463,7 +463,7 @@ img {
 }
 
 figcaption {
-  background-color: #c7738f;
+  background-color: #2487bd;
   text-align: center;
   margin-top: -4vmin;
   z-index: 1;
@@ -471,7 +471,7 @@ figcaption {
   display: inline-block;
   color: white;
   font-weight: bold;
-  font-size: 1.2vw;
+  font-size: 0.8vw;
 }
 
 
@@ -525,7 +525,7 @@ h6 {
 
 .references{
   text-align: justify;
-  font-size: 1.5vw;
+  font-size: 1vw;
   font-family: 'Wheaton Capitals-Regular';
   padding: 2vmin;
 }

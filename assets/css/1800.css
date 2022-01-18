@@ -58,7 +58,7 @@ img{
 	height: 100vmin;
 	width: 100%;
 	margin-top: -0.5vw;
-	grid-template-columns: 1.5fr 0.5fr 1fr 1fr 1fr 1fr;
+	grid-template-columns: 1.2fr 0.8fr 1fr 1fr 1fr 1fr;
 	grid-template-rows: 0.2fr 0.02fr 0.4fr 3.09fr 3.09fr 0.2fr;
 }
 
@@ -273,7 +273,7 @@ img{
 	background: url(../img/styles/1800modal.png);
 	background-position: center right;
 	background-repeat: no-repeat;
-	/*background-attachment: fixed;*/ non mettere
+	/*background-attachment: fixed;*/
 	background-size: cover;
 	background-color: transparent;
 	color: #c87354;

@@ -200,7 +200,7 @@ img {
   font-size: 1.6em; 
 }
 
-	.higlighted_more::before {
+	.highlighted_more:before {
 		content: "▶";
 		display: inline-block;
 		font-family: sans-serif;
@@ -247,7 +247,7 @@ img {
 	  top: 0%;
 	  left: -25%;
 	width: 100%; /* Full width */
-	  height: 4vw; /* Full height */
+	  height: 3vw; /* Full height */
 	  overflow: none; /* Enable scroll if needed */
 	  border-radius:10%;
   }

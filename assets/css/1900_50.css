@@ -123,6 +123,11 @@ img {
 		text-decoration:none;
 	}
 
+	.menu .highlighted, .menu .highlighted_more {
+		background-color: white;
+		color: black;
+	}
+
 .boxM { 
 	grid-area: main; 
 	overflow-y: auto;
@@ -197,12 +202,6 @@ img {
 		display: inline-block;
 		font-family: sans-serif;
 	}
-
-.highlighted .menu, .highlighted_more .menu {
-	background-color: white;
-	color: black;
-}
-
 
 /*Decorations*/
 /*dots to highlight paragraph in the central article from Bauhaus*/

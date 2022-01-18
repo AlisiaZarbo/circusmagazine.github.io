@@ -265,13 +265,13 @@ img{
 	z-index: 9; /* Sit on top */
 	top: 0%;
 	left: 0%;
-	width: 33vw; /* Full width */
-	height: 5vw; /* Full height */
 	overflow: none; /* Enable scroll if needed */
 	border-radius:10%;
   }
 
 .modal-content {
+	width: 33vw; /* Full width */
+	height: 5vw; /* Full height */
 	background: url(../img/styles/1800modal.png);
 	background-position: center right;
 	background-repeat: no-repeat;

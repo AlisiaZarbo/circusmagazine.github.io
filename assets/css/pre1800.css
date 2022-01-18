@@ -781,7 +781,7 @@ h6#main_art_title, h6#guest_art_title, h6#rev_art_title {
   width: 50%; /* Full width */
   height: 50%; /* Full height */
   overflow: none; /* Enable scroll if needed */
-  border-radius:10%;
+  border-radius:3%;
   }
 
 
@@ -794,7 +794,7 @@ div.modal-content {
   text-shadow: 0.1vmin 0.1vmin rgba(0,0,0,0.3);
   
   width: 50%;
-  border-radius:10%;
+  border-radius:3%;
   cursor:grab;
 
 }

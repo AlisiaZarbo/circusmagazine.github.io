@@ -86,13 +86,17 @@
 		font-size: 1.5em;
 	}
 	
-	.menu h6, .menu p {
+	.menu h6 {
 		font-family: Arial;
 		text-align: left;
-		margin-bottom:-0.2em;
-    		margin-top:-0.3em;
+		margin-bottom:-0.9em;
 	}
-	
+
+	.menu p {
+		font-family: Arial;
+		text-align: left;
+	}
+
 	.menu a {
 		text-decoration:none;
 	}

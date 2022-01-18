@@ -271,6 +271,10 @@ img{
 
 .modal-content {
 	background: url(../img/styles/1800modal.png);
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
 	color: #c87354;
 	margin: auto;
 	padding: 0.1vw 0.4vw;

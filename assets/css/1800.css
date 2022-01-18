@@ -119,8 +119,9 @@ img{
 	}
 	
 	.menu h6, .menu p {
-	font-family: 'MyJenson', serif;
-	text-align: left;
+		font-family: 'MyJenson', serif;
+		text-align: left;
+		margin-bottom:-1em;
 	}
 	
 	.menu a {
@@ -270,7 +271,7 @@ img{
   }
 
 .modal-content {
-	background: url(../img/styles/1800modal.png);
+	background-image: url(../img/styles/1800modal.png);
 	background-position: center center;
 	background-repeat: no-repeat;
 	background-attachment: fixed;

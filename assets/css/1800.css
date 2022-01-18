@@ -263,15 +263,14 @@ img{
 	z-index: 9; /* Sit on top */
 	top: 0%;
 	left: 0%;
-	width: 10vw; /* Full width */
-	height: 3.2vw; /* Full height */
+	width: 50vw; /* Full width */
+	height: 3vw; /* Full height */
 	overflow: none; /* Enable scroll if needed */
 	border-radius:10%;
   }
 
 .modal-content {
 	background: url(../img/styles/1800modal.png);
-	background-color: transparent;
 	color: #c87354;
 	margin: auto;
 	padding: 0.1vw 0.4vw;
@@ -418,6 +417,9 @@ button {
 	background-color:#c87354;
 	}
 
+.navbar-nav-selector {
+	align: left;
+}
 
 
 /*.navbar-nav ul, li {

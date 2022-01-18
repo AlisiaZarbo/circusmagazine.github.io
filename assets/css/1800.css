@@ -113,8 +113,9 @@ img{
 	font-family: 'MyJenson', serif;	
 }
 
-	.menu h4 {
+	#issue_title {
 		font-family: 'MyRivanna', sans-serif;
+		font-size: 1.5em;
 	}
 	
 	.menu h6, .menu p {

@@ -117,13 +117,14 @@ img {
 	
 	.menu h6, p {
 		font-family: MyAkzidenz, sans-serif;
+		margin-bottom:-1em;
 	}
 	
 	.menu a {
 		text-decoration:none;
 	}
 
-	.menu .highlighted, .menu .highlighted_more {
+	.menu .highlighted {
 		background-color: white;
 		color: black;
 	}

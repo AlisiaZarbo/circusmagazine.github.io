@@ -115,7 +115,7 @@ img {
 		text-transform: upper-case;
 	}
 	
-	.menu h6, p {
+	.menu h6, menu p {
 		font-family: MyAkzidenz, sans-serif;
 		margin-bottom:-1em;
 	}
@@ -127,6 +127,8 @@ img {
 	.menu .highlighted {
 		background-color: white;
 		color: black;
+		font-family: MyAkzidenz_b, sans-serif;
+		font-size: 1em;
 	}
 
 .boxM { 
@@ -245,7 +247,7 @@ img {
 	  top: 0%;
 	  left: -25%;
 	width: 100%; /* Full width */
-	  height: 40%; /* Full height */
+	  height: 4vw; /* Full height */
 	  overflow: none; /* Enable scroll if needed */
 	  border-radius:10%;
   }

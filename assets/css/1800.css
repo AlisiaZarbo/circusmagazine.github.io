@@ -121,7 +121,7 @@ img{
 	.menu h6, .menu p {
 		font-family: 'MyJenson', serif;
 		text-align: left;
-		margin-top:-0.3em;
+		margin-top:-0.2em;
 		margin-bottom:-0.1em;
 	}
 	
@@ -265,15 +265,15 @@ img{
 	z-index: 9; /* Sit on top */
 	top: 0%;
 	left: 0%;
-	width: 50vw; /* Full width */
-	height: 3vw; /* Full height */
+	width: 33vw; /* Full width */
+	height: 5vw; /* Full height */
 	overflow: none; /* Enable scroll if needed */
 	border-radius:10%;
   }
 
 .modal-content {
 	background: url(../img/styles/1800modal.png);
-	background-position: center center;
+	background-position: center right;
 	background-repeat: no-repeat;
 	/*background-attachment: fixed;*/ non mettere
 	background-size: cover;
@@ -282,7 +282,7 @@ img{
 	margin: auto;
 	padding: 0.1vw 0.4vw;
 	border: 0.2vw solid black;
-	text-align: center;
+	text-align: left;
 	font-weight: bold;
 }
 
@@ -294,7 +294,6 @@ img{
 	.modal-content p{
 		font-family: MyJenson, serif; 
 		font-size: 1.2em;
-		text-align: center;
 	}
 
 	.modal-content a{

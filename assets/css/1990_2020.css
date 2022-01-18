@@ -7,6 +7,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=BenchNine:wght@300&family=Dancing+Script:wght@700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=BenchNine:wght@300&family=Dancing+Script:wght@700&family=Six+Caps&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Arapey&display=swap');
 
 * {
   box-sizing: border-box;
@@ -334,7 +335,7 @@ border-top: 0.5vmin solid black;
 }
 
 .title_art > h2 {
-  font-family: 'BenchNine', sans-serif;
+  font-family: 'Arapey', serif;
   font-size: 2.6vw;
   text-transform: uppercase;
   font-weight: bold;

@@ -339,6 +339,7 @@ border-top: 0.5vmin solid black;
   font-size: 2.6vw;
   text-transform: uppercase;
   font-weight: bold;
+  text-align: center;
 }
 
 .title_art > p {

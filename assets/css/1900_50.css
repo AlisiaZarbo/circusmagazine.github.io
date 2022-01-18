@@ -32,6 +32,7 @@ h3, h4, h5, h6 {
 
 body {
 	font-family: MyAkzidenz, sans-serif;
+	overflow-y: hidden;
 }
 
 img {
@@ -313,7 +314,7 @@ img {
   display: none;
   position: absolute;
   background-color: #ddd;
-  max-width: 25vw;
+  max-width: 50vw;
   z-index: 1;
 }
 

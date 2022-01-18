@@ -81,6 +81,21 @@
   overflow: auto;
 }
 
+	#issue_title {
+		font-family: Showboat;
+		font-size: 1.5em;
+	}
+	
+	.menu h6, .menu p {
+		font-family: Arial;
+		text-align: left;
+		margin-bottom:-0.3em;
+    margin-too:-0.2em;
+	}
+	
+	.menu a {
+		text-decoration:none;
+	}
 #menutitle{
   font-family: Showboat;
   font-size: 2.5vw;

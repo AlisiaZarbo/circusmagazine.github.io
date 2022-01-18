@@ -263,15 +263,15 @@ img{
 	z-index: 9; /* Sit on top */
 	top: 0%;
 	left: 0%;
-	width: 100vw; /* Full width */
-	height: 4vw; /* Full height */
+	width: 10vw; /* Full width */
+	height: 3.2vw; /* Full height */
 	overflow: none; /* Enable scroll if needed */
 	border-radius:10%;
   }
 
 .modal-content {
-	background: url(../img/styles/PikPng.com_art-nouveau-png_6017636.png);
-	background-color: white;
+	background: url(../img/styles/1800modal.png);
+	background-color: transparent;
 	color: #c87354;
 	margin: auto;
 	padding: 0.1vw 0.4vw;

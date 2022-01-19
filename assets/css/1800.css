@@ -54,7 +54,7 @@ img{
 		'logo logo nav nav nav nav'
 		'menu main main main rightUp rightUp'
 		'menu main main main rightDown rightDown'
-		'footer footer footer footer  footer footer';
+		'menu footer footer footer  footer footer';
 	height: 100vmin;
 	width: 100%;
 	margin-top: -0.5vw;
@@ -116,13 +116,18 @@ img{
 	#issue_title {
 		font-family: 'MyRivanna', sans-serif;
 		font-size: 1.5em;
-	}
 	
-	.menu h6, .menu p {
+	.menu h6 {
+		font-family: 'MyJenson', serif;
+		text-align: left;
+		margin-bottom:-0.9em;
+	}
+
+	.menu p {
 		font-family: 'MyJenson', serif;
 		text-align: left;
 	}
-	
+
 	.menu a {
 		text-decoration:none;
 	}
@@ -290,7 +295,7 @@ img{
 
 	.modal-content p{
 		font-family: MyJenson, serif; 
-		font-size: 1.2em;
+		font-size: 1.2rem;
 		text-align: center;
 	}
 

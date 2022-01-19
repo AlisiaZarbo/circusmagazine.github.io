@@ -351,17 +351,15 @@ li .dropdown {
 /* EZ2021-01-07*/
 /* Higlight the entities and the references */
 
-/*.entity {
-  background-color: #ffe6e6;
-}
-
 .highlighted {
-  background-color: #ffffcc; 
+  background-color: white; 
+  color:black;
 }
 
 .highlighted_more {
-  background-color: red; 
-}*/
+  background-color:#2487bd;
+  
+}
 
 
 /*.w3-modal {

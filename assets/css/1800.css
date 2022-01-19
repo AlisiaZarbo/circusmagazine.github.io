@@ -266,8 +266,8 @@ img{
 	display: none; /* Hidden by default */
 	position: absolute; /* Stay in place */
 	z-index: 9; /* Sit on top */
-	top: 1%;
-	left: 1%;
+	top: 0.3%;
+	left: 0.3%;
 	overflow: none; /* Enable scroll if needed */
   }
 
@@ -282,8 +282,8 @@ img{
 	background-color: transparent;
 	color: #c87354;
 	/*margin: auto;*/
-	padding-top: 1vw;
-	padding-left: 0.4vw;
+	padding-top: 2.3vw;
+	padding-left: 0.2vw;
 	font-weight: bold;
 }
 

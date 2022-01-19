@@ -512,10 +512,8 @@ th,td {
   display: none; /* Hidden by default */
   position: absolute; /* Stay in place */
   z-index: 9; /* Sit on top */
-  left: 0;
-  top: 0;
-  width: 50%; /* Full width */
-  height: 50%; /* Full height */
+  left: 40%;
+  top: 0%;
   overflow: none; /* Enable scroll if needed */
 }
 .modal-content {
@@ -523,7 +521,8 @@ th,td {
   margin: auto;
   padding: 20px;
   border: 1px solid #888;
-  width: 50%;
+  width: 25%;
+  height: 10%; /* Full height */
 }
 
 .close {
@@ -537,5 +536,4 @@ th,td {
   color: #000;
   text-decoration: none;
   cursor: pointer;
-}
 }

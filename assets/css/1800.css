@@ -272,12 +272,12 @@ img{
   }
 
 /*.modal-content {
-	width: 35.5vw; /* Full width */
-	height: 14vw; /* Full height */
+	width: 35.5vw; 
+	height: 14vw;
 	background: url(../img/styles/1800modal2.png);
 	background-position: center center;
 	background-repeat: no-repeat;
-	/*background-attachment: fixed;*/
+	background-attachment: fixed;
 	background-size: cover;
 	background-color: transparent;
 	color: #c87354;

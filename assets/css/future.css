@@ -351,8 +351,8 @@ li .dropdown {
 /* Higlight the entities and the references */
 
 .highlighted {
-  background-color: white; 
-  color:black;
+  background-color: black; 
+  color:white;
 }
 
 .highlighted_more {

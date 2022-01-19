@@ -346,7 +346,8 @@ img{
 	  text-decoration: none;
 	  cursor: pointer;
 	}
-Responsive layout - when the screen is less than xxpx (o vmin??) wide, make the grid items stack on top of each other instead of next to each other
+		
+/*Responsive layout - when the screen is less than xxpx (o vmin??) wide, make the grid items stack on top of each other instead of next to each other
 @media screen and (max-width: 500px) {
 	.logo { display: none; }
 	.header { grid-area: 1 / 1 / 2 / span 6 ; }
@@ -357,12 +358,12 @@ Responsive layout - when the screen is less than xxpx (o vmin??) wide, make the 
 	.boxRD { grid-area: 8 / 1 / 10 / span 6 ; }
 	.footer{ grid-area: 10 / 1 / 11 / span 6 ; }
 }
+		
 @media all and (max-width:30em){
 a.button{
 display:block;
 margin:0.2em auto;
-}
-}
+}*/
  
 /* Style the navigation bar links */
 

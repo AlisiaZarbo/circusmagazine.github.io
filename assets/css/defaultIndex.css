@@ -201,6 +201,8 @@ h4 {
   .boxRU { grid-area: 6 / 1 / 8 / span 6 ;  }
   .boxRD { grid-area: 8 / 1 / 10 / span 6 ; }
   .footer{ grid-area: 10 / 1 / 11 / span 6 ; }
+  .coll {display: none;}
+  .colr {display: none;}
 }
 
 /* Style the body or other elements*/

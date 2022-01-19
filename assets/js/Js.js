@@ -32,8 +32,7 @@ function change_issue(issue) {
 	document.getElementById("issue_metadata").innerHTML = metadata_issue;
 	document.getElementById("main_art_title").classList.add("highlighted");
 	document.getElementById("main_art_url").classList.add("highlighted");
-	}	
-}
+	}
 	
 //function slide_articles() in an issue//
 counter=0

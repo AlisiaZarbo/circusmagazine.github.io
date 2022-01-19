@@ -141,7 +141,7 @@ function openPopUp(el){
 	document.getElementById("tot_occurrencies").innerText = clicked_entity.length;
 	if (item_with_data[0].hasAttribute("data-wikidata-id")) {
 		wikidataID = item_with_data[0].getAttribute("data-wikidata-id");
-		document.getElementById("PopUpWikidata").innerHTML = "url es. https://www.wikidata.org/wiki/" + wikidataID;
+		document.getElementById("PopUpWikidata").innerHTML = "https://www.wikidata.org/wiki/" + wikidataID;
 		document.getElementById("PopUpWikidata").href = "https://www.wikidata.org/wiki/" + wikidataID;
 		}
 	else {

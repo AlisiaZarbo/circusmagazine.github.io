@@ -75,7 +75,7 @@
 .coll { 
 	grid-area: coll; 
 	background-image: url("assets/img/index/left.png");
-	background-size:20%;
+	background-size:5%;
   border: 0.2vw solid #000000;
   padding: 1vw;
   overflow: auto;
@@ -84,7 +84,7 @@
 .colr { 
   grid-area: colr; 
   background-image: url("assets/img/index/right.png");
-  background-size:20%;
+  background-size:5%;
   border: 0.2vw solid #000000;
   padding: 1vw;
   overflow: auto;

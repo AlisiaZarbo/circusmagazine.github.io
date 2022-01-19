@@ -127,7 +127,7 @@
   background-color: white;
   min-width: 50vw;
   /*box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);*/
-  z-index: 10;
+  z-index: 11;
 }
 
 .dropdown-menu a {
@@ -136,6 +136,7 @@
   text-decoration: none;
   display: block;
   text-align: left;
+  z-index: 11
 }
 .navbar-nav-selector {
 background-color: black;
@@ -314,11 +315,11 @@ body {
 .dropdown-menu {
   display: none;
   position: absolute;
-  background-color: black;
-  color:#2487bd;
+  background-color: #2487bd;
+  color:white;
   min-width: 50vw;
   /*box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);*/
-  z-index: 1;
+  z-index: 10;
 }
 
 .dropdown-menu a {

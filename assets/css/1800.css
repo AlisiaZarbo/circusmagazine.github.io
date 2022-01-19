@@ -35,6 +35,10 @@ h2, h3, h4, h5, h6 {
 	text-align:center;
 }
 
+figcaption {
+	line-height: 0.95em;
+	}
+
 img{
 	width: 100%;
 	filter: sepia(100%);
@@ -216,6 +220,15 @@ img{
 	float: left;
 }
 
+.maincontent div[id="sec_nn"] p:first-letter {
+	font-family: 'MyRivanna', sans-serif;
+	padding-right: 0.2em;
+	line-height: 1em;
+	font-size: 3.8em;
+	font-style: normal;
+	float: left;
+}
+
 /*Fine paragrafo*/
 .boxM .maincontent p:after {
 	content: "☙";
@@ -235,7 +248,6 @@ img{
 	padding:0.3vw;
 	border-bottom: 0.2vw solid #000000;
 }
-
 
 /*customized scrollbar*/
 /* width */

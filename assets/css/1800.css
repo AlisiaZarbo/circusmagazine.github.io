@@ -265,13 +265,14 @@ img{
 .modal {
 	display: none; /* Hidden by default */
 	position: absolute; /* Stay in place */
-	z-index: 9; /* Sit on top */
+	z-index: 8; /* Sit on top */
 	top: 0.3%;
 	left: 0.3%;
 	overflow: none; /* Enable scroll if needed */
   }
 
 .modal-content {
+	z-index: 9;
 	width: 33.5vw; /* Full width */
 	height: 14vw; /* Full height */
 	background: url(../img/styles/1800modal.png);

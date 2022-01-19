@@ -664,8 +664,8 @@ h6#main_art_title, h6#guest_art_title, h6#rev_art_title {
   display: none; /* Hidden by default */
   position: absolute; /* Stay in place */
   z-index: 9; /* Sit on top */
-  left: 40%;
-  top: 0%;
+  left: 30%;
+  top: 5%;
   overflow: none; /* Enable scroll if needed */
   }
 

@@ -127,7 +127,7 @@
   background-color: white;
   min-width: 50vw;
   /*box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);*/
-  z-index: 11;
+  z-index: 1;
 }
 
 .dropdown-menu a {
@@ -136,7 +136,7 @@
   text-decoration: none;
   display: block;
   text-align: left;
-  z-index: 11
+  z-index: 1
 }
 .navbar-nav-selector {
 background-color: black;
@@ -171,6 +171,7 @@ margin-top: 2.5vmin;
   box-shadow: 2px 2px 15px #2487bd;
   padding: 1vw;
   overflow: auto;
+  z-index:0;
 }
 
 #issue_title {
@@ -220,6 +221,7 @@ margin-top: 2.5vmin;
   background-color: black;
   opacity: 0.9;
   margin-left: 15%;
+  z-index:0;
 }
 
 .boxRU { 
@@ -234,6 +236,7 @@ margin-top: 2.5vmin;
   padding:3vw;
   width: 80%;
   box-shadow: 2px 2px 15px #2487bd;
+  z-index:0;
 }
 
 .boxRD { 
@@ -247,6 +250,7 @@ margin-top: 2.5vmin;
   width: 80%;
   color: white;
   box-shadow: 2px 2px 15px #2487bd;
+  z-index:0;
 }
 
 .footer { 
@@ -319,7 +323,7 @@ body {
   color:white;
   min-width: 50vw;
   /*box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);*/
-  z-index: 10;
+  z-index: 1;
 }
 
 .dropdown-menu a {
@@ -330,7 +334,7 @@ body {
   text-align: left;
   color:black;
   text-shadow: 2px 2px 8px #2487bd;
-  z-index:10;
+  z-index:1;
 }
 
 /*.navbar-nav ul, li {

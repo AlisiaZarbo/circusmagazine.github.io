@@ -35,6 +35,10 @@ body {
 	overflow-y: hidden;
 }
 
+figcaption, blockquote {
+	line-height: 97%;
+}
+
 img {
 	width: 100%;
 	-webkit-filter: grayscale(100%);
@@ -219,6 +223,10 @@ img {
 .references {
 	border-top: 2vh solid black;	
 	border-right: 2vh solid black;
+}
+
+.annexes {
+	border-top: 2vh solid black;
 }
 
 /*customized scrollbar*/

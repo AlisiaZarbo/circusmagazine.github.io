@@ -269,7 +269,7 @@ margin-top: 2.5vmin;
   display: none; /* Hidden by default */
   position: absolute; /* Stay in place */
   z-index: 9; /* Sit on top */
-  left: 25%;
+  left: 40%;
   top: 3%;
   overflow: none; /* Enable scroll if needed */ 
   }

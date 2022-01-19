@@ -4,7 +4,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@600&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@600&display=swap');
 @font-face {
-  src: url('assets/fonts/holtzschue.regular.ttf');
+  src: url('../fonts/holtzschue.regular.ttf');
   font-family: 'Holtzschue Regular';
 }
 

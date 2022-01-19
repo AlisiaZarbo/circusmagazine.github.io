@@ -664,13 +664,13 @@ h6#main_art_title, h6#guest_art_title, h6#rev_art_title {
   display: none; /* Hidden by default */
   position: absolute; /* Stay in place */
   z-index: 9; /* Sit on top */
-  left: 25%;
+  left: 40%;
   top: 0%;
   overflow: none; /* Enable scroll if needed */
   }
 
 div.modal-content {
-  width: 60%; /* Full width */
+  width: 100%; /* Full width */
   height: 4%; /* Full height */
   border-radius: 1%;
   background-color: #ffe6cc;

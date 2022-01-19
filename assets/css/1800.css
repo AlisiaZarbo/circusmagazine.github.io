@@ -118,11 +118,16 @@ img{
 		font-size: 1.5em;
 	}
 	
-	.menu h6, .menu p {
+	.menu h6 {
+		font-family: 'MyJenson', serif;
+		text-align: left;
+		border-bottom: -0.9em;
+	}
+	
+	.menu p {
 		font-family: 'MyJenson', serif;
 		text-align: left;
 	}
-	
 	.menu a {
 		text-decoration:none;
 	}
@@ -278,14 +283,15 @@ img{
 	background-color: transparent;
 	color: #c87354;
 	margin: auto;
-	padding: 0.1vw 0.4vw;
-	border: 0.2vw solid black;
+	padding-top: 1vw;
+	padding-left: 0.4vw;
 	font-weight: bold;
 }
 
 	.modal-content h4{
 		font-family: 'MyRivanna', sans-serif;
 		letter-spacing: 0.5em;
+		border-botton:0.9em;
 	}
 
 	.modal-content p{

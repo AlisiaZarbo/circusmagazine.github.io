@@ -271,6 +271,24 @@ img{
 	overflow: none; /* Enable scroll if needed */
   }
 
+/*.modal-content {
+	width: 35.5vw; /* Full width */
+	height: 14vw; /* Full height */
+	background: url(../img/styles/1800modal2.png);
+	background-position: center center;
+	background-repeat: no-repeat;
+	/*background-attachment: fixed;*/
+	background-size: cover;
+	background-color: transparent;
+	color: #c87354;
+	margin: auto;
+	padding: 0.1vw 0.4vw;
+	border: 0.2vw solid black;
+	font-weight: bold;
+}*/
+
+
+
 .modal-content {
 	z-index: 9;
 	width: 33.5vw; /* Full width */
@@ -291,19 +309,32 @@ img{
 	.modal-content h4{
 		font-family: 'MyRivanna', sans-serif;
 		letter-spacing: 0.5em;
-		margin-bottom: -0.9em;
-	}
+		/*margin-bottom: -0.9em;*/
+		line-height:.5em;
+		padding-top:2.5vw;
+		font-size: 1.2vw;
+
+}
 
 	.modal-content p{
 		font-family: MyJenson, serif; 
-		font-size: 1.2em;
+		font-size: 1.2vw;
 		text-align: center;
-		margin-bottom: -0.9em;
+		/*margin-bottom: -0.9em;*/
+		line-height: .8em;
+		
 	}
 
 	.modal-content a{
 		text-decoration: none;
 	}
+
+////
+
+////
+
+
+
 
 .close {
   color: #aaaaaa;

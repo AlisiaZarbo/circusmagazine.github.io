@@ -115,6 +115,7 @@ function openPopUp(el){
 		wikidataID = clicked_entity.at(0).getAttribute("data-wikidata-id");
 		document.getElementById("PopUpWikidata").innerHTML = "https://www.wikidata.org/wiki/" + wikidataID;
 		document.getElementById("PopUpWikidata").href = "https://www.wikidata.org/wiki/" + wikidataID;
+		document.getElementById("WikidataIntro").style.display="block";
 		}
 	else {
 		document.getElementById("WikidataIntro").style.display="none"

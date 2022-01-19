@@ -48,6 +48,8 @@
 .header { 
   grid-area: header;
   font-family: 'Holtzschue Regular';
+  font-size: 4vw;
+  text-align:center;
   position: static;
   padding: 0.5vw;
   background-image: url("sfondo.jpg");

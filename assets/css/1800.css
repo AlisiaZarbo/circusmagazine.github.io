@@ -54,7 +54,7 @@ img{
 		'logo logo nav nav nav nav'
 		'menu main main main rightUp rightUp'
 		'menu main main main rightDown rightDown'
-		'footer footer footer footer  footer footer';
+		'menu footer footer footer  footer footer';
 	height: 100vmin;
 	width: 100%;
 	margin-top: -0.5vw;
@@ -121,7 +121,7 @@ img{
 	.menu h6 {
 		font-family: 'MyJenson', serif;
 		text-align: left;
-		border-bottom: -0.9em;
+		margin-bottom: -0.9em;
 	}
 	
 	.menu p {

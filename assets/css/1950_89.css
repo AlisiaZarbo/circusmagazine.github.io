@@ -157,6 +157,10 @@ button:hover {
   text-align: left;
 }
 
+	.menu h6 {
+		margin-bottom:-0.9em;
+	}
+
 .menu ul.navbar-nav {
   color: white;
   margin: 0;
@@ -656,27 +660,22 @@ h6#main_art_title, h6#guest_art_title, h6#rev_art_title {
   text-align: left; 
 }
 
-
-
-
 .modal {
   display: none; /* Hidden by default */
   position: absolute; /* Stay in place */
   z-index: 9; /* Sit on top */
-  left: 0;
-  top: 0;
-  width: 50%; /* Full width */
-  height: 50%; /* Full height */
+  left: 25%;
+  top: 3%;
   overflow: none; /* Enable scroll if needed */
-  border-radius:1%;
   }
 
 div.modal-content {
+  width: 25%; /* Full width */
+  height: 50%; /* Full height */
+  border-radius:1%;
   background-color: #ffe6cc;
   font-family: 'Bassanova', sans-serif;
   color: #cc0000;
-  
-  width: 50%;
   border-radius:1%;
   cursor:grab;
 }

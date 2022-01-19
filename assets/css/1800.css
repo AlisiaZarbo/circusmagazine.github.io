@@ -37,8 +37,7 @@ h2, h3, h4, h5, h6 {
 
 figcaption {
 	line-height: 0.95em;
-	text-align: justify;
-}
+	}
 
 img{
 	width: 100%;
@@ -209,6 +208,7 @@ img{
 	color: #c87354;
 }
 
+
 /*Decorations*/
 /*Drop caps*/
 .maincontent div[id^="sec"] p:first-of-type::first-letter {
@@ -220,7 +220,7 @@ img{
 	float: left;
 }
 
-.maincontent div[id="sec_nn"] p:first-word {
+.maincontent div[id="sec_nn"] p:first-letter {
 	font-family: 'MyRivanna', sans-serif;
 	padding-right: 0.2em;
 	line-height: 1em;
@@ -278,7 +278,7 @@ img{
 	display: none; /* Hidden by default */
 	position: absolute; /* Stay in place */
 	z-index: 8; /* Sit on top */
-	top: 0.2%;
+	top: 0.3%;
 	left: 0.3%;
 	overflow: none; /* Enable scroll if needed */
   }
@@ -299,6 +299,8 @@ img{
 	font-weight: bold;
 }*/
 
+
+
 .modal-content {
 	z-index: 9;
 	width: 33.5vw; /* Full width */
@@ -311,8 +313,8 @@ img{
 	background-color: transparent;
 	color: #c87354;
 	/*margin: auto;*/
-	padding-top: 1.8vw;
-	padding-left: 0.1vw;
+	padding-top: 2.3vw;
+	padding-left: 0.2vw;
 	font-weight: bold;
 }
 
@@ -323,31 +325,36 @@ img{
 		line-height:.5em;
 		padding-top:2.5vw;
 		font-size: 1.2vw;
-	}
+
+}
 
 	.modal-content p{
 		font-family: MyJenson, serif; 
 		font-size: 1.2vw;
 		text-align: center;
-		margin-bottom: -0.9em;
-		/*line-height: .8em;
+		/*margin-bottom: -0.9em;*/
+		line-height: .8em;
+		
 	}
+
 	.modal-content a{
 		text-decoration: none;
 	}
+
 .close {
   color: #aaaaaa;
   float: right;
   font-size: 1vw;
   font-weight: bold;
 }
+
 	.close:hover, .close:focus {
 	  color: #000;
 	  text-decoration: none;
 	  cursor: pointer;
 	}
-		
-/*Responsive layout - when the screen is less than xxpx (o vmin??) wide, make the grid items stack on top of each other instead of next to each other
+
+Responsive layout - when the screen is less than xxpx (o vmin??) wide, make the grid items stack on top of each other instead of next to each other
 @media screen and (max-width: 500px) {
 	.logo { display: none; }
 	.header { grid-area: 1 / 1 / 2 / span 6 ; }
@@ -358,13 +365,37 @@ img{
 	.boxRD { grid-area: 8 / 1 / 10 / span 6 ; }
 	.footer{ grid-area: 10 / 1 / 11 / span 6 ; }
 }
-		
 @media all and (max-width:30em){
 a.button{
 display:block;
 margin:0.2em auto;
-}*/
+}
+}
  
+
+
+/*.maincontent p {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+}
+.maincontent p:after, p::after {
+  content: "_____________________________________________" ;
+/*  url("../img/styles/1800.PNG");
+  display: inline-block;
+  width: %;
+  height: %;
+ z-index: -1;
+ position: absolute;
+}*/
+
+
+/*nuovo.references {
+	background-image: url("../img/styles/kisspng-borders-and-frames-art-nouveau-art-deco-clip-art-huy-5b3de9091fcf26.5596030415307840091303.png");
+	width: %;
+	z-index: -1;
+}*/
+
 /* Style the navigation bar links */
 
 .navbar a {

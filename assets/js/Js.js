@@ -109,9 +109,10 @@ function openPopUp(el){
 	clicked_entity.forEach(entity => entity.classList.add("highlighted"));
 	(clicked_entity.at(0)).classList.add("highlighted_more");
 	(clicked_entity.at(0)).scrollIntoView();
-	item_with_data = clicked_entity.filter(entity => entity.hasAttribute("data-active"));
-	if (item_with_data[0].hasAttribute("data-wikidata-id")) {
-		wikidataID = item_with_data[0].getAttribute("data-wikidata-id");
+	//item_with_data = clicked_entity.filter(entity => entity.hasAttribute("data-active"));
+	//if (item_with_data[0].hasAttribute("data-wikidata-id")) {
+	if (clicked_entity.at(0).hasAttribute("data-wikidata-id")) {
+		wikidataID = clicked_entity.at(0).getAttribute("data-wikidata-id");
 		document.getElementById("PopUpWikidata").innerHTML = "https://www.wikidata.org/wiki/" + wikidataID;
 		document.getElementById("PopUpWikidata").href = "https://www.wikidata.org/wiki/" + wikidataID;
 		}

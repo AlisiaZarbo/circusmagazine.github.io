@@ -348,6 +348,7 @@ img{
   display: none;
   position: absolute;
   background-color: #f9f9f9;
+  max-width: 80vw;
   max-height: 100vh;
   z-index: 1;
 }

@@ -12,6 +12,8 @@ font-family: MyJenson;
 src: url("../fonts/AdobeJensonProRegular.otf") format("opentype");
 }
 
+@charset "UTF-8"; 
+
 /*general settings*/
 * {
 	box-sizing: border-box;

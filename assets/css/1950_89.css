@@ -127,9 +127,9 @@ ul.navbar-nav {
 }
 
 
-.dropdown-menu#KW, .dropdown-menu#PE, .dropdown-menu#PL, .dropdown-menu#OR {
+/*.dropdown-menu#KW, .dropdown-menu#PE, .dropdown-menu#PL, .dropdown-menu#OR {
   max-height: 20%;
-}
+}*/
 
 button {
   color: #ffe6cc;

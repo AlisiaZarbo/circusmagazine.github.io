@@ -12,12 +12,6 @@ font-family: MyJenson;
 src: url("../fonts/AdobeJensonProRegular.otf") format("opentype");
 }
 
-/* Flowers icons for end of lines?*/
-@font-face {
-font-family: MyFlow;
-src: url("../fonts/Art Nouveau Flowers.ttf");
-}
-
 /*general settings*/
 * {
 	box-sizing: border-box;
@@ -298,7 +292,7 @@ img{
 }
 
 	.modal-content p{
-		font-family: serif; 
+		font-family: 'MyJenson', serif;
 		font-size: 1.2vw;
 		text-align: center;
 		margin-bottom: -0.9em;		
@@ -352,7 +346,7 @@ img{
   display: none;
   position: absolute;
   background-color: #f9f9f9;
-  max-width: 40vw;
+  max-height: 100vh;
   z-index: 1;
 }
 

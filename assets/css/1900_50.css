@@ -185,11 +185,9 @@ img {
 		width: %;
 		}
 
-	table, th, td, thead {
-	border: 0.2rem solid black;
-	/*border-collapse: collapse;
-	vertical-align: bottom;*/
-	}
+	th, td {
+	margin: 0.2rem solid black;
+		}
 
 .footer { 
 	grid-area: footer; 
@@ -240,7 +238,7 @@ img {
 }
 
 .annexes {
-	border-left: 3vh solid black;
+	border-top: 2vh solid black;
 }
 
 /*customized scrollbar*/

@@ -126,6 +126,11 @@ ul.navbar-nav {
   color: #000000 !important;
 }
 
+
+.dropdown-menu#KW, .dropdown-menu#PE, .dropdown-menu#PL, .dropdown-menu#OR {
+  max-height: 20%;
+}
+
 button {
   color: #ffe6cc;
   padding: 0.5vmin;
@@ -667,6 +672,7 @@ h6#main_art_title, h6#guest_art_title, h6#rev_art_title {
   left: 30%;
   top: 5%;
   overflow: none; /* Enable scroll if needed */
+  border: 0.3vw solid #000000;
   }
 
 div.modal-content {

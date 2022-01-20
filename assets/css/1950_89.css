@@ -673,6 +673,7 @@ h6#main_art_title, h6#guest_art_title, h6#rev_art_title {
   top: 5%;
   overflow: none; /* Enable scroll if needed */
   border: 0.3vw solid #000000;
+  background-color: #ffe6cc;
   }
 
 div.modal-content {

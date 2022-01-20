@@ -260,59 +260,7 @@ img{
 	background: #e5c19a; 
 }
 
-.modal {
-	display: none; /* Hidden by default */
-	position: absolute; /* Stay in place */
-	z-index: 9; /* Sit on top */
-	top: 0%;
-	left: 0%;
-	width: 100%; /* Full width */
-	height: 50%; /* Full height */
-	overflow: none; /* Enable scroll if needed */
-	border-radius:10%;
-  }
-
-.modal-content {
-	background: url(../img/styles/PikPng.com_art-nouveau-png_6017636.png);
-	background-position: center;
-	height: 4vw;
-	color: #c87354;
-	margin: auto;
-	padding: 0.1vw 0.4vw;
-	border: 0.2vw solid black;
-	text-align: center;
-	font-weight: bold;
-}
-
-	.modal-content h4{
-		font-family: 'MyRivanna', sans-serif;
-		letter-spacing: 0.5em;
-	}
-
-	.modal-content p{
-		font-family: MyJenson, serif; 
-		font-size: 1.2em;
-	}
-
-	.modal-content a{
-		text-decoration: none;
-	}
-
-
-.close {
-	  color: #aaaaaa;
-	  float: right;
-	  font-size: 28px;
-	  font-weight: bold;
-	}
-
-	.close:hover, .close:focus {
-	  color: #000;
-	  text-decoration: none;
-	  cursor: pointer;
-	}
-
-/*customized modal
+/*customized modal*/
 
 .modal {
 	display: none; /* Hidden by default */
@@ -372,7 +320,6 @@ img{
 	  text-decoration: none;
 	  cursor: pointer;
 	}
-*/
 
 /* Style the navigation bar links */
 

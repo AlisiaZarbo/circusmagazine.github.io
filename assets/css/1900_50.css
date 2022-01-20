@@ -270,8 +270,8 @@ img {
   }
 
   .modal-content {
-	  width: 50vw; /* Full width */
-	  height: 10.3vw; /* Full height */
+	  width: 100%; /* Full width */
+	  height: 100%; /* Full height */
 	  background-color: black;
 	  color: white;
 	  margin: auto;

@@ -225,9 +225,9 @@ button:hover {
   border: none;
 }
 
-.menu nav.navbar ul li .dropdown-menu {
+/*.menu nav.navbar ul li .dropdown-menu {
   max-width: 50vw;
-}
+}*/
 
 .menu nav.navbar ul li .dropdown-menu .dropdown-item {
   display: inline-block;

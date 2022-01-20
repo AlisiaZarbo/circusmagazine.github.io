@@ -35,7 +35,8 @@ h2, h3, h4, h5, h6 {
 	text-align:center;
 }
 
-figcaption {
+figcaption, blockquote {
+	text-align: justify;
 	line-height: 0.95em;
 	}
 
@@ -220,15 +221,6 @@ img{
 	float: left;
 }
 
-.maincontent div[id="sec_nn"] p:first-letter {
-	font-family: 'MyRivanna', sans-serif;
-	padding-right: 0.2em;
-	line-height: 1em;
-	font-size: 3.8em;
-	font-style: normal;
-	float: left;
-}
-
 /*Fine paragrafo*/
 .boxM .maincontent p:after {
 	content: "☙";
@@ -278,8 +270,8 @@ img{
 	display: none; /* Hidden by default */
 	position: absolute; /* Stay in place */
 	z-index: 8; /* Sit on top */
-	top: 0.3%;
-	left: 0.3%;
+	top: 0.1%;
+	left: 0.4%;
 	overflow: none; /* Enable scroll if needed */
   }
 
@@ -303,17 +295,17 @@ img{
 
 .modal-content {
 	z-index: 9;
-	width: 33.5vw; /* Full width */
+	width: 35.5vw; 
 	height: 14vw; /* Full height */
 	background: url(../img/styles/1800modal.png);
-	background-position: center right;
+	background-position: center center;
 	background-repeat: no-repeat;
 	/*background-attachment: fixed;*/
 	background-size: cover;
 	background-color: transparent;
 	color: #c87354;
 	/*margin: auto;*/
-	padding-top: 2.3vw;
+	padding-top: 1.5vw;
 	padding-left: 0.2vw;
 	font-weight: bold;
 }
@@ -332,8 +324,8 @@ img{
 		font-family: MyJenson, serif; 
 		font-size: 1.2vw;
 		text-align: center;
-		/*margin-bottom: -0.9em;*/
-		line-height: .8em;
+		margin-bottom: -0.9em;
+		/*line-height: .8em;*/
 		
 	}
 

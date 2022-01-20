@@ -266,15 +266,15 @@ img{
 	display: none; /* Hidden by default */
 	position: absolute; /* Stay in place */
 	z-index: 9; /* Sit on top */
-	top: 0%;
-	left: 0%;
+	top: 0.5%;
+	left: 0.5%;
 	overflow: none; /* Enable scroll if needed */
   }
 
 .modal-content {
-	width: 33.5vw; 
+	width: 30vw; 
 	border: 0.2vw black;
-	height: 14vw; /* Full height */
+	height: 12vw; /* Full height */
 	/*background: url(../img/styles/1800modal.png);
 	background-position: center center;
 	background-repeat: no-repeat;
@@ -285,7 +285,8 @@ img{
 	margin: auto;
 	padding-top: 0.8vw;
 	padding-left: 0.2vw;
-	font-weight: bold;	
+	font-weight: bold;
+	border: 0.2vw solid black;
 }
 
 	.modal-content h4{

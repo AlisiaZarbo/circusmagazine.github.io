@@ -57,6 +57,7 @@
 .header { 
   grid-area: header;
   font-family: 'Holtzschue Regular';
+  text-shadow:4px 4px 30px white;
   font-size: 4vw;
   text-align:center;
   position: static;
